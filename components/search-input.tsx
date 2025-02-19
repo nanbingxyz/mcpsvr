@@ -41,6 +41,8 @@ export default function SearchInput(options: {
                 <SearchFieldInput placeholder="Search..." onChange={onInput} />
                 <SearchFieldClear
                     onPress={() => {
+                        setSearchTerm('')
+                        debouncedSearch.cancel()
                         options.onSearch([])
                     }}
                 >
