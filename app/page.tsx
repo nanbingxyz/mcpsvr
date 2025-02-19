@@ -1,4 +1,5 @@
 'use client'
+import Footer from '@/components/footer'
 import HeroText from '@/components/hero-text'
 import SearchInput from '@/components/search-input'
 import allServers from '@/public/servers.json'
@@ -63,7 +64,7 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="text-2xl font-bold">
-                    <div className="w-[768px] hidden md:block">
+                    <div className="w-[768px] hidden md:block mt-12">
                         <HeroText />
                     </div>
                     <div className="block md:hidden mt-6">
@@ -79,7 +80,7 @@ export default function Home() {
                         key={s.key}
                         className="hover:bg-stone-100 p-2 rounded-lg"
                     >
-                        <div className="text-xl font-bold">
+                        <div className="text-xl font-medium">
                             <span className="tint-color">●</span>&nbsp;
                             <span
                                 dangerouslySetInnerHTML={{
@@ -106,7 +107,7 @@ export default function Home() {
                     </div>
                 ))}
             </main>
-            <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
+            <Footer/>
         </div>
     )
 }
