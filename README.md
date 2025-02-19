@@ -41,7 +41,7 @@ All registered MCP servers are maintained in the centralized repository located 
 
 For interactive parameter requirements, adhere to the standardized format:
 ```
-<paramName>::<paramType>::<paramDescription>
+<paramName::paramType::paramDescription>
 ```
 This convention enables parameter extraction and presentation in client applications.
 
