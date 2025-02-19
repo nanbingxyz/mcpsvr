@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<img src="./public/logo.png" width="68" alt="mcpsvr logo"/>
 
-## Getting Started
+# Discover Exceptional MCP Servers
 
-First, run the development server:
+[Chinese Version](./README_cn.md)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+MCPSvr is an innovative spin-off project from  [5ire](http://github.com/nanbingxyz/5ire) designed to host a decentralized directory of MCP server implementations. This platform empowers developers to discover exceptional tools while offering a streamlined process for sharing their own MCP server creations.
+
+## Contribution Guidelines
+
+All registered MCP servers are maintained in the centralized repository located at `/public/servers.json`. Developers can submit new server configurations through GitHub pull requests (PRs).
+
+### Configuration Schema
+```json
+{
+  "name": "Server Identifier",
+  "key": "Unique alphanumeric identifier",
+  "description": "Concise implementation overview",
+  "command": "Execution environment specifier (e.g., uvx, npx, python, node)",
+  "args": [
+    "Required runtime arguments"
+  ],
+  "env": {
+    "ENVIRONMENT_VARIABLE": "Value assignment"
+  },
+  "homepage": "Official documentation URL"
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Best Practices
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Field Organization**: Maintain alphabetical ordering for configuration keys
+2. **Identifier Requirements**:
+   - Must be a unique alphanumeric string starting with a letter
+   - Strictly prohibits numeric prefixes
+3. **Metadata Handling**:
+   - Optional `name` field defaults to `key` display value
+   - Environment variables and homepage URLs are supplementary fields
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### User-Defined Parameters
 
-## Learn More
+For interactive parameter requirements, adhere to the standardized format:
+```
+<paramName>::<paramType>::<paramDescription>
+```
+This convention enables parameter extraction and presentation in client applications.
 
-To learn more about Next.js, take a look at the following resources:
+**Example Implementation**:
+```json
+{
+  "name": "File System Access Control",
+  "key": "FileSystem",
+  "command": "npx",
+  "description": "Enforces directory-level operation restrictions through specified arguments",
+  "args": [
+    "-y",
+    "@modelcontextprotocol/server-filesystem",
+    "<dirs::list::directories you about to access. Include trailing slash>"
+  ],
+  "homepage": "https://github.com/modelcontextprotocol/servers"
+}
+```
+**Parameter Extraction**:
+```json
+{
+  "name": "dirs",
+  "type": "list",
+  "description": "Directories you about to access. Include trailing slash"
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Field Constraints**:
+- `paramName` must be unique within the server configuration
+- Supported data types include string and list
+- Descriptive text remains optional
