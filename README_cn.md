@@ -39,7 +39,7 @@ MCPSvr 是从 [5ire](http://github.com/nanbingxyz/5ire) 衍生出的一个项目
 
 若 Server 需要用户填入参数，请遵守以下的约定
 ```
-<paramName::paramType::paramDescription>
+{{paramName@paramType::paramDescription}}
 ```
 该约定允许应用程序提取出需要自定义的参数，以合适的交互方式供用户填写。
 
@@ -53,7 +53,7 @@ MCPSvr 是从 [5ire](http://github.com/nanbingxyz/5ire) 衍生出的一个项目
     "args": [
       "-y",
       "@modelcontextprotocol/server-filesystem",
-      "<dirs::list::directories you about to access. Trailing slash in path required.>"
+      "{{dirs@list::directories you about to access. Trailing slash in path required.}}"
     ],
     "homepage":"https://github.com/modelcontextprotocol/servers"
   }
@@ -68,5 +68,5 @@ MCPSvr 是从 [5ire](http://github.com/nanbingxyz/5ire) 衍生出的一个项目
 ```
 
 * paramName 在当前 server 内必须唯一，由大小写字母和数字组成，且不能以数字开头
-* paramType 目前支持 string 和 list
+* paramType 目前支持 string, list 和 number, 请确保使用正确的类型
 * description 可选

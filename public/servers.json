@@ -14,7 +14,7 @@
         "args": [
             "mcp-server-git",
             "--repository",
-            "<repoPath::string::Git Repository Path>"
+            "{{repoPath@string::Git Repository Path}}"
         ],
         "homepage": "https://github.com/modelcontextprotocol/servers"
     },
@@ -26,7 +26,7 @@
         "args": [
             "-y",
             "@modelcontextprotocol/server-filesystem",
-            "<dirs::list::directories you about to access. Trailing slash in path required.>"
+            "{{dirs@list::directories you about to access. Trailing slash in path required.}}"
         ],
         "homepage": "https://github.com/modelcontextprotocol/servers"
     },
@@ -44,7 +44,7 @@
         "description": "This server allowing LLMs to interact with Linear issues.",
         "args": ["-y", "linear-mcp-server"],
         "env": {
-            "LINEAR_API_KEY": "<apiKey::string::Get the api key from linear.app>"
+            "LINEAR_API_KEY": "{{apiKey@string::Get the api key from linear.app}}"
         },
         "homepage": "https://github.com/jerhadf/linear-mcp-server"
     },
@@ -61,11 +61,11 @@
         "description": "An MCP server gives LLMs read - only access to MySQL databases for schema inspection and query execution.",
         "args": ["-y", "@benborla29/mcp-server-mysql"],
         "env": {
-            "MYSQL_HOST": "<host::string::database host>",
-            "MYSQL_PORT": "<port::string::database port>",
-            "MYSQL_USER": "<user::string::database user>",
-            "MYSQL_PASS": "<pass::string::database password>",
-            "MYSQL_DB": "<db::string::database name>"
+            "MYSQL_HOST": "{{host@string::database host}}",
+            "MYSQL_PORT": "{{port@number::database port}}",
+            "MYSQL_USER": "{{user@string::database user}}",
+            "MYSQL_PASS": "{{pass@string::database password}}",
+            "MYSQL_DB": "{{db@string::database name}}"
         },
         "homepage": "https://github.com/benborla/mcp-server-mysql"
     },
@@ -76,7 +76,7 @@
         "args": [
             "-y",
             "mcp-obsidian",
-            "<vaultPath::string::Folder where md files are stored>"
+            "{{vaultPath@string::Folder where md files are stored}}"
         ],
         "homepage": "https://github.com/MarkusPfundstein/mcp-obsidian"
     },
@@ -87,7 +87,7 @@
         "args": [
             "-y",
             "@modelcontextprotocol/server-postgres",
-            "<connectionString::string::like postgresql://localhost/db>"
+            "{{connectionString@string::like postgresql://localhost/db}}"
         ],
         "homepage": "https://github.com/modelcontextprotocol/servers"
     },
@@ -105,7 +105,7 @@
         "description": "A Model Context Protocol (MCP) server that provides search and crawl functionality using Search1API.",
         "args": ["-y", "search1api-mcp"],
         "env": {
-            "SEARCH1API_KEY": "<apiKey::string::Get the api key from www.search1api.com>"
+            "SEARCH1API_KEY": "{{apiKey@string::Get the api key from www.search1api.com}}"
         },
         "homepage": "https://github.com/fatwang2/search1api-mcp"
     },
@@ -122,8 +122,8 @@
         "description": "MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.",
         "args": ["-y", "@modelcontextprotocol/server-slack"],
         "env": {
-            "SLACK_BOT_TOKEN": "<botToken::string::Your slack bot token>",
-            "SLACK_TEAM_ID": "<teamId::string::Your slack team id>"
+            "SLACK_BOT_TOKEN": "{{botToken@string::Your slack bot token}}",
+            "SLACK_TEAM_ID": "{{teamId@string::Your slack team id}}"
         },
         "homepage": "https://github.com/modelcontextprotocol/servers"
     },
@@ -134,7 +134,7 @@
         "args": [
             "mcp-server-sqlite",
             "--db-path",
-            "<dbPath::string::Sqlite database file path>"
+            "{{dbPath@string::Sqlite database file path}}"
         ],
         "homepage": "https://github.com/modelcontextprotocol/servers"
     },
@@ -144,7 +144,7 @@
         "description": "Seamless interaction with the tavily-search and tavily-extract tools",
         "args": ["-y", "tavily-mcp@0.1.2"],
         "env": {
-            "TAVILY_API_KEY": "<apiKey::string::You can get the API key from https://tavily.com>"
+            "TAVILY_API_KEY": "{{apiKey@string::You can get the API key from https://tavily.com}}"
         },
         "homepage": "https://github.com/tavily-ai/tavily-mcp"
     },
@@ -154,7 +154,7 @@
         "description": "A Model Context Protocol server providing tools for time queries and timezone conversions for LLMs",
         "args": [
             "mcp-server-time",
-            "--local-timezone=<timezone::string::like Asia/Shanghai. You may need install tzdata first>"
+            "--local-timezone={{timezone@string::like Asia/Shanghai. You may need install tzdata first}}"
         ],
         "homepage": "https://github.com/modelcontextprotocol/servers"
     },

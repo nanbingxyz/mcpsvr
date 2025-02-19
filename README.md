@@ -41,7 +41,7 @@ All registered MCP servers are maintained in the centralized repository located 
 
 For interactive parameter requirements, adhere to the standardized format:
 ```
-<paramName::paramType::paramDescription>
+{{paramName@paramType::paramDescription}}
 ```
 This convention enables parameter extraction and presentation in client applications.
 
@@ -55,7 +55,7 @@ This convention enables parameter extraction and presentation in client applicat
   "args": [
     "-y",
     "@modelcontextprotocol/server-filesystem",
-    "<dirs::list::directories you about to access. Include trailing slash>"
+    "{{dirs@list::directories you about to access. Include trailing slash}}"
   ],
   "homepage": "https://github.com/modelcontextprotocol/servers"
 }
@@ -71,5 +71,5 @@ This convention enables parameter extraction and presentation in client applicat
 
 **Field Constraints**:
 - `paramName` must be unique within the server configuration
-- Supported data types include string and list
+- Supported data types include string,list and number,make sure to use the right type!
 - Descriptive text remains optional
