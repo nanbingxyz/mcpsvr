@@ -54,7 +54,7 @@ export default function Home() {
                     <div className="flex gap-2">
                         <SearchInput onSearch={onSearch} />
                         <a
-                            href="https://github.com/nanbingxyz/mcp-server-market"
+                            href="https://github.com/nanbingxyz/mcpsvr"
                             target="_blank"
                             className="bg-stone-800 px-4 py-2 rounded-md text-gray-50"
                         >
