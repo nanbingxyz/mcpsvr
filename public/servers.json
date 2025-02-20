@@ -1,168 +1,183 @@
 [
-    {
-        "name": "Apple Notes",
-        "key": "AppleNotes",
-        "command": "uvx",
-        "description": "The server implements the ability to read and write to your Apple Notes. Require Python>=3.12.",
-        "args": ["apple-notes-mcp"],
-        "homepage": "https://github.com/sirmews/apple-notes-mcp"
+  {
+    "name": "Apple Notes",
+    "key": "AppleNotes",
+    "command": "uvx",
+    "description": "The server implements the ability to read and write to your Apple Notes. Require Python>=3.12.",
+    "args": ["apple-notes-mcp"],
+    "homepage": "https://github.com/sirmews/apple-notes-mcp"
+  },
+  {
+    "name": "Database Utilities",
+    "key": "DbUtils",
+    "command": "uvx",
+    "description": "A unified database access service supporting PostgreSQL and SQLite. With an abstraction layer design, it provides a simple, unified database operation interface for MCP servers.",
+    "args": [
+      "mcp-dbutils",
+      "--config",
+      "{{configPath@string::/path/to/config.yaml}}"
+    ],
+    "env": {
+      "MCP_DEBUG": "{{debug@string::0 or 1}}"
     },
-    {
-        "key": "Git",
-        "command": "uvx",
-        "description": "Tools to read, search, and manipulate Git repositories",
-        "args": [
-            "mcp-server-git",
-            "--repository",
-            "{{repoPath@string::Git Repository Path}}"
-        ],
-        "homepage": "https://github.com/modelcontextprotocol/servers"
+    "homepage": "https://github.com/donghao1393/mcp-dbutils"
+  },
+  {
+    "key": "Git",
+    "command": "uvx",
+    "description": "Tools to read, search, and manipulate Git repositories",
+    "args": [
+      "mcp-server-git",
+      "--repository",
+      "{{repoPath@string::Git Repository Path}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "name": "File System",
+    "key": "FileSystem",
+    "command": "npx",
+    "description": "The server will only allow operations within directories specified via args.",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-filesystem",
+      "{{dirs@list::directories you about to access. Trailing slash in path required.}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "name": "Hacker News",
+    "key": "HackerNews",
+    "command": "uvx",
+    "description": "The server provides tools for fetching information from Hacker News",
+    "args": ["mcp-hn"],
+    "homepage": "https://github.com/erithwik/mcp-hn"
+  },
+  {
+    "key": "Linear",
+    "command": "npx",
+    "description": "This server allowing LLMs to interact with Linear issues.",
+    "args": ["-y", "linear-mcp-server"],
+    "env": {
+      "LINEAR_API_KEY": "{{apiKey@string::Get the api key from linear.app}}"
     },
-    {
-        "name": "File System",
-        "key": "FileSystem",
-        "command": "npx",
-        "description": "The server will only allow operations within directories specified via args.",
-        "args": [
-            "-y",
-            "@modelcontextprotocol/server-filesystem",
-            "{{dirs@list::directories you about to access. Trailing slash in path required.}}"
-        ],
-        "homepage": "https://github.com/modelcontextprotocol/servers"
+    "homepage": "https://github.com/jerhadf/linear-mcp-server"
+  },
+  {
+    "key": "MacOs",
+    "command": "npx",
+    "description": "A Model Context Protocol server that provides macOS-specific system information and operations.",
+    "args": ["-y", "@mcp-get-community/server-macos"],
+    "homepage": "https://mcp-get.com/packages/%40mcp-get-community%2Fserver-macos"
+  },
+  {
+    "key": "MySQL",
+    "command": "npx",
+    "description": "An MCP server gives LLMs read - only access to MySQL databases for schema inspection and query execution.",
+    "args": ["-y", "@benborla29/mcp-server-mysql"],
+    "env": {
+      "MYSQL_HOST": "{{host@string::database host}}",
+      "MYSQL_PORT": "{{port@number::database port}}",
+      "MYSQL_USER": "{{user@string::database user}}",
+      "MYSQL_PASS": "{{pass@string::database password}}",
+      "MYSQL_DB": "{{db@string::database name}}"
     },
-    {
-        "name": "Hacker News",
-        "key": "HackerNews",
-        "command": "uvx",
-        "description": "The server provides tools for fetching information from Hacker News",
-        "args": ["mcp-hn"],
-        "homepage": "https://github.com/erithwik/mcp-hn"
+    "homepage": "https://github.com/benborla/mcp-server-mysql"
+  },
+  {
+    "key": "Obsidian",
+    "command": "npx",
+    "description": "Read and search through your Obsidian vault or any directory containing Markdown notes.",
+    "args": [
+      "-y",
+      "mcp-obsidian",
+      "{{vaultPath@string::Folder where md files are stored}}"
+    ],
+    "homepage": "https://github.com/MarkusPfundstein/mcp-obsidian"
+  },
+  {
+    "key": "Postgres",
+    "command": "npx",
+    "description": "Read-only database access with schema inspection.",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-postgres",
+      "{{connectionString@string::like postgresql://localhost/db}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "name": "Sequential Thinking",
+    "key": "SequentialThinking",
+    "command": "npx",
+    "description": "An MCP server tool for dynamic problem-solving with structured thinking.",
+    "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "Search1api",
+    "command": "npx",
+    "description": "A Model Context Protocol (MCP) server that provides search and crawl functionality using Search1API.",
+    "args": ["-y", "search1api-mcp"],
+    "env": {
+      "SEARCH1API_KEY": "{{apiKey@string::Get the api key from www.search1api.com}}"
     },
-    {
-        "key": "Linear",
-        "command": "npx",
-        "description": "This server allowing LLMs to interact with Linear issues.",
-        "args": ["-y", "linear-mcp-server"],
-        "env": {
-            "LINEAR_API_KEY": "{{apiKey@string::Get the api key from linear.app}}"
-        },
-        "homepage": "https://github.com/jerhadf/linear-mcp-server"
+    "homepage": "https://github.com/fatwang2/search1api-mcp"
+  },
+  {
+    "key": "Shell",
+    "command": "npx",
+    "description": "A Node.js MCP implementation enables secure shell command execution for AI models.",
+    "args": ["-y", "mcp-shell"],
+    "homepage": "https://github.com/hdresearch/mcp-shell"
+  },
+  {
+    "key": "Slack",
+    "command": "npx",
+    "description": "MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.",
+    "args": ["-y", "@modelcontextprotocol/server-slack"],
+    "env": {
+      "SLACK_BOT_TOKEN": "{{botToken@string::Your slack bot token}}",
+      "SLACK_TEAM_ID": "{{teamId@string::Your slack team id}}"
     },
-    {
-        "key": "MacOs",
-        "command": "npx",
-        "description": "A Model Context Protocol server that provides macOS-specific system information and operations.",
-        "args": ["-y", "@mcp-get-community/server-macos"],
-        "homepage": "https://mcp-get.com/packages/%40mcp-get-community%2Fserver-macos"
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "Sqlite",
+    "command": "uvx",
+    "description": "An MCP server using SQLite allows SQL querying, business data analysis, and automatic memo generation.",
+    "args": [
+      "mcp-server-sqlite",
+      "--db-path",
+      "{{dbPath@string::Sqlite database file path}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "Tavily",
+    "command": "npx",
+    "description": "Seamless interaction with the tavily-search and tavily-extract tools",
+    "args": ["-y", "tavily-mcp@0.1.2"],
+    "env": {
+      "TAVILY_API_KEY": "{{apiKey@string::You can get the API key from https://tavily.com}}"
     },
-    {
-        "key": "MySQL",
-        "command": "npx",
-        "description": "An MCP server gives LLMs read - only access to MySQL databases for schema inspection and query execution.",
-        "args": ["-y", "@benborla29/mcp-server-mysql"],
-        "env": {
-            "MYSQL_HOST": "{{host@string::database host}}",
-            "MYSQL_PORT": "{{port@number::database port}}",
-            "MYSQL_USER": "{{user@string::database user}}",
-            "MYSQL_PASS": "{{pass@string::database password}}",
-            "MYSQL_DB": "{{db@string::database name}}"
-        },
-        "homepage": "https://github.com/benborla/mcp-server-mysql"
-    },
-    {
-        "key": "Obsidian",
-        "command": "npx",
-        "description": "Read and search through your Obsidian vault or any directory containing Markdown notes.",
-        "args": [
-            "-y",
-            "mcp-obsidian",
-            "{{vaultPath@string::Folder where md files are stored}}"
-        ],
-        "homepage": "https://github.com/MarkusPfundstein/mcp-obsidian"
-    },
-    {
-        "key": "Postgres",
-        "command": "npx",
-        "description": "Read-only database access with schema inspection.",
-        "args": [
-            "-y",
-            "@modelcontextprotocol/server-postgres",
-            "{{connectionString@string::like postgresql://localhost/db}}"
-        ],
-        "homepage": "https://github.com/modelcontextprotocol/servers"
-    },
-    {
-        "name": "Sequential Thinking",
-        "key": "SequentialThinking",
-        "command": "npx",
-        "description": "An MCP server tool for dynamic problem-solving with structured thinking.",
-        "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
-        "homepage": "https://github.com/modelcontextprotocol/servers"
-    },
-    {
-        "key": "Search1api",
-        "command": "npx",
-        "description": "A Model Context Protocol (MCP) server that provides search and crawl functionality using Search1API.",
-        "args": ["-y", "search1api-mcp"],
-        "env": {
-            "SEARCH1API_KEY": "{{apiKey@string::Get the api key from www.search1api.com}}"
-        },
-        "homepage": "https://github.com/fatwang2/search1api-mcp"
-    },
-    {
-        "key": "Shell",
-        "command": "npx",
-        "description": "A Node.js MCP implementation enables secure shell command execution for AI models.",
-        "args": ["-y", "mcp-shell"],
-        "homepage": "https://github.com/hdresearch/mcp-shell"
-    },
-    {
-        "key": "Slack",
-        "command": "npx",
-        "description": "MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.",
-        "args": ["-y", "@modelcontextprotocol/server-slack"],
-        "env": {
-            "SLACK_BOT_TOKEN": "{{botToken@string::Your slack bot token}}",
-            "SLACK_TEAM_ID": "{{teamId@string::Your slack team id}}"
-        },
-        "homepage": "https://github.com/modelcontextprotocol/servers"
-    },
-    {
-        "key": "Sqlite",
-        "command": "uvx",
-        "description": "An MCP server using SQLite allows SQL querying, business data analysis, and automatic memo generation.",
-        "args": [
-            "mcp-server-sqlite",
-            "--db-path",
-            "{{dbPath@string::Sqlite database file path}}"
-        ],
-        "homepage": "https://github.com/modelcontextprotocol/servers"
-    },
-    {
-        "key": "Tavily",
-        "command": "npx",
-        "description": "Seamless interaction with the tavily-search and tavily-extract tools",
-        "args": ["-y", "tavily-mcp@0.1.2"],
-        "env": {
-            "TAVILY_API_KEY": "{{apiKey@string::You can get the API key from https://tavily.com}}"
-        },
-        "homepage": "https://github.com/tavily-ai/tavily-mcp"
-    },
-    {
-        "key": "Time",
-        "command": "uvx",
-        "description": "A Model Context Protocol server providing tools for time queries and timezone conversions for LLMs",
-        "args": [
-            "mcp-server-time",
-            "--local-timezone={{timezone@string::like Asia/Shanghai. You may need install tzdata first}}"
-        ],
-        "homepage": "https://github.com/modelcontextprotocol/servers"
-    },
-    {
-        "key": "Web",
-        "command": "uvx",
-        "description": "A Model Context Protocol server that provides web content fetching capabilities",
-        "args": ["mcp-server-fetch"],
-        "homepage": "https://pypi.org/project/mcp-server-fetch/"
-    }
+    "homepage": "https://github.com/tavily-ai/tavily-mcp"
+  },
+  {
+    "key": "Time",
+    "command": "uvx",
+    "description": "A Model Context Protocol server providing tools for time queries and timezone conversions for LLMs",
+    "args": [
+      "mcp-server-time",
+      "--local-timezone={{timezone@string::like Asia/Shanghai. You may need install tzdata first}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "Web",
+    "command": "uvx",
+    "description": "A Model Context Protocol server that provides web content fetching capabilities",
+    "args": ["mcp-server-fetch"],
+    "homepage": "https://pypi.org/project/mcp-server-fetch/"
+  }
 ]
