@@ -6,6 +6,11 @@
 
 MCPSvr is an innovative spin-off project from  [5ire](http://github.com/nanbingxyz/5ire) designed to host a community-driven directory of MCP servers. This platform empowers developers to discover exceptional tools while offering a streamlined process for sharing their own MCP server creations.
 
+**🚀 The servers here enable MCP clients like 5ire to install and run directly.**
+
+![5ire tools market](https://github.com/user-attachments/assets/c034bef6-5ecd-4cc1-b0ea-e5226ae1a4b4)
+
+
 ## Contribution Guidelines
 
 All registered MCP servers are maintained in the centralized repository located at `/public/servers.json`. Developers can submit new server configurations through GitHub pull requests (PRs).
