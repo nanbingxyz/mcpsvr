@@ -192,5 +192,12 @@
     "description": "A Model Context Protocol server that provides web content fetching capabilities",
     "args": ["mcp-server-fetch"],
     "homepage": "https://pypi.org/project/mcp-server-fetch/"
+  },
+  {
+    "key": "Email",
+    "command": "uvx",
+    "description": "A Model Context Protocol server that provides email content fetching and sending capabilities",
+    "args": ["mcp-email-server", "stdio"],
+    "homepage": "https://github.com/ai-zerolab/mcp-email-server"
   }
 ]
