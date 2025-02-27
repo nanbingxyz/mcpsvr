@@ -8,8 +8,7 @@ MCPSvr is an innovative spin-off project from  [5ire](http://github.com/nanbingx
 
 **🚀 The servers here enable MCP clients like 5ire to install and run directly.**
 
-![5ire tools market](https://github.com/user-attachments/assets/c034bef6-5ecd-4cc1-b0ea-e5226ae1a4b4)
-
+https://github.com/user-attachments/assets/3d1ec8db-2041-4f2d-b72c-eb8ae17ab31c
 
 ## Contribution Guidelines
 
