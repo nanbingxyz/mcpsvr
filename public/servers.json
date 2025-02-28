@@ -46,6 +46,17 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Firecrawl",
+    "key": "firecrawl",
+    "command": "npx",
+    "description": "A MCP server implementation that integrates with Firecrawl for web scraping capabilities.",
+    "args": ["-y", "firecrawl-mcp"],
+    "env": {
+      "FIRECRAWL_API_KEY": "{{apiKey@string::Get the api key from https://firecrawl.dev/}}"
+    },
+    "homepage": "https://github.com/mendableai/firecrawl-mcp-server"
+  },
+  {
     "name": "Hacker News",
     "key": "HackerNews",
     "command": "uvx",
