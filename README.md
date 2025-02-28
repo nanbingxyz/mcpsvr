@@ -4,7 +4,11 @@
 
 [Chinese Version](./README_cn.md)
 
-MCPSvr is an innovative spin-off project from  [5ire](http://github.com/nanbingxyz/5ire) designed to host a decentralized directory of MCP server implementations. This platform empowers developers to discover exceptional tools while offering a streamlined process for sharing their own MCP server creations.
+MCPSvr is an innovative spin-off project from  [5ire](http://github.com/nanbingxyz/5ire) designed to host a community-driven directory of MCP servers. This platform empowers developers to discover exceptional tools while offering a streamlined process for sharing their own MCP server creations.
+
+**🚀 The servers here enable MCP clients like 5ire to install and run directly.**
+
+https://github.com/user-attachments/assets/3d1ec8db-2041-4f2d-b72c-eb8ae17ab31c
 
 ## Contribution Guidelines
 

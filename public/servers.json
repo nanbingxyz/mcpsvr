@@ -206,10 +206,31 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "key": "Timeplus",
+    "command": "uvx",
+    "description": "MCP Server for Timeplus, a SQL database to process millions of rows per second from Kafka, Pulsar, or ClickHouse.",
+    "args": ["mcp-timeplus"],
+    "env": {
+      "TIMEPLUS_HOST": "{{host@string::database host, e.g. localhost}}",
+      "TIMEPLUS_PORT": "{{port@number::database port, e.g. 8123}}",
+      "TIMEPLUS_USER": "{{user@string::database user, e.g. default}}",
+      "TIMEPLUS_PASSWORD": "{{pass@string::database password, can be empty}}"
+    },
+    "homepage": "https://github.com/jovezhong/mcp-timeplus"
+  },
+  {
     "key": "Web",
     "command": "uvx",
     "description": "A Model Context Protocol server that provides web content fetching capabilities",
     "args": ["mcp-server-fetch"],
     "homepage": "https://pypi.org/project/mcp-server-fetch/"
+  },
+  {
+    "Name": "Zerolab Email",
+    "key": "ZerolabEmail",
+    "command": "uvx",
+    "description": "MCP Server for Email fetching and sending. Use uvx mcp-email-server ui to get started",
+    "args": ["mcp-email-server", "stdio"],
+    "homepage": "https://github.com/ai-zerolab/mcp-email-server"
   }
 ]
