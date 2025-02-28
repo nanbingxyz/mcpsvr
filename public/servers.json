@@ -104,6 +104,19 @@
     "homepage": "https://github.com/benborla/mcp-server-mysql"
   },
   {
+    "name": "Neon",
+    "key": "neon",
+    "command": "npx",
+    "description": "Neon's official MCP server that provides access to Neon databases",
+    "args": [
+      "-y",
+      "@neondatabase/mcp-server-neon",
+      "init",
+      "{{apiKey@string::NEON_API_KEY}}"
+    ],
+    "homepage": "https://github.com/neondatabase/mcp-server-neon"
+  },
+  {
     "key": "Obsidian",
     "command": "npx",
     "description": "Read and search through your Obsidian vault or any directory containing Markdown notes.",
