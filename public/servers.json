@@ -230,7 +230,18 @@
     "key": "ZerolabEmail",
     "command": "uvx",
     "description": "MCP Server for Email fetching and sending. Use uvx mcp-email-server ui to get started",
-    "args": ["mcp-email-server", "stdio"],
+    "args": ["mcp-email-server@latest", "stdio"],
     "homepage": "https://github.com/ai-zerolab/mcp-email-server"
+  },
+  {
+    "Name": "Zerolab Toolbox",
+    "key": "ZerolabToolbox",
+    "command": "uvx",
+    "description": "A set of tools to enhance LLM through MCP protocols. View our homepage for more information.",
+    "args": ["mcp-toolbox@latest", "stdio"],
+    "env": {
+      "FIGMA_API_KEY": "{{apiKey@string::Your figma api key}}"
+    },
+    "homepage": "https://github.com/ai-zerolab/mcp-toolbox"
   }
 ]
