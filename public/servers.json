@@ -65,6 +65,18 @@
         "homepage": "https://github.com/erithwik/mcp-hn"
     },
     {
+        "name": "Home Assistant",
+        "key": "HomeAssistant",
+        "command": "uvx",
+        "description": "Provides access to control Home Assistant devices and services using the MCP server integration.",
+        "args": ["mcp-proxy"],
+        "env": {
+            "API_ACCESS_TOKEN": "{{token@string::Your long-lived access token}}",
+            "SSE_URL": "{{sseUrl@string::Your Home Assistant URL ending in /mcp_server/sse}}",
+        },
+        "homepage": "https://www.home-assistant.io/integrations/mcp_server"
+    },
+    {
         "name": "LLM.txt",
         "key": "llmtxt",
         "command": "npx",
