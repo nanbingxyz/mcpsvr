@@ -34,6 +34,19 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Fewsats ",
+    "key": "Fewsats",
+    "description": "Tools enabling AI agents to pay and get paid using the L402 protocol",
+    "command": "uvx",
+    "args": [
+      "fewsats-mcp"
+    ],
+    "env": {
+      "FEWSATS_API_KEY": "Your Fewsats API key"
+    },
+    "homepage": "https://github.com/Fewsats/fewsats-mcp"
+  },
+  {
     "name": "File System",
     "key": "FileSystem",
     "command": "npx",
