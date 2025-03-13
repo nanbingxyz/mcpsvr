@@ -32,7 +32,7 @@ export default function SearchInput(options: {
     }, [searchTerm, debouncedSearch])
 
     return (
-        <SearchField className="max-w-[400px]">
+        <SearchField className="max-w-[400px] min-w-28">
             <FieldGroup>
                 <SearchIcon
                     aria-hidden
