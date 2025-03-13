@@ -14,20 +14,27 @@ export default function SearchInput(options: {
 }) {
     const [searchTerm, setSearchTerm] = useState('')
 
+    const clearSearch = () => {
+        setSearchTerm('')
+        debouncedSearch.cancel()
+        options.onSearch([])
+    }
+
     const onInput = (evt: FormEvent<HTMLInputElement>) => {
-        setSearchTerm((evt.target as HTMLInputElement).value || '')
+        const value = (evt.target as HTMLInputElement).value
+        value ? setSearchTerm(value) : clearSearch()
     }
 
     const debouncedSearch = useCallback(
         debounce((value: string) => {
             const words = value.split(/\s+/g).filter(Boolean)
             options.onSearch(words)
-        }, 500),
+        }, 300),
         [options.onSearch]
     )
 
     useEffect(() => {
-        debouncedSearch(searchTerm)
+        searchTerm && debouncedSearch(searchTerm)
         return () => debouncedSearch.cancel()
     }, [searchTerm, debouncedSearch])
 
@@ -39,13 +46,7 @@ export default function SearchInput(options: {
                     className="size-4 text-muted-foreground"
                 />
                 <SearchFieldInput placeholder="Search..." onChange={onInput} />
-                <SearchFieldClear
-                    onPress={() => {
-                        setSearchTerm('')
-                        debouncedSearch.cancel()
-                        options.onSearch([])
-                    }}
-                >
+                <SearchFieldClear onPress={clearSearch}>
                     <XIcon aria-hidden className="size-4" />
                 </SearchFieldClear>
             </FieldGroup>
