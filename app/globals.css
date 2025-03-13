@@ -78,7 +78,15 @@ body {
         border-radius: 2px;
     }
 }
-
+.header{
+    background: #fff;
+}
+@media (max-width: 640px) {
+    .header{
+        background: url('/grid.png') no-repeat center center;
+        background-size:100%;
+    }
+}
 .servers {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260, 1fr)); /* Adjust minmax as needed */

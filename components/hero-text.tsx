@@ -5,7 +5,7 @@ import { TextRotate } from "@/components/ui/text-rotate"
 
 export default function HeroText() {
   return (
-    <div className="w-full h-full text-2xl sm:text-3xl md:text-5xl flex flex-row items-center justify-center font-overusedGrotesk bg-white dark:text-muted text-foreground font-light overflow-hidden p-12 sm:p-14 md:p-14">
+    <div className="w-full h-full text-2xl sm:text-3xl md:text-5xl flex flex-row items-center justify-center font-overusedGrotesk dark:text-muted text-foreground font-light overflow-hidden p-12 sm:p-14 md:p-14">
       <LayoutGroup>
         <motion.p className="flex whitespace-pre" layout>
           <motion.span

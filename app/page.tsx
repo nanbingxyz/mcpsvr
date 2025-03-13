@@ -1,6 +1,7 @@
 "use client";
 import Footer from "@/components/footer";
 import HeroText from "@/components/hero-text";
+import { RetroGrid } from "@/components/retro-grid";
 import SearchInput from "@/components/search-input";
 import allServers from "@/public/servers.json";
 import { useState, useMemo } from "react";
@@ -43,7 +44,7 @@ export default function Home() {
 
   return (
     <div className="mx-auto w-full h-full flex flex-col">
-      <header className="mb-10">
+      <header className="mb-4 w-full">
         <div className="border-b py-2 sm:px-0 px-2">
         <div className="flex justify-between items-center max-w-6xl mx-auto">
           <div className="mr-3">
@@ -61,11 +62,14 @@ export default function Home() {
           </div>
         </div>
         </div>
-        <div className="text-2xl font-bold">
-          <div className="hidden md:block mt-8">
-            <HeroText />
+        <div className="header text-2xl font-bold pt-4 sm:pt-8 h-64 py-10 mx-auto relative">
+          <div className="hidden md:block">
+            <div className="absolute flex justify-center w-full">
+              <div className="max-auto top-0"><HeroText /></div>
+            </div>
+            <RetroGrid />
           </div>
-          <div className="block md:hidden mt-6">
+          <div className="block md:hidden">
             <p className="text-4xl font-bold px-4">
               Discover Exceptional MCP Servers
             </p>
@@ -77,7 +81,7 @@ export default function Home() {
             {servers.map((s) => (
               <div
                 key={s.key}
-                className="hover:bg-stone-100 p-4 rounded-lg sm:w-72 w-full h-48 bg-stone-50 text-left flex flex-col"
+                className="hover:bg-stone-100 p-4 rounded-lg sm:max-w-72 w-full h-48 bg-stone-50 text-left flex flex-col"
               >
                 <div className="text-xl font-medium mb-2">
                   <span
