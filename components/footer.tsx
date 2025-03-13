@@ -23,7 +23,7 @@ export default function Footer() {
                 </div>
                 </div>
                 <div className="text-sm text-gray-400 px-4 lg:px-0 lg:my-0 my-2">
-                    MCPSvr is an  <a href="https://github.com/nanbingxyz/mcpsvr" className="underline">project </a> designed to host a community-driven directory of MCP servers. This platform empowers developers to discover exceptional tools while offering a streamlined process for sharing their own MCP server creations.
+                    MCPSvr is a  <a href="https://github.com/nanbingxyz/mcpsvr" className="underline">project </a> designed to host a community-driven directory of MCP servers. This platform empowers developers to discover exceptional tools while offering a streamlined process for sharing their own MCP server creations.
                 </div>
             </div>
             
