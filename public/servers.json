@@ -36,7 +36,7 @@
   {
     "name": "Fewsats ",
     "key": "Fewsats",
-    "description": "Tools enabling AI agents to pay and get paid using the L402 protocol",
+    "description": "Enable AI Agents to purchase anything in a secure way",
     "command": "uvx",
     "args": [
       "fewsats-mcp"
