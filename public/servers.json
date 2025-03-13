@@ -34,6 +34,29 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Feishu Bot",
+    "key": "FeishuBot",
+    "command": "npx",
+    "description": "A Feishu bot tool based on MCP protocol, which can easily send messages to Feishu group chats.",
+    "args": ["-y", "@topfullstack/mcp-feishu-bot"],
+    "env": {
+      "FEISHU_BOT_URL": "{{botUrl@string::Feishu bot's Webhook URL, e.g.: https://open.feishu.cn/open-apis/bot/v2/hook/xxx }}"
+    },
+    "homepage": "https://github.com/wxs77577/tfs/tree/main/packages/mcp-feishu-bot"
+  },
+  {
+    "name": "Feishu Table",
+    "key": "FeishuTable",
+    "command": "npx",
+    "description": "A Feishu multi-dimensional table tool based on MCP protocol, which can easily operate Feishu multi-dimensional tables.",
+    "args": ["-y", "@topfullstack/mcp-feishu-table"],
+    "env": {
+      "FEISHU_TABLE_URL": "{{tableUrl@string::Feishu multi-dimensional table URL, e.g.: https://docs.feishu.cn/base/xxx }}",
+      "FEISHU_TABLE_TOKEN": "{{token@string::Access token for Feishu multi-dimensional table}}"
+    },
+    "homepage": "https://github.com/wxs77577/tfs/tree/main/packages/mcp-feishu-table "
+  },
+  {
     "name": "Fewsats ",
     "key": "Fewsats",
     "description": "Enable AI Agents to purchase anything in a secure way",
