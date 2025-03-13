@@ -4,14 +4,14 @@ import HeroText from "@/components/hero-text";
 import { RetroGrid } from "@/components/retro-grid";
 import SearchInput from "@/components/search-input";
 import allServers from "@/public/servers.json";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useCallback } from "react";
 
 export default function Home() {
   const [filter, setFilter] = useState<string[]>([]);
 
-  const onSearch = (words: string[]) => {
+  const onSearch = useCallback((words: string[]) => {
     setFilter(words);
-  };
+  }, []);
   const highlightText = (text: string) => {
     let result = text;
     filter.forEach((word) => {
