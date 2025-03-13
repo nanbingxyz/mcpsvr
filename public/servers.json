@@ -94,7 +94,7 @@
     "key": "llmtxt",
     "command": "npx",
     "description": "A MCP server that extracts and serves context from llm.txt files, enabling AI models to understand file structure, dependencies, and code relationships in development environments.",
-    "args": ["-y", "@modelcontextprotocol/server-llm-txt"],
+    "args": ["-y", "@mcp-get-community/server-llm-txt"],
     "homepage": "https://github.com/mcp-get/community-servers/tree/main/src/server-llm-txt"
   },
   {
