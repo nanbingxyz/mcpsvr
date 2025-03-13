@@ -62,7 +62,7 @@ export default function Home() {
           </div>
         </div>
         </div>
-        <div className="header text-2xl font-bold pt-4 sm:pt-8 h-64 py-10 mx-auto relative">
+        <div className="header text-2xl font-bold pt-4 h-64 mx-auto relative">
           <div className="hidden md:block">
             <div className="absolute flex justify-center w-full">
               <div className="max-auto top-0"><HeroText /></div>
@@ -70,13 +70,13 @@ export default function Home() {
             <RetroGrid />
           </div>
           <div className="block md:hidden">
-            <p className="text-4xl font-bold px-4">
+            <p className="text-4xl font-bold px-4 pt-12">
               Discover Exceptional MCP Servers
             </p>
           </div>
         </div>
       </header>
-      <main className="w-full px-4 flex-grow">
+      <main className="w-full px-4 flex-grow sm:mt-0 -mt-4">
           <div className="servers grid justify-items-start gap-4">
             {servers.map((s) => (
               <div
