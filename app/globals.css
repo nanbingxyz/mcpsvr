@@ -89,7 +89,7 @@ body {
 }
 .servers {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260, 1fr)); /* Adjust minmax as needed */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* 添加 px 单位 */
     gap: 1rem; /* Adjust gap as needed */
     justify-items: start; /* Left align items in the last row */
     margin-left: auto;
