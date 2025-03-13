@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="flex w-full flex-col border-t mt-6">
-            <div className="mx-auto w-full max-w-7xl py-6 md:flex md:items-center md:justify-between">
+            <div className="mx-auto w-full py-6 md:flex md:items-center md:justify-between max-w-6xl">
                 <div className="flex flex-col items-center justify-center gap-2 md:order-2 md:items-end"></div>
                 <div className="mt-4 md:order-1 md:mt-0">
                     <div className="flex items-center justify-center gap-3 md:justify-start mb-1">

@@ -46,7 +46,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="h-full">
-            <body className="antialiased flex justify-center">{children}</body>
+            <body className="antialiased flex justify-center h-full">{children}</body>
         </html>
     )
 }
