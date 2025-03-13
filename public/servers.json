@@ -34,6 +34,19 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Fewsats ",
+    "key": "Fewsats",
+    "description": "Enable AI Agents to purchase anything in a secure way",
+    "command": "uvx",
+    "args": [
+      "fewsats-mcp"
+    ],
+    "env": {
+      "FEWSATS_API_KEY": "Your Fewsats API key"
+    },
+    "homepage": "https://github.com/Fewsats/fewsats-mcp"
+  },
+  {
     "name": "File System",
     "key": "FileSystem",
     "command": "npx",
