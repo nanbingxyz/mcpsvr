@@ -27,7 +27,7 @@ export default function SearchInput(options: {
     )
 
     useEffect(() => {
-        debouncedSearch(searchTerm)
+        searchTerm && debouncedSearch(searchTerm)
         return () => debouncedSearch.cancel()
     }, [searchTerm, debouncedSearch])
 
