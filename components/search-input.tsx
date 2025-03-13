@@ -22,7 +22,8 @@ export default function SearchInput(options: {
 
     const onInput = (evt: FormEvent<HTMLInputElement>) => {
         const value = (evt.target as HTMLInputElement).value
-        value ? setSearchTerm(value) : clearSearch()
+        if (value) setSearchTerm(value)
+        else clearSearch()
     }
 
     const debouncedSearch = useCallback(
@@ -34,7 +35,9 @@ export default function SearchInput(options: {
     )
 
     useEffect(() => {
-        searchTerm && debouncedSearch(searchTerm)
+        if (searchTerm) {
+            debouncedSearch(searchTerm)
+        }
         return () => debouncedSearch.cancel()
     }, [searchTerm, debouncedSearch])
 
