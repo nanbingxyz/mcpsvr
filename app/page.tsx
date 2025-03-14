@@ -61,7 +61,7 @@ export default function Home() {
                             <a
                                 href="https://github.com/nanbingxyz/mcpsvr"
                                 target="_blank"
-                                className="bg-stone-800 px-4 py-2 rounded-md text-gray-50 flex justify-start gap-1"
+                                className="bg-stone-800 px-2 sm:px-4 py-2 rounded-md text-gray-50 flex justify-start gap-1"
                             >
                                 <svg
                                     width="24px"
