@@ -109,6 +109,8 @@ body {
 }
 pre{
     padding:20px!important;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 code,code span {
     white-space: pre-wrap;

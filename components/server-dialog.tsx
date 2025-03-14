@@ -25,7 +25,7 @@ export default function ServerDialog({
                     <DialogTitle className="border-b border-border px-6 py-4 text-base">
                         {server.name || server.key}
                     </DialogTitle>
-                    <div className="overflow-y-auto bg-stone-100">
+                    <div className="overflow-y-auto">
                         <DialogDescription asChild>
                             <SyntaxHighlighter language="json" style={github}>
                                 {JSON.stringify(server, null, 2)}
