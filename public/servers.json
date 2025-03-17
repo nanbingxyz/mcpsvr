@@ -313,5 +313,17 @@
             "FIGMA_API_KEY": "{{apiKey@string::Your figma api key}}"
         },
         "homepage": "https://github.com/ai-zerolab/mcp-toolbox"
+    },
+    {
+        "key": "Lokka - Microsoft Graph",
+        "command": "npx",
+        "description": "Lokka ia an MCP server for the Microsoft Graph API and can be used to query and manage resources in your Microsoft 365 tenant. This MCP server supports all Microsoft Graph APIs including update operations (limited by the permissions you grant to the app).",
+        "args": ["-y", "@merill/lokka"],
+        "env": {
+            "TENANT_ID": "{{tenantId@string::Tenant ID of your Microsoft 365 tenant}}",
+            "CLIENT_ID": "{{clientId@string::Client ID of the app you registered in your Microsoft 365 tenant. See https://lokka.dev}}",
+            "CLIENT_SECRET": "{{clientSecret@string::Client secret of the app you registered in your Microsoft 365 tenant. See https://lokka.dev}}"
+        },
+        "homepage": "https://lokka.dev"
     }
 ]
