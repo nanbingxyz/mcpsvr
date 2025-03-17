@@ -81,7 +81,7 @@
     },
     {
         "name": "Firecrawl",
-        "key": "firecrawl",
+        "key": "FireCrawl",
         "command": "npx",
         "description": "A MCP server implementation that integrates with Firecrawl for web scraping capabilities.",
         "args": ["-y", "firecrawl-mcp"],
@@ -112,7 +112,7 @@
     },
     {
         "name": "LLM.txt",
-        "key": "llmtxt",
+        "key": "LLMTxt",
         "command": "npx",
         "description": "A MCP server that extracts and serves context from llm.txt files, enabling AI models to understand file structure, dependencies, and code relationships in development environments.",
         "args": ["-y", "@mcp-get-community/server-llm-txt"],
@@ -130,7 +130,7 @@
     },
     {
         "name": "Lokka - Microsoft Graph",
-        "key": "lokka",
+        "key": "Lokka",
         "command": "npx",
         "description": "Lokka ia an MCP server for the Microsoft Graph API and can be used to query and manage resources in your Microsoft 365 tenant. This MCP server supports all Microsoft Graph APIs including update operations (limited by the permissions you grant to the app).",
         "args": ["-y", "@merill/lokka"],
@@ -164,7 +164,7 @@
     },
     {
         "name": "Neon",
-        "key": "neon",
+        "key": "Neon",
         "command": "npx",
         "description": "Neon's official MCP server that provides access to Neon databases",
         "args": [
