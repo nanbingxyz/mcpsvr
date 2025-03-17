@@ -1,5 +1,16 @@
 [
     {
+        "name": "AgentCraft",
+        "key": "AgentCraft",
+        "description": "AgentCraft is a partner product of Crafted™. Our AI Agent framework allows you to deploy intelligent agents that understand, learn, and evolve with your business needs. It provides premade and custom AI agents for enterprises, ensuring secure and scalable solutions.",
+        "command": "python",
+        "args": ["-m", "agentcraft_mcp.server"],
+        "env": {
+            "AGENTCRAFT_BEARER_TOKEN": "Your AgentCraft API Token"
+        },
+        "homepage": "https://github.com/seyhunak/agentcraft-mcp"
+    },    
+    {
         "name": "Apple Notes",
         "key": "AppleNotes",
         "command": "uvx",
