@@ -19,6 +19,21 @@
     "homepage": "https://github.com/sirmews/apple-notes-mcp"
   },
   {
+    "name": "Apifox",
+    "key": "Apifox",
+    "command": "npx",
+    "description": "Apifox MCP Server allows developers to generate/modify code and search docs through AI assistants.",
+    "args": [
+      "-y",
+      "apifox-mcp-server@latest",
+      "--project-id={{projectId@string::Your Apifox Project ID}}"
+    ],
+    "env": {
+      "APIFOX_ACCESS_TOKEN": "{{accessToken@string::Your Apifox Access Token}}"
+    },
+    "homepage": "https://github.com/apifox/apifox-mcp-server/tree/main"
+  },
+  {
     "name": "Blender",
     "key": "Blender",
     "description": "a blender mcp server enables prompt assisted 3D modeling, scene creation, and manipulation",
