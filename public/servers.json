@@ -11,6 +11,17 @@
     "homepage": "https://github.com/seyhunak/agentcraft-mcp"
   },
   {
+    "Name": "AMap (GaoDe Map)",
+    "key": "AMap",
+    "command": "npx",
+    "description": "MCP Server for AMap (GaoDe Map)",
+    "args": ["-y", "@modelcontextprotocol/server-amap"],
+    "env": {
+      "AMAP_MAPS_API_KEY": "{{amapKey@string::got it from https://lbs.amap.com/api/mcp-server/create-project-and-key }}"
+    },
+    "homepage": "https://lbs.amap.com/api/mcp-server/summary"
+  },
+  {
     "name": "Apple Notes",
     "key": "AppleNotes",
     "command": "uvx",
