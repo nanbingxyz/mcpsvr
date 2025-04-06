@@ -15,7 +15,7 @@
     "key": "AMap",
     "command": "npx",
     "description": "MCP Server for AMap (GaoDe Map)",
-    "args": ["-y", "@modelcontextprotocol/server-amap"],
+    "args": ["-y", "@amap/amap-maps-mcp-server"],
     "env": {
       "AMAP_MAPS_API_KEY": "{{amapKey@string::got it from https://lbs.amap.com/api/mcp-server/create-project-and-key }}"
     },
