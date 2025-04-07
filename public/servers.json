@@ -136,6 +136,19 @@
     "homepage": "https://github.com/mendableai/firecrawl-mcp-server"
   },
   {
+    "name": "Graphlit",
+    "key": "Graphlit",
+    "command": "npx",
+    "description": "Ingest anything from Slack, Discord, websites, Google Drive, email, Jira, Linear or GitHub into a Graphlit project - and then search and retrieve relevant knowledge within an MCP client",
+    "args": ["-y", "graphlit-mcp-server"],
+    "env": {
+      "GRAPHLIT_ORGANIZATION_ID": "{{orgId@string::Get the Organization Id from https://portal.graphlit.dev/}}",
+      "GRAPHLIT_ENVIRONMENT_ID": "{{envId@string::Get the Environment Id from https://portal.graphlit.dev/}}",
+      "GRAPHLIT_JWT_SECRET": "{{jwtSecret@string::Get the JWT Secret from https://portal.graphlit.dev/}}"
+    },
+    "homepage": "https://github.com/graphlit/graphlit-mcp-server"
+  },
+  {
     "name": "Hacker News",
     "key": "HackerNews",
     "command": "uvx",
