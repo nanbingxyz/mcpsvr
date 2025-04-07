@@ -261,6 +261,17 @@
     "homepage": "https://github.com/fatwang2/search1api-mcp"
   },
   {
+    "key": "Sentry",
+    "command": "uvx",
+    "description": "This server provides tools to inspect error reports, stacktraces, and other debugging information from your Sentry account.",
+    "args": [
+      "mcp-server-sentry",
+      "--auth-token",
+      "{{authToken@string::Get the auth token from https://sentry.io/}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sentry"
+  },
+  {
     "key": "Shell",
     "command": "npx",
     "description": "A Node.js MCP implementation enables secure shell command execution for AI models.",
