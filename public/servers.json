@@ -34,6 +34,17 @@
     "homepage": "https://github.com/apifox/apifox-mcp-server/tree/main"
   },
   {
+    "name": "AWSDocumention",
+    "key": "AWSDocumention",
+    "description": "This MCP server provides tools to access AWS documentation, search for content, and get recommendations. Python 3.10 or newer",
+    "command": "uvx",
+    "args": ["awslabs.aws-documentation-mcp-server@latest"],
+    "env": {
+      "FASTMCP_LOG_LEVEL": "ERROR"
+    },
+    "homepage": "https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server"
+  },
+  {
     "name": "Blender",
     "key": "Blender",
     "description": "a blender mcp server enables prompt assisted 3D modeling, scene creation, and manipulation",
