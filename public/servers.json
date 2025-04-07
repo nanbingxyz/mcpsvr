@@ -234,6 +234,17 @@
     "homepage": "https://github.com/neondatabase/mcp-server-neon"
   },
   {
+    "name": "Notion",
+    "key": "Notion",
+    "command": "npx",
+    "description": "MCP Server for the Notion API, enabling MCP Clients to interact with Notion workspaces.",
+    "args": ["-y", "@suekou/mcp-notion-server"],
+    "env": {
+      "NOTION_API_TOKEN": "{{token@string::Your integration token get from https://www.notion.so}}"
+    },
+    "homepage": "https://github.com/suekou/mcp-notion-server"
+  },
+  {
     "key": "Obsidian",
     "command": "npx",
     "description": "Read and search through your Obsidian vault or any directory containing Markdown notes.",
