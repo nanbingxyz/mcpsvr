@@ -297,6 +297,18 @@
     "homepage": "https://github.com/ppl-ai/modelcontextprotocol"
   },
   {
+    "name": "QA Sphere",
+    "key": "QASphere",
+    "command": "npx",
+    "description": "Integration with QA Sphere test management system, enabling LLMs to discover, summarize, and interact with test cases",
+    "args": ["-y", "qasphere-mcp"],
+    "env": {
+      "QASPHERE_TENANT_URL": "{{tenantUrl@string::Your company's QA Sphere URL (e.g., example.eu2.qasphere.com)}}",
+      "QASPHERE_API_KEY": "{{apiKey@string::Your QA Sphere API key from Settings → API Keys}}"
+    },
+    "homepage": "https://github.com/Hypersequent/qasphere-mcp"
+  },
+  {
     "name": "Sequential Thinking",
     "key": "SequentialThinking",
     "command": "npx",
