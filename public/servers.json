@@ -64,6 +64,14 @@
     "homepage": "https://github.com/ahujasid/blender-mcp"
   },
   {
+    "name": "Browsermcp",
+    "key": "Browsermcp",
+    "description": "The MCP server for automating your browser.",
+    "command": "npx",
+    "args": ["@browsermcp/mcp@latest"],
+    "homepage": "https://browsermcp.io"
+  },
+  {
     "name": "Database Utilities",
     "key": "DbUtils",
     "command": "uvx",
