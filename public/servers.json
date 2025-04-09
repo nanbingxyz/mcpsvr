@@ -56,6 +56,18 @@
     "homepage": "https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server"
   },
   {
+    "key": "BioMCP",
+    "name": "BioMCP",
+    "description": "Biomedical Model Context Protocol server providing access to PubMed, ClinicalTrials.gov, and MyVariant.info.",
+    "command": "uvx",
+    "args": [
+      "biomcp-python",
+      "biomcp",
+      "run"
+    ],
+    "homepage": "https://biomcp.org/"
+  },
+  {
     "name": "Blender",
     "key": "Blender",
     "description": "a blender mcp server enables prompt assisted 3D modeling, scene creation, and manipulation",
