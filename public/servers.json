@@ -61,7 +61,7 @@
     "description": "Biomedical Model Context Protocol server providing access to PubMed, ClinicalTrials.gov, and MyVariant.info.",
     "command": "uvx",
     "args": [
-      "biomcp-python",
+      "--from=biomcp-python",
       "biomcp",
       "run"
     ],
