@@ -60,11 +60,7 @@
     "name": "BioMCP",
     "description": "Biomedical Model Context Protocol server providing access to PubMed, ClinicalTrials.gov, and MyVariant.info.",
     "command": "uvx",
-    "args": [
-      "--from=biomcp-python",
-      "biomcp",
-      "run"
-    ],
+    "args": ["--from=biomcp-python", "biomcp", "run"],
     "homepage": "https://biomcp.org/"
   },
   {
@@ -268,12 +264,12 @@
     "name": "Notion",
     "key": "Notion",
     "command": "npx",
-    "description": "MCP Server for the Notion API, enabling MCP Clients to interact with Notion workspaces.",
-    "args": ["-y", "@suekou/mcp-notion-server"],
+    "description": "Notion's official MCP server that provides access to Notion databases.",
+    "args": ["-y", "@notionhq/notion-mcp-server"],
     "env": {
-      "NOTION_API_TOKEN": "{{token@string::Your integration token get from https://www.notion.so}}"
+      "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer {{IntegrationSecret@string::Find it from your integration configuration tab}}\", \"Notion-Version\": \"2022-06-28\" }"
     },
-    "homepage": "https://github.com/suekou/mcp-notion-server"
+    "homepage": "https://github.com/makenotion/notion-mcp-server"
   },
   {
     "key": "Obsidian",
