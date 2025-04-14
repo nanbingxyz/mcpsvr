@@ -163,6 +163,14 @@
     "homepage": "https://github.com/mendableai/firecrawl-mcp-server"
   },
   {
+    "name": "FFmpeg",
+    "key": "FFmpeg",
+    "command": "uvx",
+    "description": "Using ffmpeg command line to achieve an mcp server, can be very convenient, through the dialogue to achieve the local video search, tailoring, stitching, playback and other functions",
+    "args": ["-y", "ffmpeg-mcp"],
+    "homepage": "https://github.com/video-creator/ffmpeg-mcp"
+  },
+  {
     "name": "Graphlit",
     "key": "Graphlit",
     "command": "npx",
