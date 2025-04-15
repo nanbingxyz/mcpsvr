@@ -27,6 +27,7 @@
     "command": "uvx",
     "description": "A Model Context Protocol (MCP) server implementation that provides database interaction and business intelligence capabilities through IoTDB. This server enables running SQL queries.",
     "args": [
+      "uv",
       "--directory",
       "{{repoPath@string::Your local repo path}}/src/iotdb_mcp_server",
       "run",
