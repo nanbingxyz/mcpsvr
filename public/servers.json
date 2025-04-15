@@ -21,6 +21,27 @@
     },
     "homepage": "https://lbs.amap.com/api/mcp-server/summary"
   },
+   {
+    "name": "Apache IoTDB",
+    "key": "ApacheIoTDB",
+    "command": "uvx",
+    "description": "A Model Context Protocol (MCP) server implementation that provides database interaction and business intelligence capabilities through IoTDB. This server enables running SQL queries.",
+    "args": [
+      "--directory",
+      "{{repoPath@string::Your local repo path}}/src/iotdb_mcp_server",
+      "run",
+      "server.py"
+    ],
+    "env": {
+      "IOTDB_HOST": "{{host@string::IoTDB Server Host}}",
+      "IOTDB_PORT": "{{port@string::IoTDB Server Port}}",
+      "IOTDB_USER": "{{user@string::IoTDB User}}",
+      "IOTDB_PASSWORD": "{{password@string::IoTDB Password}}",
+      "IOTDB_DATABASE": "{{database@string::use database}}",
+      "IOTDB_SQL_DIALECT": "{{sqlDialect@string::SQL dialect: tree or table}}"
+    },
+    "homepage": "https://github.com/apache/iotdb-mcp-server"
+  },
   {
     "name": "Apple Notes",
     "key": "AppleNotes",
