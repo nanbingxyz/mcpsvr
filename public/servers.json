@@ -475,5 +475,18 @@
       "FIGMA_API_KEY": "{{apiKey@string::Your figma api key}}"
     },
     "homepage": "https://github.com/ai-zerolab/mcp-toolbox"
+  },
+  {
+    "Name": "Zoom",
+    "key": "Zoom",
+    "description": "Now you can date a Zoom meeting with AI's help",
+    "command": "npx",
+    "args": ["-y", "@yitianyigexiangfa/zoom-mcp-server"],
+    "env": {
+      "ZOOM_ACCOUNT_ID": "{{zoomAccountId@string::You can get the ZOOM_ACCOUNT_ID from https://marketplace.zoom.us}}",
+      "ZOOM_CLIENT_ID": "{{zoomClientId@string::You can get the ZOOM_CLIENT_ID from https://marketplace.zoom.us}}",
+      "ZOOM_CLIENT_SECRET": "{{zoomClinetSecret@string::You can get the ZOOM_CLIENT_SECRET from https://marketplace.zoom.us}}"
+    },
+    "homepage": "https://github.com/JavaProgrammerLB/zoom-mcp-server"
   }
 ]
