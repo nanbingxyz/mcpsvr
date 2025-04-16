@@ -21,7 +21,7 @@
     },
     "homepage": "https://lbs.amap.com/api/mcp-server/summary"
   },
-   {
+  {
     "name": "Apache IoTDB",
     "key": "ApacheIoTDB",
     "command": "uvx",
@@ -115,6 +115,14 @@
       "MCP_DEBUG": "{{debug@string::0 or 1}}"
     },
     "homepage": "https://github.com/donghao1393/mcp-dbutils"
+  },
+  {
+    "name": "Desktop Commander",
+    "key": "DesktopCommander",
+    "command": "npx",
+    "description": "Search, update, manage files and run terminal commands with AI.",
+    "args": ["-y", "@wonderwhy-er/desktop-commander"],
+    "homepage": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
   },
   {
     "key": "Git",
