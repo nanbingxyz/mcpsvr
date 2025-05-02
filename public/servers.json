@@ -355,6 +355,17 @@
     "homepage": "https://github.com/Hypersequent/qasphere-mcp"
   },
   {
+    "name": "Readwise",
+    "key": "Readwise",
+    "command": "npx",
+    "description": "This project is a local MCP server designed to act as a bridge between LLM clients (such as 5ire) and Readwise.",
+    "args": ["-y", "@readwise/readwise-mcp"],
+    "env": {
+      "ACCESS_TOKEN": "{{token@string::Get your access token from https://readwise.io/access_token)}}"
+    },
+    "homepage": "https://readwise.io"
+  },
+  {
     "name": "Sequential Thinking",
     "key": "SequentialThinking",
     "command": "npx",
