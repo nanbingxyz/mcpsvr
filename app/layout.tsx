@@ -11,11 +11,11 @@ export const metadata: Metadata = {
         title: 'MCPServer - Discover Exceptional MCP Servers',
         description:
             'MCPSvr is a hub for users to discover top MCP servers, unlocking advanced AI capabilities and accelerating innovation.',
-        url: `https://mcpsvr.com`,
+        url: `https://github.com/nanbingxyz/mcpsvr`,
         siteName: 'MCPSvr',
         images: [
             {
-                url: 'https://mcpsvr.com/open-graph.jpg',
+                url: 'https://github.com/nanbingxyz/mcpsvr/open-graph.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'mcpsvr.com',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         creator: '@1ronben',
         images: [
             {
-                url: 'https://mcpsvr.com/open-graph.jpg',
+                url: 'https://github.com/nanbingxyz/mcpsvr/open-graph.jpg',
                 width: 1200,
                 height: 630,
                 alt: 'mcpsvr.com',

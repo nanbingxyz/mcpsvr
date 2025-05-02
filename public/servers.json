@@ -11,7 +11,7 @@
     "homepage": "https://github.com/seyhunak/agentcraft-mcp"
   },
   {
-    "Name": "AMap (GaoDe Map)",
+    "name": "AMap (GaoDe Map)",
     "key": "AMap",
     "command": "npx",
     "description": "MCP Server for AMap (GaoDe Map)",
@@ -125,17 +125,6 @@
     "homepage": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
   },
   {
-    "key": "Git",
-    "command": "uvx",
-    "description": "Tools to read, search, and manipulate Git repositories",
-    "args": [
-      "mcp-server-git",
-      "--repository",
-      "{{repoPath@string::Git Repository Path}}"
-    ],
-    "homepage": "https://github.com/modelcontextprotocol/servers"
-  },
-  {
     "name": "Feishu Bot",
     "key": "FeishuBot",
     "command": "npx",
@@ -201,6 +190,18 @@
     "homepage": "https://github.com/video-creator/ffmpeg-mcp"
   },
   {
+    "name": "Git",
+    "key": "Git",
+    "command": "uvx",
+    "description": "Tools to read, search, and manipulate Git repositories",
+    "args": [
+      "mcp-server-git",
+      "--repository",
+      "{{repoPath@string::Git Repository Path}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
     "name": "Graphlit",
     "key": "Graphlit",
     "command": "npx",
@@ -242,6 +243,7 @@
     "homepage": "https://github.com/mcp-get/community-servers/tree/main/src/server-llm-txt"
   },
   {
+    "name": "Linear",
     "key": "Linear",
     "command": "npx",
     "description": "This server allowing LLMs to interact with Linear issues.",
@@ -265,6 +267,7 @@
     "homepage": "https://lokka.dev"
   },
   {
+    "name": "MacOs",
     "key": "MacOs",
     "command": "npx",
     "description": "A Model Context Protocol server that provides macOS-specific system information and operations.",
@@ -272,6 +275,7 @@
     "homepage": "https://mcp-get.com/packages/%40mcp-get-community%2Fserver-macos"
   },
   {
+    "name": "MySQL",
     "key": "MySQL",
     "command": "npx",
     "description": "An MCP server gives LLMs read - only access to MySQL databases for schema inspection and query execution.",
@@ -310,6 +314,7 @@
     "homepage": "https://github.com/makenotion/notion-mcp-server"
   },
   {
+    "name": "Obsidian",
     "key": "Obsidian",
     "command": "npx",
     "description": "Read and search through your Obsidian vault or any directory containing Markdown notes.",
@@ -321,17 +326,6 @@
     "homepage": "https://github.com/MarkusPfundstein/mcp-obsidian"
   },
   {
-    "key": "Postgres",
-    "command": "npx",
-    "description": "Read-only database access with schema inspection.",
-    "args": [
-      "-y",
-      "@modelcontextprotocol/server-postgres",
-      "{{connectionString@string::like postgresql://localhost/db}}"
-    ],
-    "homepage": "https://github.com/modelcontextprotocol/servers"
-  },
-  {
     "name": "Perplexity Ask",
     "key": "PerplexityAsk",
     "command": "npx",
@@ -341,6 +335,18 @@
       "PERPLEXITY_API_KEY": "{{apiKey@string::Get the api key from perplexity.ai}}"
     },
     "homepage": "https://github.com/ppl-ai/modelcontextprotocol"
+  },
+  {
+    "name": "Postgres",
+    "key": "Postgres",
+    "command": "npx",
+    "description": "Read-only database access with schema inspection.",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-postgres",
+      "{{connectionString@string::like postgresql://localhost/db}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
     "name": "QA Sphere",
@@ -366,14 +372,7 @@
     "homepage": "https://readwise.io"
   },
   {
-    "name": "Sequential Thinking",
-    "key": "SequentialThinking",
-    "command": "npx",
-    "description": "An MCP server tool for dynamic problem-solving with structured thinking.",
-    "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
-    "homepage": "https://github.com/modelcontextprotocol/servers"
-  },
-  {
+    "name": "Search1api",
     "key": "Search1api",
     "command": "npx",
     "description": "A Model Context Protocol (MCP) server that provides search and crawl functionality using Search1API.",
@@ -384,6 +383,7 @@
     "homepage": "https://github.com/fatwang2/search1api-mcp"
   },
   {
+    "name": "Sentry",
     "key": "Sentry",
     "command": "uvx",
     "description": "This server provides tools to inspect error reports, stacktraces, and other debugging information from your Sentry account.",
@@ -395,6 +395,15 @@
     "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sentry"
   },
   {
+    "name": "Sequential Thinking",
+    "key": "SequentialThinking",
+    "command": "npx",
+    "description": "An MCP server tool for dynamic problem-solving with structured thinking.",
+    "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "name": "Shell",
     "key": "Shell",
     "command": "npx",
     "description": "A Node.js MCP implementation enables secure shell command execution for AI models.",
@@ -402,6 +411,7 @@
     "homepage": "https://github.com/hdresearch/mcp-shell"
   },
   {
+    "name": "Slack",
     "key": "Slack",
     "command": "npx",
     "description": "MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.",
@@ -413,6 +423,7 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Sqlite",
     "key": "Sqlite",
     "command": "uvx",
     "description": "An MCP server using SQLite allows SQL querying, business data analysis, and automatic memo generation.",
@@ -424,6 +435,7 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Tavily",
     "key": "Tavily",
     "command": "npx",
     "description": "Seamless interaction with the tavily-search and tavily-extract tools",
@@ -434,6 +446,7 @@
     "homepage": "https://github.com/tavily-ai/tavily-mcp"
   },
   {
+    "name": "Time",
     "key": "Time",
     "command": "uvx",
     "description": "A Model Context Protocol server providing tools for time queries and timezone conversions for LLMs",
@@ -444,6 +457,7 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Timeplus",
     "key": "Timeplus",
     "command": "uvx",
     "description": "MCP Server for Timeplus, a SQL database to process millions of rows per second from Kafka, Pulsar, or ClickHouse.",
@@ -457,6 +471,7 @@
     "homepage": "https://github.com/jovezhong/mcp-timeplus"
   },
   {
+    "name": "Twitter",
     "key": "Twitter",
     "command": "npx",
     "description": "This MCP server allows Clients to interact with Twitter, enabling posting tweets and searching Twitter.",
@@ -470,6 +485,7 @@
     "homepage": "https://github.com/EnesCinr/twitter-mcp"
   },
   {
+    "name": "Web",
     "key": "Web",
     "command": "uvx",
     "description": "A Model Context Protocol server that provides web content fetching capabilities",
@@ -477,7 +493,7 @@
     "homepage": "https://pypi.org/project/mcp-server-fetch/"
   },
   {
-    "Name": "Zerolab Email",
+    "name": "Zerolab Email",
     "key": "ZerolabEmail",
     "command": "uvx",
     "description": "MCP Server for Email fetching and sending. Use uvx mcp-email-server ui to get started",
@@ -485,7 +501,7 @@
     "homepage": "https://github.com/ai-zerolab/mcp-email-server"
   },
   {
-    "Name": "Zerolab Toolbox",
+    "name": "Zerolab Toolbox",
     "key": "ZerolabToolbox",
     "command": "uvx",
     "description": "A set of tools to enhance LLM through MCP protocols. View our homepage for more information.",
@@ -496,7 +512,7 @@
     "homepage": "https://github.com/ai-zerolab/mcp-toolbox"
   },
   {
-    "Name": "Zoom",
+    "name": "Zoom",
     "key": "Zoom",
     "description": "Now you can date a Zoom meeting with AI's help",
     "command": "npx",
@@ -507,5 +523,16 @@
       "ZOOM_CLIENT_SECRET": "{{zoomClinetSecret@string::You can get the ZOOM_CLIENT_SECRET from https://marketplace.zoom.us}}"
     },
     "homepage": "https://github.com/JavaProgrammerLB/zoom-mcp-server"
+  },
+  {
+    "name": "NewServer",
+    "key": "NewServer",
+    "description": "This is a new server added to the list.",
+    "command": "npx",
+    "args": ["-y", "new-server"],
+    "env": {
+      "NEW_SERVER_API_KEY": "{{apiKey@string::Your new server API key}}"
+    },
+    "homepage": "https://github.com/newserver"
   }
 ]
