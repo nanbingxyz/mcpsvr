@@ -102,6 +102,22 @@
     "homepage": "https://browsermcp.io"
   },
   {
+    "name": "Cribl MCP",
+    "key": "cribl-mcp",
+    "description": "MCP server for managing Cribl configuration and resources, including worker groups, pipelines, routes and sources.",
+    "command": "npx",
+    "args": ["-y", "@pebbletek/cribl-mcp"],
+    "env": {
+      "CRIBL_BASE_URL": "{{CRIBL_BASE_URL@string::Base URL of your Cribl deployment (e.g., https://your-instance.cribl.cloud)}}",
+      "CRIBL_AUTH_TYPE": "{{CRIBL_AUTH_TYPE@string::Authentication type: 'cloud' or 'local'}}",
+      "CRIBL_CLIENT_ID": "{{CRIBL_CLIENT_ID@string::Client ID for Cribl.Cloud (required if CRIBL_AUTH_TYPE is 'cloud')}}",
+      "CRIBL_CLIENT_SECRET": "{{CRIBL_CLIENT_SECRET@string::Client Secret for Cribl.Cloud (required if CRIBL_AUTH_TYPE is 'cloud')}}",
+      "CRIBL_USERNAME": "{{CRIBL_USERNAME@string::Username for local authentication (required if CRIBL_AUTH_TYPE is 'local')}}",
+      "CRIBL_PASSWORD": "{{CRIBL_PASSWORD@string::Password for local authentication (required if CRIBL_AUTH_TYPE is 'local')}}"
+      },
+    "homepage": "https://github.com/pebbletek/cribl-mcp"
+  },
+  {
     "name": "Database Utilities",
     "key": "DbUtils",
     "command": "uvx",
