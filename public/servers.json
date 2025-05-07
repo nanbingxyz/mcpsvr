@@ -103,7 +103,7 @@
   },
   {
     "name": "Cribl MCP",
-    "key": "cribl-mcp",
+    "key": "CriblMcp",
     "description": "MCP server for managing Cribl configuration and resources, including worker groups, pipelines, routes and sources.",
     "command": "npx",
     "args": ["-y", "@pebbletek/cribl-mcp"],
