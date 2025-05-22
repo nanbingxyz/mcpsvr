@@ -6,14 +6,14 @@ import SearchInput from "@/components/search-input";
 import allServers from "@/public/servers.json";
 import { useState, useMemo, useCallback } from "react";
 import ServerDialog from "@/components/server-dialog";
-import { cn } from "@/lib/utils";
+import { cn, encodeBase64 } from "@/lib/utils";
 
 const cmdBgColor = (cmd: string) => {
   switch (cmd) {
     case "npx":
       return "bg-blue-100";
     case "uvx":
-      return "bg-red-100";
+      return "bg-violet-100";
     case "node":
       return "bg-green-100";
     case "python":
@@ -133,7 +133,7 @@ export default function Home() {
           {servers.map((s) => (
             <div
               key={s.key}
-              className="hover:bg-stone-100 p-4 rounded-lg sm:max-w-72 w-full bg-stone-50 text-left flex flex-col"
+              className="hover:bg-stone-100 p-4 rounded-lg sm:max-w-72 w-full bg-stone-50 text-left flex flex-col group"
             >
               <div
                 className="cursor-pointer"
@@ -149,6 +149,27 @@ export default function Home() {
                     }}
                   />
                 </div>
+                <div className="flex flex-start gap-2 items-center mb-2">
+                  <div
+                    className={cn(
+                      "text-sm px-2 rounded-md",
+                      cmdBgColor(s.command),
+                    )}
+                  >
+                    {s.command}
+                  </div>
+                  {s.homepage && (
+                    <div>
+                      <a
+                        href={s.homepage}
+                        target="_blank"
+                        className="text-sm text-gray-400 hover:text-gray-600"
+                      >
+                        {new URL(s.homepage).hostname}
+                      </a>
+                    </div>
+                  )}
+                </div>
                 <div
                   className="text-sm overflow-hidden h-[85px]"
                   style={{
@@ -162,26 +183,18 @@ export default function Home() {
                   }}
                 />
               </div>
-              <div className="flex justify-between items-center mt-2">
-                <div
-                  className={cn(
-                    "text-sm px-2 rounded-md",
-                    cmdBgColor(s.command),
-                  )}
+              <div className="flex justify-end mt-4">
+                <a
+                  className="bg-neutral-100 py-1 px-4 text-sm rounded-full inline-block group-hover:bg-red-100"
+                  href={`app.5ire://install-tool#${encodeBase64(
+                    JSON.stringify({
+                      ...s,
+                      name: s.key,
+                    }),
+                  )}`}
                 >
-                  {s.command}
-                </div>
-                {s.homepage && (
-                  <div>
-                    <a
-                      href={s.homepage}
-                      target="_blank"
-                      className="text-sm text-gray-400 hover:text-gray-600"
-                    >
-                      {new URL(s.homepage).hostname}
-                    </a>
-                  </div>
-                )}
+                  Install
+                </a>
               </div>
             </div>
           ))}
