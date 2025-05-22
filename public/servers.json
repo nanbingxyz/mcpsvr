@@ -11,7 +11,7 @@
     "homepage": "https://github.com/seyhunak/agentcraft-mcp"
   },
   {
-    "Name": "AMap (GaoDe Map)",
+    "name": "AMap (GaoDe Map)",
     "key": "AMap",
     "command": "npx",
     "description": "MCP Server for AMap (GaoDe Map)",
@@ -76,6 +76,23 @@
       "FASTMCP_LOG_LEVEL": "ERROR"
     },
     "homepage": "https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server"
+  },
+  {
+    "name": "AWS Lambda MCP Server",
+    "key": "awslabs-lambda-mcp-server",
+    "description": "A Model Context Protocol (MCP) server for AWS Lambda to select and run Lambda function as MCP tools without code changes. Python 3.10 or newer",
+    "command": "uvx",
+    "args": ["awslabs.lambda-mcp-server@latest"],
+    "env": {
+      "AWS_PROFILE": "{{profile@string::aws profile,like default}}",
+      "AWS_REGION": "{{region@string::aws region,like us-east-1}}",
+      "FUNCTION_PREFIX": "{{functionPrefix@string::your function prefix}}",
+      "FUNCTION_LIST": "{{functionList@string::your-first-function, your-second-function}}",
+      "FUNCTION_TAG_KEY": "{{tagKey@string::your tag key}}",
+      "FUNCTION_TAG_VALUE": "{{tagValue@string::your tag value}}",
+      "FUNCTION_INPUT_SCHEMA_ARN_TAG_KEY": "{{inputSchemaArnTagKey@string::your function tag for input schema}}"
+    },
+    "homepage": "https://awslabs.github.io/mcp/servers/lambda-mcp-server"
   },
   {
     "key": "BioMCP",
@@ -477,7 +494,7 @@
     "homepage": "https://pypi.org/project/mcp-server-fetch/"
   },
   {
-    "Name": "Zerolab Email",
+    "name": "Zerolab Email",
     "key": "ZerolabEmail",
     "command": "uvx",
     "description": "MCP Server for Email fetching and sending. Use uvx mcp-email-server ui to get started",
@@ -485,7 +502,7 @@
     "homepage": "https://github.com/ai-zerolab/mcp-email-server"
   },
   {
-    "Name": "Zerolab Toolbox",
+    "name": "Zerolab Toolbox",
     "key": "ZerolabToolbox",
     "command": "uvx",
     "description": "A set of tools to enhance LLM through MCP protocols. View our homepage for more information.",
@@ -496,7 +513,7 @@
     "homepage": "https://github.com/ai-zerolab/mcp-toolbox"
   },
   {
-    "Name": "Zoom",
+    "name": "Zoom",
     "key": "Zoom",
     "description": "Now you can date a Zoom meeting with AI's help",
     "command": "npx",
