@@ -119,6 +119,22 @@
     "homepage": "https://browsermcp.io"
   },
   {
+    "name": "Cribl MCP",
+    "key": "CriblMcp",
+    "description": "MCP server for managing Cribl configuration and resources, including worker groups, pipelines, routes and sources.",
+    "command": "npx",
+    "args": ["-y", "@pebbletek/cribl-mcp"],
+    "env": {
+      "CRIBL_BASE_URL": "{{CRIBL_BASE_URL@string::Base URL of your Cribl deployment (e.g., https://your-instance.cribl.cloud)}}",
+      "CRIBL_AUTH_TYPE": "{{CRIBL_AUTH_TYPE@string::Authentication type: 'cloud' or 'local'}}",
+      "CRIBL_CLIENT_ID": "{{CRIBL_CLIENT_ID@string::Client ID for Cribl.Cloud (required if CRIBL_AUTH_TYPE is 'cloud')}}",
+      "CRIBL_CLIENT_SECRET": "{{CRIBL_CLIENT_SECRET@string::Client Secret for Cribl.Cloud (required if CRIBL_AUTH_TYPE is 'cloud')}}",
+      "CRIBL_USERNAME": "{{CRIBL_USERNAME@string::Username for local authentication (required if CRIBL_AUTH_TYPE is 'local')}}",
+      "CRIBL_PASSWORD": "{{CRIBL_PASSWORD@string::Password for local authentication (required if CRIBL_AUTH_TYPE is 'local')}}"
+      },
+    "homepage": "https://github.com/pebbletek/cribl-mcp"
+  },
+  {
     "name": "Database Utilities",
     "key": "DbUtils",
     "command": "uvx",
@@ -524,5 +540,43 @@
       "ZOOM_CLIENT_SECRET": "{{zoomClinetSecret@string::You can get the ZOOM_CLIENT_SECRET from https://marketplace.zoom.us}}"
     },
     "homepage": "https://github.com/JavaProgrammerLB/zoom-mcp-server"
+  },
+  {
+    "name": "Playwright MCP",
+    "key": "playwright",
+    "description": "Model Context Protocol server providing LLM-driven browser automation via Playwright’s accessibility snapshots.",
+    "command": "npx",
+    "args": [
+      "@playwright/mcp@latest",
+      "--allowed-origins",
+      "{{allowedOrigins@string::(default: allow all) Semicolon-separated list of origins to allow}}",
+      "--blocked-origins",
+      "{{blockedOrigins@string::(default: none) Semicolon-separated list of origins to block}}",
+      "--browser",
+      "{{browser@string::(default: chrome) Browser or channel to use (chrome, firefox, webkit, msedge, chrome-beta, chrome-canary, chrome-dev, msedge-beta, msedge-canary)}}",
+      "--caps",
+      "{{caps@string::(default: all) Comma-separated list of capabilities to enable (core, tabs, pdf, history, wait, files, install, testing)}}",
+      "--cdp-endpoint",
+      "{{cdpEndpoint@string::(default: none) CDP endpoint to connect to}}",
+      "--config",
+      "{{config@string::(default: none) Path to JSON configuration file}}",
+      "--device",
+      "{{device@string::(default: none) Emulate mobile device name}}",
+      "--executable-path",
+      "{{executablePath@string::(default: use bundled) Path to browser executable}}",
+      "--headless",
+      "{{headless@boolean::(default: false) Run browser in headless mode}}",
+      "--host",
+      "{{host@string::(default: localhost) Host to bind server to}}",
+      "--output-dir",
+      "{{outputDir@string::(default: none) Directory for output files}}",
+      "--port",
+      "{{port@number::(default: 8930) Port to listen on for SSE transport}}",
+      "--user-data-dir",
+      "{{userDataDir@string::(default: auto-generated) Path to user data directory}}",
+      "--vision",
+      "{{vision@boolean::(default: false) Enable vision mode (screenshots instead of accessibility snapshots)}}"
+    ],
+    "homepage": "https://github.com/microsoft/playwright-mcp"
   }
 ]
