@@ -354,6 +354,18 @@
     "homepage": "https://github.com/MarkusPfundstein/mcp-obsidian"
   },
   {
+    "name": "Offorte Proposal Software",
+    "key": "Offorte",
+    "command": "npx",
+    "description": "Offorte Proposal Software MCP server enables creation and sending of business proposals.",
+		"args": ["-y", "@offorte/mcp-server"],
+		"env": {
+		  "OFFORTE_ACCOUNT_NAME": "{{accountName@string::Get the account name from www.offorte.com}}",
+		  "OFFORTE_API_KEY": "{{apiKey@string::Get the api key from www.offorte.com}}"
+		},
+    "homepage": "https://github.com/offorte/offorte-mcp-server"
+  },
+  {
     "key": "Postgres",
     "command": "npx",
     "description": "Read-only database access with schema inspection.",
