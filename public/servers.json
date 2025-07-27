@@ -247,6 +247,18 @@
     "homepage": "https://github.com/graphlit/graphlit-mcp-server"
   },
   {
+    "name": "Google Analytics 4 MCP Sever",
+    "key": "GA4MCP",
+    "command": "python",
+    "description": "MCP Server of Google Analytics to access the data via Claude, Cursor and more.",
+		"args": ["-m", "ga4-mcp-server"],
+		"env": {
+		  "GOOGLE_APPLICATION_CREDENTIALS": "get credentials from GCP",
+                  "GA4_PROPERTY_ID": "Your GA Property Id"
+		},
+    "homepage": "https://github.com/surendranb-google-analytics-mcp"
+  },
+  {
     "name": "Hacker News",
     "key": "HackerNews",
     "command": "uvx",
