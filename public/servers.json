@@ -411,6 +411,17 @@
     "homepage": "https://readwise.io"
   },
   {
+    "name": "Transcribe",
+    "key": "MCP-Transcribe",
+    "command": "npx",
+    "description": "This service provides fast and reliable transcriptions for audio/video files and voice memos. It allows LLMs to interact with the text content of audio/video file.",
+    "args": ["-y", "github:transcribe-app/mcp-transcribe"],
+    "env": {
+      "MCP_INTEGRATION_URL": "{{mcpIntegrationUrl@string::Your MCP Integration URL from Transcribe.com → Automation}}"
+    },
+    "homepage": "https://transcribe.com"
+  },
+  {
     "name": "Sequential Thinking",
     "key": "SequentialThinking",
     "command": "npx",
