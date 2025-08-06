@@ -253,8 +253,8 @@
     "description": "MCP Server of Google Analytics to access the data via Claude, Cursor and more.",
 		"args": ["-m", "ga4-mcp-server"],
 		"env": {
-		  "GOOGLE_APPLICATION_CREDENTIALS": "get credentials from GCP",
-                  "GA4_PROPERTY_ID": "Your GA Property Id"
+		  "GOOGLE_APPLICATION_CREDENTIALS": "{{appCredentials@string::get credentials from GCP}}",
+      "GA4_PROPERTY_ID": "{{propertyId@string::Your GA Property Id}}"
 		},
     "homepage": "https://github.com/surendranb-google-analytics-mcp"
   },
