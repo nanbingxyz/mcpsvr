@@ -423,6 +423,21 @@
     "homepage": "https://readwise.io"
   },
   {
+	  "name": "Rube",
+	  "key": "Rube",
+	  "description": "Rube is a MCP server that connects your AI tools to 500+ apps like Gmail, Slack, GitHub, and Notion",
+	  "command": "npx",
+	  "args": [
+		"-y",
+		"mcp-remote",
+        "https://rube.composio.dev/mcp"
+	  ],
+      "env": {
+        "npm_config_yes": "true"
+      },
+	  "homepage": "https://rube.composio.dev"
+  },
+  {
     "name": "Transcribe",
     "key": "MCP-Transcribe",
     "command": "npx",
