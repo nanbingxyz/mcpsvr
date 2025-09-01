@@ -517,6 +517,17 @@
     "homepage": "https://github.com/tavily-ai/tavily-mcp"
   },
   {
+    "name": "Teamwork.com",
+    "key": "Teamwork",
+    "description": "Teamwork.com official MCP server.",
+    "command": "docker",
+    "args": ["run", "-i", "--rm", "-e", "TW_MCP_BEARER_TOKEN", "ghcr.io/teamwork/mcp:latest"],
+    "env": {
+      "TW_MCP_BEARER_TOKEN": "{{apiKey@string::You can get the API key from https://teamwork.com}}"
+    },
+    "homepage": "https://github.com/teamwork/mcp"
+  },
+  {
     "key": "Time",
     "command": "uvx",
     "description": "A Model Context Protocol server providing tools for time queries and timezone conversions for LLMs",
