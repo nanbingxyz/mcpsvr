@@ -590,6 +590,19 @@
     "homepage": "https://github.com/ai-zerolab/mcp-toolbox"
   },
   {
+    "name": "ZeroCut",
+    "key": "ZeroCut",
+    "command": "npx",
+    "description": "ZeroCut is a tool to create videos using AI",
+    "args": ["-y", "zerocut"],
+    "env": {
+      "CEREVOX_API_KEY": "{{apiKey@string::Your zerocut api key}}",
+      "ZEROCUT_WORKSPACE_DIR": "{{workspaceDir@string::Your zerocut workspace directory}}",
+      "CLIENT_TYPE": "5ire"
+    },
+    "homepage": "https://zerocut.art"
+  },
+  {
     "name": "Zoom",
     "key": "Zoom",
     "description": "Now you can date a Zoom meeting with AI's help",
