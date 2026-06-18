@@ -627,6 +627,18 @@
     "homepage": "https://github.com/JavaProgrammerLB/zoom-mcp-server"
   },
   {
+    "name": "microservices.sh",
+    "key": "MicroservicesSh",
+    "description": "Inspect verified Cloudflare-native modules and templates, generate app plans, run checks, and trigger confirmation-gated preview deploys.",
+    "command": "npx",
+    "args": ["-y", "@microservices-sh/mcp"],
+    "env": {
+      "MICROSERVICES_API_URL": "https://api.microservices.sh",
+      "MICROSERVICES_API_KEY": "{{apiKey@string::Your microservices.sh API key for remote deploy/status tools}}"
+    },
+    "homepage": "https://github.com/microservices-sh/mcp"
+  },
+  {
     "name": "Playwright MCP",
     "key": "playwright",
     "description": "Model Context Protocol server providing LLM-driven browser automation via Playwright’s accessibility snapshots.",
