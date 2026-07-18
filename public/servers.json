@@ -226,6 +226,14 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Find MCP",
+    "key": "FindMcp",
+    "command": "npx",
+    "description": "Search 17,000+ MCP servers from the official MCP registry (registry.modelcontextprotocol.io) via remote Streamable HTTP or stdio.",
+    "args": ["-y", "@agentage/find-mcp"],
+    "homepage": "https://github.com/agentage/find-mcp"
+  },
+  {
     "name": "Firecrawl",
     "key": "FireCrawl",
     "command": "npx",
