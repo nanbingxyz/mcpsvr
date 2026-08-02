@@ -711,5 +711,17 @@
       "HUSHVERT_API_KEY": "{{hushvertKey@string::Get a developer key at https://hushvert.com/developers/keys}}"
     },
     "homepage": "https://github.com/hushvert/mcp"
+  },
+  {
+    "name": "Parallel Search",
+    "key": "ParallelSearch",
+    "description": "Free remote MCP server for live web search and fetching clean content from URLs. No account or API key required.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://search.parallel.ai/mcp"
+    ],
+    "homepage": "https://docs.parallel.ai/search/mcp-server/quickstart"
   }
 ]
