@@ -711,5 +711,20 @@
       "HUSHVERT_API_KEY": "{{hushvertKey@string::Get a developer key at https://hushvert.com/developers/keys}}"
     },
     "homepage": "https://github.com/hushvert/mcp"
+  },
+  {
+    "name": "Tendem",
+    "key": "Tendem",
+    "description": "Delegate tasks to vetted human experts - research, writing, analysis, and data work.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.tendem.ai/mcp?utm_hash=743f0e4956"
+    ],
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://github.com/Toloka/tendem-mcp"
   }
 ]
