@@ -355,6 +355,20 @@
     "homepage": "https://github.com/neondatabase/mcp-server-neon"
   },
   {
+    "name": "Neither",
+    "key": "Neither",
+    "command": "npx",
+    "description": "Selected project notes and documents for Cursor and Claude Desktop via local stdio MCP, with related retrieval and source evidence.",
+    "args": [
+      "-y",
+      "@neitherai/mcp-server"
+    ],
+    "env": {
+      "NEITHER_API_KEY": "{{neitherApiKey@string::Neither workspace API key from the developer quickstart}}"
+    },
+    "homepage": "https://github.com/stonianua/neither-mcp"
+  },
+  {
     "name": "Notion",
     "key": "Notion",
     "command": "npx",
