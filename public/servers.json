@@ -759,6 +759,21 @@
     "homepage": "https://github.com/hushvert/mcp"
   },
   {
+    "name": "Tendem",
+    "key": "Tendem",
+    "description": "Delegate tasks to vetted human experts - research, writing, analysis, and data work.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.tendem.ai/mcp?utm_hash=743f0e4956"
+    ],
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://github.com/Toloka/tendem-mcp"
+  },
+  {
     "name": "Bargo Congress Trades",
     "key": "BargoCongressTrades",
     "description": "Read-only access to normalized U.S. House and Senate STOCK Act disclosures, with filters for ticker, member, chamber, transaction type, and date.",
