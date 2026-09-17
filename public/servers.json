@@ -791,5 +791,20 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "You.com",
+    "key": "You",
+    "description": "Remote MCP server from You.com for live web search and URL content extraction. The keyless free profile exposes the you-search and you-contents tools with no API key required; point args at https://api.you.com/mcp with a YDC_API_KEY header for the full authenticated toolset.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.you.com/mcp?profile=free"
+    ],
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://you.com/docs"
   }
 ]
