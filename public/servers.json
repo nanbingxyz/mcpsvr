@@ -298,6 +298,18 @@
     "homepage": "https://www.home-assistant.io/integrations/mcp_server"
   },
   {
+    "name": "JobYap",
+    "key": "JobYap",
+    "description": "Search job postings aggregated from companies' official careers sites — salaries, locations, and a community discussion thread on every job.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.jobyap.com/mcp"
+    ],
+    "homepage": "https://jobyap.com"
+  },
+  {
     "name": "LLM.txt",
     "key": "LLMTxt",
     "command": "npx",
