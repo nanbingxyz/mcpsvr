@@ -723,5 +723,24 @@
       "HUSHVERT_API_KEY": "{{hushvertKey@string::Get a developer key at https://hushvert.com/developers/keys}}"
     },
     "homepage": "https://github.com/hushvert/mcp"
+  },
+  {
+    "name": "Bargo Congress Trades",
+    "key": "BargoCongressTrades",
+    "description": "Read-only access to normalized U.S. House and Senate STOCK Act disclosures, with filters for ticker, member, chamber, transaction type, and date.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote@0.1.38",
+      "https://www.bargo.ai/free-apis/congress/mcp",
+      "--transport",
+      "http-only",
+      "--header",
+      "Authorization:${BARGO_CONGRESS_AUTH_HEADER}"
+    ],
+    "env": {
+      "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
+    },
+    "homepage": "https://www.bargo.ai/free-apis/congress"
   }
 ]
