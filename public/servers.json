@@ -226,6 +226,14 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Find MCP",
+    "key": "FindMcp",
+    "command": "npx",
+    "description": "Search 17,000+ MCP servers from the official MCP registry (registry.modelcontextprotocol.io) via remote Streamable HTTP or stdio.",
+    "args": ["-y", "@agentage/find-mcp"],
+    "homepage": "https://github.com/agentage/find-mcp"
+  },
+  {
     "name": "Firecrawl",
     "key": "FireCrawl",
     "command": "npx",
@@ -288,6 +296,18 @@
       "SSE_URL": "{{sseUrl@string::Your Home Assistant URL ending in /mcp_server/sse}}"
     },
     "homepage": "https://www.home-assistant.io/integrations/mcp_server"
+  },
+  {
+    "name": "JobYap",
+    "key": "JobYap",
+    "description": "Search job postings aggregated from companies' official careers sites — salaries, locations, and a community discussion thread on every job.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.jobyap.com/mcp"
+    ],
+    "homepage": "https://jobyap.com"
   },
   {
     "name": "LLM.txt",
@@ -353,6 +373,20 @@
       "{{apiKey@string::NEON_API_KEY}}"
     ],
     "homepage": "https://github.com/neondatabase/mcp-server-neon"
+  },
+  {
+    "name": "Neither",
+    "key": "Neither",
+    "command": "npx",
+    "description": "Selected project notes and documents for Cursor and Claude Desktop via local stdio MCP, with related retrieval and source evidence.",
+    "args": [
+      "-y",
+      "@neitherai/mcp-server"
+    ],
+    "env": {
+      "NEITHER_API_KEY": "{{neitherApiKey@string::Neither workspace API key from the developer quickstart}}"
+    },
+    "homepage": "https://github.com/stonianua/neither-mcp"
   },
   {
     "name": "Notion",
@@ -646,6 +680,18 @@
     "homepage": "https://github.com/JavaProgrammerLB/zoom-mcp-server"
   },
   {
+    "name": "microservices.sh",
+    "key": "MicroservicesSh",
+    "description": "Inspect verified Cloudflare-native modules and templates, generate app plans, run checks, and trigger confirmation-gated preview deploys.",
+    "command": "npx",
+    "args": ["-y", "@microservices-sh/mcp"],
+    "env": {
+      "MICROSERVICES_API_URL": "https://api.microservices.sh",
+      "MICROSERVICES_API_KEY": "{{apiKey@string::Your microservices.sh API key for remote deploy/status tools}}"
+    },
+    "homepage": "https://github.com/microservices-sh/mcp"
+  },
+  {
     "name": "Playwright MCP",
     "key": "playwright",
     "description": "Model Context Protocol server providing LLM-driven browser automation via Playwright’s accessibility snapshots.",
@@ -726,5 +772,24 @@
       "npm_config_yes": "true"
     },
     "homepage": "https://github.com/Toloka/tendem-mcp"
+  },
+  {
+    "name": "Bargo Congress Trades",
+    "key": "BargoCongressTrades",
+    "description": "Read-only access to normalized U.S. House and Senate STOCK Act disclosures, with filters for ticker, member, chamber, transaction type, and date.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote@0.1.38",
+      "https://www.bargo.ai/free-apis/congress/mcp",
+      "--transport",
+      "http-only",
+      "--header",
+      "Authorization:${BARGO_CONGRESS_AUTH_HEADER}"
+    ],
+    "env": {
+      "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
+    },
+    "homepage": "https://www.bargo.ai/free-apis/congress"
   }
 ]
