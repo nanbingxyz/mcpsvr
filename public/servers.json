@@ -791,5 +791,16 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "AdTest.AI",
+    "key": "AdTestAI",
+    "description": "Score an image, video or text ad on 13 effectiveness dimensions before you spend on media; returns a section-by-section report with concrete fixes (1 credit per analysis).",
+    "command": "npx",
+    "args": ["-y", "adtest-mcp"],
+    "env": {
+        "ADTEST_API_KEY": "{{apiKey@string::Your AdTest.AI developer API key (app.adtest.ai → Developer → Generate key)}}"
+    },
+    "homepage": "https://github.com/menaker/adtest-mcp"
   }
 ]
