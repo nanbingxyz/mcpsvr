@@ -791,5 +791,19 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "ThreatCluster",
+    "key": "ThreatCluster",
+    "description": "Threat intelligence for agents: clustered incident records, validated IOCs, CVEs with KEV/EPSS/exploit status, ransomware leak-site victims and entity profiles. 10 tools over the ThreatCluster public API. Free API key at https://threatcluster.io.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "threatcluster-mcp"
+    ],
+    "env": {
+      "THREATCLUSTER_API_KEY": "{{apiKey@string::Your ThreatCluster API key (tc_live_...)}}"
+    },
+    "homepage": "https://github.com/Jam0k/Threat-Intelligence-MCP"
   }
 ]
