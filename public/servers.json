@@ -791,5 +791,16 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "GTD Brain",
+    "key": "GTDBrain",
+    "description": "Getting Things Done board: capture to Inbox, next actions by context, projects, waiting-for and weekly review, shared with the GTD Brain web, iOS and Android apps. Hosted remote server, OAuth 2.1 sign-in with an email code, no API key.",
+    "command": "npx",
+    "args": ["-y", "mcp-remote", "https://mcp.gtdbrain.com/api/gtdbrain/v1/mcp"],
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://gtdbrain.com/connect?source=mcpsvr"
   }
 ]
