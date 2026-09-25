@@ -791,5 +791,17 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "Clera",
+    "key": "Clera",
+    "description": "Search 210,000+ vetted startup candidates, review Clera's picks for your open roles and request intros. OAuth sign-in on first use, no API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.getclera.com"
+    ],
+    "homepage": "https://www.getclera.com/mcp"
   }
 ]
