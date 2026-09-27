@@ -348,6 +348,17 @@
     "homepage": "https://mcp-get.com/packages/%40mcp-get-community%2Fserver-macos"
   },
   {
+    "name": "Mnemoverse",
+    "key": "Mnemoverse",
+    "command": "npx",
+    "description": "Hosted AI agent memory that learns from outcomes, with shared rooms. The agent reports whether a recalled memory helped, and later recalls are re-ranked.",
+    "args": ["-y", "@mnemoverse/mcp-memory-server"],
+    "env": {
+      "MNEMOVERSE_API_KEY": "{{apiKey@string::Free API key (starts with mk_live_) from https://console.mnemoverse.com}}"
+    },
+    "homepage": "https://github.com/mnemoverse/mcp-memory-server"
+  },
+  {
     "key": "MySQL",
     "command": "npx",
     "description": "An MCP server gives LLMs read - only access to MySQL databases for schema inspection and query execution.",
