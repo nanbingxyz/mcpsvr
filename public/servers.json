@@ -791,5 +791,20 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "Omentir",
+    "key": "Omentir",
+    "description": "LinkedIn prospecting and outreach: find and score leads, draft messages, run human-paced campaigns and answer replies. Hosted server, signs in with OAuth in the browser. The agent never sees your LinkedIn password.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://omentir.com/api/agent/v1/mcp"
+    ],
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://omentir.com/integrations/mcp"
   }
 ]
