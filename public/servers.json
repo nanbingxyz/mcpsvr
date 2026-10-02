@@ -298,6 +298,20 @@
     "homepage": "https://www.home-assistant.io/integrations/mcp_server"
   },
   {
+    "name": "Hyperconsciousness",
+    "key": "Hyperconsciousness",
+    "description": "Developer-alpha Rust MCP server for signed, encrypted, append-only knowledge with scoped, expiring grants. Build from source, put hc on the MCP client PATH, and initialize a store and read grant using the README before connecting.",
+    "command": "hc",
+    "args": [
+      "mcp",
+      "--as",
+      "{{grantId@string::Read grant ID for this store}}",
+      "--dir",
+      "{{storePath@string::Absolute path to the initialized HC store}}"
+    ],
+    "homepage": "https://github.com/louis030195/hyperconsciousness"
+  },
+  {
     "name": "JobYap",
     "key": "JobYap",
     "description": "Search job postings aggregated from companies' official careers sites — salaries, locations, and a community discussion thread on every job.",
