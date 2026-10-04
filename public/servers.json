@@ -530,6 +530,18 @@
     "homepage": "https://github.com/hdresearch/mcp-shell"
   },
   {
+    "name": "SkyAccess",
+    "key": "SkyAccess",
+    "description": "Search 5,000+ live empty leg flights, get charter price estimates and booking links. No account or API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.skyaccess.com/mcp"
+    ],
+    "homepage": "https://github.com/sky-access/skyaccess-mcp"
+  },
+  {
     "key": "Slack",
     "command": "npx",
     "description": "MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.",
