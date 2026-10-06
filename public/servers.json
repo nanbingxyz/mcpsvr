@@ -350,7 +350,7 @@
   {
     "name": "MAQAMI Travel",
     "key": "MaqamiTravel",
-    "description": "Official MCP server for MAQAMI, a hotel and flight booking platform with 3M+ hotels. Search hotels and flights, look up places, airports and hotel details, then prebook and book. Remote Streamable HTTP endpoint, no API key.",
+    "description": "Official MCP server for MAQAMI, a hotel and flight booking platform with 3M+ hotels. Search hotels and flights, look up cities, airports and hotel details, then send a secure checkout link on book.maqami.co. Remote Streamable HTTP endpoint, no API key.",
     "command": "npx",
     "args": [
       "-y",
