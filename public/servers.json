@@ -791,5 +791,17 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "Symbioza",
+    "key": "Symbioza",
+    "description": "Run a GPU job under a hard dollar cap and collect the files it writes.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://symbioza.dev/mcp"
+    ],
+    "homepage": "https://symbioza.dev"
   }
 ]
