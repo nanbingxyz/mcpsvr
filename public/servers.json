@@ -146,6 +146,18 @@
     "homepage": "https://github.com/pebbletek/cribl-mcp"
   },
   {
+    "name": "Datacircle",
+    "key": "Datacircle",
+    "description": "Query your favorite B2B data APIs through us. Same request, same price, no markup.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.datacircle.dev/mcp"
+    ],
+    "homepage": "https://docs.datacircle.dev/mcp-server"
+  },
+  {
     "name": "Database Utilities",
     "key": "DbUtils",
     "command": "uvx",
