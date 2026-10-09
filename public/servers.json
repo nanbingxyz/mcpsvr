@@ -791,5 +791,18 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "ERIUS PHONE",
+    "key": "EriusPhone",
+    "description": "Drive a hosted ERIUS PHONE Android phone or tablet: read the screen as an accessibility tree or screenshot, tap, type, swipe, launch apps, install APKs, and pull crash logs.",
+    "command": "uvx",
+    "args": [
+      "erius-phone-mcp"
+    ],
+    "env": {
+      "ERIUS_PHONE_API_KEY": "{{apiKey@string::ERIUS PHONE API key (early access, request at https://eriusphone.com)}}"
+    },
+    "homepage": "https://github.com/Protremix/erius-phone-mcp"
   }
 ]
