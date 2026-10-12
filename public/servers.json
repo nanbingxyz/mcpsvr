@@ -791,5 +791,22 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "looot",
+    "key": "looot",
+    "description": "One API key and prepaid balance for 2,500+ data endpoints: work email, phone, company and people enrichment, Google SERP, web pages. Pay per call.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote@0.1.38",
+      "https://api.looot.ai/mcp",
+      "--header",
+      "Authorization:${LOOOT_AUTH_HEADER}"
+    ],
+    "env": {
+      "LOOOT_AUTH_HEADER": "Bearer {{apiKey@string::looot API key from https://looot.ai}}"
+    },
+    "homepage": "https://github.com/loootai/looot-mcp"
   }
 ]
