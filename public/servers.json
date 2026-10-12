@@ -616,6 +616,18 @@
     "homepage": "https://pypi.org/project/mcp-server-fetch/"
   },
   {
+    "name": "Warmerly",
+    "key": "Warmerly",
+    "description": "Email warmup and cold outreach: mailbox health and warmup, SPF/DKIM/DMARC checks, placement tests, lead search, draft campaigns and inbox reply triage. Hosted server; sign in with a Warmerly account (OAuth, free plan available).",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://app.warmerly.com/api/mcp"
+    ],
+    "homepage": "https://warmerly.com/ai"
+  },
+  {
     "name": "Xquik",
     "key": "Xquik",
     "command": "npx",
