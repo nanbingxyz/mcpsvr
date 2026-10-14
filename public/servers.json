@@ -1,5 +1,15 @@
 [
   {
+    "name": "Ship.com",
+    "key": "ShipCom",
+    "description": "Hosted shipping rates, order management and tracking for shipments originating in the United States. Uses a Ship.com access token; purchasing tools require an access-token connection and explicit approval. OAuth is documented for supported Claude clients only and does not offer label purchasing.",
+    "url": "https://app.ship.com/mcp",
+    "headers": {
+      "Authorization": "Bearer {{accessToken@string::Ship.com access token from Settings > API Integration, without Bearer prefix}}"
+    },
+    "homepage": "https://www.ship.com/api/mcp"
+  },
+  {
     "name": "AgentCraft",
     "key": "AgentCraft",
     "description": "AgentCraft is a partner product of Crafted™. Our AI Agent framework allows you to deploy intelligent agents that understand, learn, and evolve with your business needs. It provides premade and custom AI agents for enterprises, ensuring secure and scalable solutions.",
