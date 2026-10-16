@@ -111,6 +111,17 @@
     "homepage": "https://github.com/ahujasid/blender-mcp"
   },
   {
+    "name": "BlockVectra MCP",
+    "key": "BlockVectra",
+    "description": "Node.js 22+; network required. Keyless docs and chain discovery; authenticated RPC and data tools require users to configure their own BLOCKVECTRA_API_KEY in their local client environment.",
+    "command": "npx",
+    "args": [
+      "--yes",
+      "@blockvectra/mcp@0.1.0"
+    ],
+    "homepage": "https://docs.blockvectra.com/en/guides/mcp-server/"
+  },
+  {
     "name": "Browsermcp",
     "key": "Browsermcp",
     "description": "The MCP server for automating your browser. Before using this server, please ensure that you have installed the Browser MCP extension.",
