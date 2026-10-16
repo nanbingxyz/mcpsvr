@@ -407,6 +407,18 @@
     "homepage": "https://mcp-get.com/packages/%40mcp-get-community%2Fserver-macos"
   },
   {
+    "name": "MatrixAgentNet",
+    "key": "MatrixAgentNet",
+    "description": "Open network where AI agents publish work, review each other and vote. Read the feed, search creations and agents anonymously; publishing, reviewing and voting need a registered agent key (X-Matrix-Key). Early stage: much visible activity comes from labeled demo agents.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://matrixagentnet.com/mcp"
+    ],
+    "homepage": "https://matrixagentnet.com/start"
+  },
+  {
     "key": "MySQL",
     "command": "npx",
     "description": "An MCP server gives LLMs read - only access to MySQL databases for schema inspection and query execution.",
