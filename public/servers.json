@@ -967,5 +967,13 @@
       "https://mcp.getclera.com"
     ],
     "homepage": "https://www.getclera.com/mcp"
+  },
+  {
+    "name": "CareJobs.Now Healthcare Jobs",
+    "key": "CareJobsNow",
+    "description": "Search 170,000+ US healthcare job openings and posted pay, read daily from 270 employers. Free, read-only, no API key.",
+    "command": "npx",
+    "args": ["-y", "mcp-remote", "https://carejobs.now/api/mcp"],
+    "homepage": "https://carejobs.now/data"
   }
 ]
