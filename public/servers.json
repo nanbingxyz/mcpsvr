@@ -955,5 +955,17 @@
       "ERIUS_PHONE_API_KEY": "{{apiKey@string::ERIUS PHONE API key (early access, request at https://eriusphone.com)}}"
     },
     "homepage": "https://github.com/Protremix/erius-phone-mcp"
+  },
+  {
+    "name": "Clera",
+    "key": "Clera",
+    "description": "Search 210,000+ vetted startup candidates, review Clera's picks for your open roles and request intros. OAuth sign-in on first use, no API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.getclera.com"
+    ],
+    "homepage": "https://www.getclera.com/mcp"
   }
 ]
