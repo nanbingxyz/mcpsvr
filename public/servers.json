@@ -1,5 +1,15 @@
 [
   {
+    "name": "Ship.com",
+    "key": "ShipCom",
+    "description": "Hosted shipping rates, order management and tracking for shipments originating in the United States. Uses a Ship.com access token; purchasing tools require an access-token connection and explicit approval. OAuth is documented for supported Claude clients only and does not offer label purchasing.",
+    "url": "https://app.ship.com/mcp",
+    "headers": {
+      "Authorization": "Bearer {{accessToken@string::Ship.com access token from Settings > API Integration, without Bearer prefix}}"
+    },
+    "homepage": "https://www.ship.com/api/mcp"
+  },
+  {
     "name": "AgentCraft",
     "key": "AgentCraft",
     "description": "AgentCraft is a partner product of Crafted™. Our AI Agent framework allows you to deploy intelligent agents that understand, learn, and evolve with your business needs. It provides premade and custom AI agents for enterprises, ensuring secure and scalable solutions.",
@@ -111,6 +121,17 @@
     "homepage": "https://github.com/ahujasid/blender-mcp"
   },
   {
+    "name": "BlockVectra MCP",
+    "key": "BlockVectra",
+    "description": "Node.js 22+; network required. Keyless docs and chain discovery; authenticated RPC and data tools require users to configure their own BLOCKVECTRA_API_KEY in their local client environment.",
+    "command": "npx",
+    "args": [
+      "--yes",
+      "@blockvectra/mcp@0.1.0"
+    ],
+    "homepage": "https://docs.blockvectra.com/en/guides/mcp-server/"
+  },
+  {
     "name": "Browsermcp",
     "key": "Browsermcp",
     "description": "The MCP server for automating your browser. Before using this server, please ensure that you have installed the Browser MCP extension.",
@@ -146,6 +167,20 @@
     "homepage": "https://github.com/pebbletek/cribl-mcp"
   },
   {
+    "name": "CurlShot",
+    "key": "CurlShot",
+    "description": "Screenshot API as a remote MCP server: take_screenshot returns a PNG, JPEG, WebP or PDF of any public web page (full page, device presets, cookie banners hidden); list_devices lists device presets. Needs a CurlShot access key (free plan, 100 screenshots a month).",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://curlshot.com/api/mcp",
+      "--header",
+      "Authorization:Bearer {{accessKey@string::CurlShot access key from https://curlshot.com/register}}"
+    ],
+    "homepage": "https://curlshot.com/docs/guides/ai-agents"
+  },
+  {
     "name": "Datacircle",
     "key": "Datacircle",
     "description": "Query your favorite B2B data APIs through us. Same request, same price, no markup.",
@@ -179,6 +214,18 @@
     "description": "Search, update, manage files and run terminal commands with AI.",
     "args": ["-y", "@wonderwhy-er/desktop-commander"],
     "homepage": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
+  },
+  {
+    "name": "EmpirioLabs AI",
+    "key": "EmpirioLabs",
+    "description": "Run 200+ AI models for chat, image, video, speech, music, and 3D generation, plus cited web search, batch and async jobs, GPU Cloud, and hosted agents. Sign in with an EmpirioLabs AI account.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.empiriolabs.ai/mcp"
+    ],
+    "homepage": "https://docs.empiriolabs.ai/mcp"
   },
   {
     "key": "Git",
@@ -236,6 +283,18 @@
       "{{dirs@list::directories you about to access. Trailing slash in path required.}}"
     ],
     "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "name": "Fincept MCP",
+    "key": "Fincept",
+    "description": "Hosted MCP for Fincept Terminal: market data, economics, filings, backtests and 15 quant engines. OAuth sign-in; requires the paid Exclusive Pro plan.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://enterprise.fincept.in/mcp"
+    ],
+    "homepage": "https://docs.fincept.in"
   },
   {
     "name": "Find MCP",
@@ -358,6 +417,18 @@
     "description": "A Model Context Protocol server that provides macOS-specific system information and operations.",
     "args": ["-y", "@mcp-get-community/server-macos"],
     "homepage": "https://mcp-get.com/packages/%40mcp-get-community%2Fserver-macos"
+  },
+  {
+    "name": "MatrixAgentNet",
+    "key": "MatrixAgentNet",
+    "description": "Open network where AI agents publish work, review each other and vote. Read the feed, search creations and agents anonymously; publishing, reviewing and voting need a registered agent key (X-Matrix-Key). Early stage: much visible activity comes from labeled demo agents.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://matrixagentnet.com/mcp"
+    ],
+    "homepage": "https://matrixagentnet.com/start"
   },
   {
     "key": "MySQL",
@@ -551,6 +622,13 @@
       "SLACK_TEAM_ID": "{{teamId@string::Your slack team id}}"
     },
     "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "SolidPing",
+    "command": "npx",
+    "description": "Uptime and synthetic monitoring: create, run and diagnose checks, read results and incidents, manage status pages and maintenance windows.",
+    "args": ["-y", "mcp-remote", "https://solidping.io/api/v1/mcp"],
+    "homepage": "https://github.com/fclairamb/solidping"
   },
   {
     "key": "Sqlite",
@@ -803,5 +881,30 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "Parallel Search",
+    "key": "ParallelSearch",
+    "description": "Free remote MCP server for live web search and fetching clean content from URLs. No account or API key required.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://search.parallel.ai/mcp"
+    ],
+    "homepage": "https://docs.parallel.ai/integrations/mcp/search-mcp"
+  },
+  {
+    "name": "ERIUS PHONE",
+    "key": "EriusPhone",
+    "description": "Drive a hosted ERIUS PHONE Android phone or tablet: read the screen as an accessibility tree or screenshot, tap, type, swipe, launch apps, install APKs, and pull crash logs.",
+    "command": "uvx",
+    "args": [
+      "erius-phone-mcp"
+    ],
+    "env": {
+      "ERIUS_PHONE_API_KEY": "{{apiKey@string::ERIUS PHONE API key (early access, request at https://eriusphone.com)}}"
+    },
+    "homepage": "https://github.com/Protremix/erius-phone-mcp"
   }
 ]
