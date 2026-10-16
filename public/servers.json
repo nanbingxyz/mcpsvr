@@ -551,6 +551,18 @@
     "homepage": "https://readwise.io"
   },
   {
+    "name": "Remoet",
+    "key": "Remoet",
+    "description": "Search public tech jobs from company careers pages and discover companies by their tech stack through the hosted MCP server. Free for job seekers.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.remoet.dev/mcp"
+    ],
+    "homepage": "https://docs.remoet.dev"
+  },
+  {
 	  "name": "Rube",
 	  "key": "Rube",
 	  "description": "Rube is a MCP server that connects your AI tools to 500+ apps like Gmail, Slack, GitHub, and Notion",
