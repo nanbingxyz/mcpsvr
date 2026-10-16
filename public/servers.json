@@ -21,6 +21,17 @@
     "homepage": "https://github.com/seyhunak/agentcraft-mcp"
   },
   {
+    "name": "Aident Loadout",
+    "key": "AidentLoadout",
+    "description": "Connects Codex, Claude Code, Cursor, ChatGPT and other MCP clients to 1,000+ apps and 400+ Skills via one remote MCP setup (https://aident.ai).",
+    "command": "npx",
+    "args": ["-y", "mcp-remote", "https://loadout.aident.ai/mcp"],
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://aident.ai"
+  },
+  {
     "name": "AMap (GaoDe Map)",
     "key": "AMap",
     "command": "npx",
