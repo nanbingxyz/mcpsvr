@@ -791,5 +791,17 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "Parallel Search",
+    "key": "ParallelSearch",
+    "description": "Free remote MCP server for live web search and fetching clean content from URLs. No account or API key required.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://search.parallel.ai/mcp"
+    ],
+    "homepage": "https://docs.parallel.ai/integrations/mcp/search-mcp"
   }
 ]
