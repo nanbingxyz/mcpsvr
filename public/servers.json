@@ -273,6 +273,18 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Fincept MCP",
+    "key": "Fincept",
+    "description": "Hosted MCP for Fincept Terminal: market data, economics, filings, backtests and 15 quant engines. OAuth sign-in; requires the paid Exclusive Pro plan.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://enterprise.fincept.in/mcp"
+    ],
+    "homepage": "https://docs.fincept.in"
+  },
+  {
     "name": "Find MCP",
     "key": "FindMcp",
     "command": "npx",
