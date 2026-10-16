@@ -169,6 +169,18 @@
     "homepage": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
   },
   {
+    "name": "EmpirioLabs AI",
+    "key": "EmpirioLabs",
+    "description": "Run 200+ AI models for chat, image, video, speech, music, and 3D generation, plus cited web search, batch and async jobs, GPU Cloud, and hosted agents. Sign in with an EmpirioLabs AI account.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.empiriolabs.ai/mcp"
+    ],
+    "homepage": "https://docs.empiriolabs.ai/mcp"
+  },
+  {
     "key": "Git",
     "command": "uvx",
     "description": "Tools to read, search, and manipulate Git repositories",
