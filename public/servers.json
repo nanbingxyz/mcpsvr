@@ -793,6 +793,18 @@
     "homepage": "https://www.bargo.ai/free-apis/congress"
   },
   {
+    "name": "Parallel Search",
+    "key": "ParallelSearch",
+    "description": "Free remote MCP server for live web search and fetching clean content from URLs. No account or API key required.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://search.parallel.ai/mcp"
+    ],
+    "homepage": "https://docs.parallel.ai/integrations/mcp/search-mcp"
+  },
+  {
     "name": "ERIUS PHONE",
     "key": "EriusPhone",
     "description": "Drive a hosted ERIUS PHONE Android phone or tablet: read the screen as an accessibility tree or screenshot, tap, type, swipe, launch apps, install APKs, and pull crash logs.",
