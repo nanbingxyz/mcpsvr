@@ -932,6 +932,20 @@
     "homepage": "https://www.bargo.ai/free-apis/congress"
   },
   {
+    "name": "ThreatCluster",
+    "key": "ThreatCluster",
+    "description": "Threat intelligence for agents: clustered incident records, validated IOCs, CVEs with KEV/EPSS/exploit status, ransomware leak-site victims and entity profiles. 10 tools over the ThreatCluster public API. Free API key at https://threatcluster.io.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "threatcluster-mcp"
+    ],
+    "env": {
+      "THREATCLUSTER_API_KEY": "{{apiKey@string::Your ThreatCluster API key (tc_live_...)}}"
+    },
+    "homepage": "https://github.com/Jam0k/Threat-Intelligence-MCP"
+  },
+  {
     "name": "Parallel Search",
     "key": "ParallelSearch",
     "description": "Free remote MCP server for live web search and fetching clean content from URLs. No account or API key required.",
