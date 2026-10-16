@@ -791,5 +791,13 @@
       "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
     },
     "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
+    "name": "CareJobs.Now Healthcare Jobs",
+    "key": "CareJobsNow",
+    "description": "Search 170,000+ US healthcare job openings and posted pay, read daily from 270 employers. Free, read-only, no API key.",
+    "command": "npx",
+    "args": ["-y", "mcp-remote", "https://carejobs.now/api/mcp"],
+    "homepage": "https://carejobs.now/data"
   }
 ]
