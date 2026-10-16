@@ -146,6 +146,20 @@
     "homepage": "https://github.com/pebbletek/cribl-mcp"
   },
   {
+    "name": "CurlShot",
+    "key": "CurlShot",
+    "description": "Screenshot API as a remote MCP server: take_screenshot returns a PNG, JPEG, WebP or PDF of any public web page (full page, device presets, cookie banners hidden); list_devices lists device presets. Needs a CurlShot access key (free plan, 100 screenshots a month).",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://curlshot.com/api/mcp",
+      "--header",
+      "Authorization:Bearer {{accessKey@string::CurlShot access key from https://curlshot.com/register}}"
+    ],
+    "homepage": "https://curlshot.com/docs/guides/ai-agents"
+  },
+  {
     "name": "Database Utilities",
     "key": "DbUtils",
     "command": "uvx",
