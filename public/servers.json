@@ -588,6 +588,13 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "key": "SolidPing",
+    "command": "npx",
+    "description": "Uptime and synthetic monitoring: create, run and diagnose checks, read results and incidents, manage status pages and maintenance windows.",
+    "args": ["-y", "mcp-remote", "https://solidping.io/api/v1/mcp"],
+    "homepage": "https://github.com/fclairamb/solidping"
+  },
+  {
     "key": "Sqlite",
     "command": "uvx",
     "description": "An MCP server using SQLite allows SQL querying, business data analysis, and automatic memo generation.",
