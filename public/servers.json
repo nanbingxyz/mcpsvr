@@ -10,6 +10,18 @@
     "homepage": "https://www.ship.com/api/mcp"
   },
   {
+    "name": "Aeon",
+    "key": "Aeon",
+    "description": "Run and manage your Aeon autonomous agent from chat: skills, runs, memory, strategy, packs and settings. Hosted server; sign in with GitHub (OAuth) and pick which agent the client may use.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://www.aeon.fun/connect/mcp"
+    ],
+    "homepage": "https://www.aeon.fun/connect"
+  },
+  {
     "name": "AgentCraft",
     "key": "AgentCraft",
     "description": "AgentCraft is a partner product of Crafted™. Our AI Agent framework allows you to deploy intelligent agents that understand, learn, and evolve with your business needs. It provides premade and custom AI agents for enterprises, ensuring secure and scalable solutions.",
