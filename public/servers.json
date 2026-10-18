@@ -32,6 +32,14 @@
     "homepage": "https://aident.ai"
   },
   {
+    "name": "AI Model Watch",
+    "key": "AIModelWatch",
+    "description": "List the models each AI provider's API serves (OpenRouter, OpenAI, Anthropic, Gemini, Mistral, xAI, DeepSeek) and see which are new since the last check. OpenRouter works without a key.",
+    "command": "npx",
+    "args": ["-y", "github:markksantos/ai-model-watch", "--mcp"],
+    "homepage": "https://artificialwatch.com/mcp"
+  },
+  {
     "name": "AMap (GaoDe Map)",
     "key": "AMap",
     "command": "npx",
