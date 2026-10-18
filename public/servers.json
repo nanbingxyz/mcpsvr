@@ -227,6 +227,19 @@
     "homepage": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
   },
   {
+    "name": "Dreamtune",
+    "key": "Dreamtune",
+    "description": "Access AI models, tool APIs, GPU compute and request logs through a Dreamtune workspace. Requires Node.js 22.20+, a scoped workspace API key and prepaid credit for paid operations.",
+    "command": "npx",
+    "args": ["-y", "--package=@dreamtune/sdk@0.1.1", "dreamtune", "mcp"],
+    "env": {
+      "DREAMTUNE_API_KEY": "{{apiKey@string::Dreamtune workspace API key with the required permissions}}",
+      "DREAMTUNE_API_ORIGIN": "https://api.dreamtunelabs.com",
+      "DREAMTUNE_REQUEST_TIMEOUT_MS": "120000"
+    },
+    "homepage": "https://docs.dreamtunelabs.com/connect/local-mcp"
+  },
+  {
     "name": "EmpirioLabs AI",
     "key": "EmpirioLabs",
     "description": "Run 200+ AI models for chat, image, video, speech, music, and 3D generation, plus cited web search, batch and async jobs, GPU Cloud, and hosted agents. Sign in with an EmpirioLabs AI account.",
