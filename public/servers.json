@@ -459,7 +459,7 @@
     "name": "Mnemoverse",
     "key": "Mnemoverse",
     "command": "npx",
-    "description": "Hosted AI agent memory that learns from outcomes, with shared rooms. The agent reports whether a recalled memory helped, and later recalls are re-ranked.",
+    "description": "Hosted long-term memory for AI agents over MCP. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms (beta) let several agents work from one memory. Needs an API key: the free plan has 1,000 queries a day, no credit card.",
     "args": ["-y", "@mnemoverse/mcp-memory-server"],
     "env": {
       "MNEMOVERSE_API_KEY": "{{apiKey@string::Free API key (starts with mk_live_) from https://console.mnemoverse.com}}"
