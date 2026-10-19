@@ -989,5 +989,16 @@
     "command": "npx",
     "args": ["-y", "mcp-remote", "https://carejobs.now/api/mcp"],
     "homepage": "https://carejobs.now/data"
+  },
+  {
+    "name": "Sem",
+    "key": "Sem",
+    "description": "Local code symbol lookup, source search, structural diffs and impact analysis. Writes a local index; validation tools can execute commands. Use trusted checkouts; SEM_REPO is not a sandbox.",
+    "command": "npx",
+    "args": ["-y", "@ataraxy-labs/sem@0.27.0", "mcp"],
+    "env": {
+      "SEM_REPO": "{{repoPath@string::Absolute path to an existing Git checkout on the MCP client host}}"
+    },
+    "homepage": "https://github.com/Ataraxy-Labs/sem"
   }
 ]
