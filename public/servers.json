@@ -209,6 +209,14 @@
     "homepage": "https://github.com/BuyWhere/buywhere-mcp"
   },
   {
+    "name": "Caption Checker",
+    "key": "CaptionChecker",
+    "description": "Check SRT and WebVTT captions against Netflix, BBC and DCMP Captioning Key limits: reading speed, line length, lines, time on screen, gaps and overlaps. Runs locally, no key.",
+    "command": "npx",
+    "args": ["-y", "github:markksantos/caption-checker", "--mcp"],
+    "homepage": "https://www.markstudios.com/tools/caption-checker"
+  },
+  {
     "name": "CodeTrendy",
     "key": "CodeTrendy",
     "description": "Read-only remote MCP server for the CodeTrendy directory of startups, SaaS, AI and developer tools: search listings, read a full listing profile, find alternatives to a product, browse categories and see what is trending. Streamable HTTP, no API key, no account.",
