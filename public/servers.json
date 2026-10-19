@@ -989,5 +989,19 @@
     "command": "npx",
     "args": ["-y", "mcp-remote", "https://carejobs.now/api/mcp"],
     "homepage": "https://carejobs.now/data"
+  },
+  {
+    "name": "Keenable",
+    "key": "Keenable",
+    "description": "Remote MCP server for web search and fetching pages as clean markdown (search_web_pages, fetch_page_content). No account or API key required.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.keenable.ai/mcp",
+      "--header",
+      "X-Keenable-Title:mcpsvr"
+    ],
+    "homepage": "https://docs.keenable.ai/mcp-server"
   }
 ]
