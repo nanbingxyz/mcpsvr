@@ -162,6 +162,13 @@
     "homepage": "https://github.com/BuyWhere/buywhere-mcp"
   },
   {
+    "name": "CodeTrendy",
+    "key": "CodeTrendy",
+    "description": "Read-only remote MCP server for the CodeTrendy directory of startups, SaaS, AI and developer tools: search listings, read a full listing profile, find alternatives to a product, browse categories and see what is trending. Streamable HTTP, no API key, no account.",
+    "url": "https://codetrendy.com/api/mcp",
+    "homepage": "https://codetrendy.com/mcp"
+  },
+  {
     "name": "Cribl MCP",
     "key": "CriblMcp",
     "description": "MCP server for managing Cribl configuration and resources, including worker groups, pipelines, routes and sources.",
