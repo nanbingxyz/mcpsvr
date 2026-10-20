@@ -650,6 +650,18 @@
     "homepage": "https://github.com/hdresearch/mcp-shell"
   },
   {
+    "name": "Shortform Kit",
+    "key": "ShortformKit",
+    "description": "Free remote MCP server for social video: transcribe public Instagram Reels, TikToks and YouTube videos (also without captions), read their metadata and captions, and look up sourced creator data such as upload specs, loudness targets and monetization programs. No account or API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://shortformkit.com/mcp"
+    ],
+    "homepage": "https://shortformkit.com/mcp-server/"
+  },
+  {
     "name": "SkyAccess",
     "key": "SkyAccess",
     "description": "Search 5,000+ live empty leg flights, get charter price estimates and booking links. No account or API key.",
