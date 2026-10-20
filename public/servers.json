@@ -989,5 +989,13 @@
     "command": "npx",
     "args": ["-y", "mcp-remote", "https://carejobs.now/api/mcp"],
     "homepage": "https://carejobs.now/data"
+  },
+  {
+    "name": "Zip-Codes.com",
+    "key": "ZipCodes",
+    "description": "Location intelligence for US addresses and ZIP Codes: standardize a US street address to its ZIP+4, look up US ZIP Codes and Canadian postal codes, search by radius, measure distance and request census tract demographics and district overlaps. Listed without a key, the endpoint runs in demo mode: real values, with deeper fields withheld except on demo codes and addresses. An X-Api-Key header with a free key (2,500 credits a day) removes the masking.",
+    "command": "npx",
+    "args": ["-y", "mcp-remote", "https://mcp.zip-codes.com/mcp"],
+    "homepage": "https://www.zip-codes.com/api/mcp"
   }
 ]
