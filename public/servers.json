@@ -201,14 +201,14 @@
   {
     "name": "Datacircle",
     "key": "Datacircle",
-    "description": "Query your favorite B2B data APIs through us. Same request, same price, no markup.",
+    "description": "Datacircle lists all the GTM APIs. Our MCP server is open to anyone, with no key: add api.datacircle.dev/mcp to Claude, ChatGPT or Cursor.",
     "command": "npx",
     "args": [
       "-y",
       "mcp-remote",
       "https://api.datacircle.dev/mcp"
     ],
-    "homepage": "https://docs.datacircle.dev/mcp-server"
+    "homepage": "https://datacircle.dev/docs/mcp"
   },
   {
     "name": "Database Utilities",
