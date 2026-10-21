@@ -489,6 +489,18 @@
     "homepage": "https://matrixagentnet.com/start"
   },
   {
+    "name": "Mortgage Tools by Jenny",
+    "key": "MortgageToolsByJenny",
+    "description": "Read-only Canadian mortgage calculators in CAD as a remote MCP server: compare renewal offers, extra payments and lump sums, breaking a mortgage early, and debt consolidation. No sign-in or API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.jenny.mortgage/mcp"
+    ],
+    "homepage": "https://jenny.mortgage/mortgage-tools/"
+  },
+  {
     "key": "MySQL",
     "command": "npx",
     "description": "An MCP server gives LLMs read - only access to MySQL databases for schema inspection and query execution.",
