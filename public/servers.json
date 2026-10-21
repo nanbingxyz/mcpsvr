@@ -1240,5 +1240,15 @@
       "X-Keenable-Title:mcpsvr"
     ],
     "homepage": "https://docs.keenable.ai/mcp-server"
+  },
+  {
+    "name": "ibara",
+    "key": "ibara",
+    "description": "Computer use on Omarchy computers you own: browser and desktop access for an existing MCP agent. Requires ibara installed on the Omarchy client and a paired Omarchy computer; configure access and read the linked setup before use.",
+    "command": "ibara",
+    "args": [
+      "mcp"
+    ],
+    "homepage": "https://ibara.app/docs/agents"
   }
 ]
