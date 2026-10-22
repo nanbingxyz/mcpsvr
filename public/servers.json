@@ -1333,5 +1333,17 @@
       "https://mcp.evolink.ai/mcp"
     ],
     "homepage": "https://evolink.ai/docs/en/mcp/overview"
+  },
+  {
+    "name": "HOL Guard",
+    "key": "holGuard",
+    "description": "Connect a locally installed HOL Guard CLI over stdio. Requires hol-guard on PATH; follow the linked setup instructions. This entry does not install the CLI or enable enforcement.",
+    "command": "hol-guard",
+    "args": [
+      "mcp",
+      "serve",
+      "--stdio"
+    ],
+    "homepage": "https://github.com/hashgraph-online/hol-guard-plugin"
   }
 ]
