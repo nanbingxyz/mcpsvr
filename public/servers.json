@@ -1061,7 +1061,7 @@
       "--blocked-origins",
       "{{blockedOrigins@string::(default: none) Semicolon-separated list of origins to block}}",
       "--browser",
-      "{{browser@string::(default: chrome) Browser or channel to use (chrome, firefox, webkit, msedge, chrome-beta, chrome-canary, chrome-dev, msedge-beta, msedge-canary)}}",
+      "{{browser@string::(default: chrome) Browser or channel to use (chrome, firefox, webkit, msedge, chrome-canary, chrome-dev, msedge-beta, msedge-canary)}}",
       "--caps",
       "{{caps@string::(default: all) Comma-separated list of capabilities to enable (core, tabs, pdf, history, wait, files, install, testing)}}",
       "--cdp-endpoint",
@@ -1250,5 +1250,29 @@
       "mcp"
     ],
     "homepage": "https://ibara.app/docs/agents"
+  },
+  {
+    "name": "Symbioza",
+    "key": "Symbioza",
+    "description": "Symbioza runs a containerized GPU job on a rented cloud machine and hands back the files it writes, under a spending limit the user sets. Estimates are free; a job runs only after the user approves it. The remote Streamable HTTP MCP server uses OAuth 2.1 with dynamic client registration, so mcp-remote opens the browser sign-in on first use; no API key or env var is needed.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://symbioza.dev/mcp"
+    ],
+    "homepage": "https://symbioza.dev"
+  },
+  {
+    "name": "Zip-Codes.com",
+    "key": "ZipCodes",
+    "description": "Location intelligence for US addresses and ZIP Codes: standardize a US street address to its ZIP+4, look up US ZIP Codes and Canadian postal codes, search by radius, measure distance and validate, and more.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.zip-codes.com/mcp"
+    ],
+    "homepage": "https://www.zip-codes.com/api/mcp"
   }
 ]
