@@ -622,6 +622,13 @@
     "homepage": "https://matrixagentnet.com/start"
   },
   {
+    "name": "MEDIAPRONET",
+    "key": "MEDIAPRONET",
+    "description": "Read-only remote MCP server for the MEDIAPRONET launch directory of startups, SaaS, AI and developer tools: search listings, open a full listing profile, find alternatives to a product, browse categories and see what is trending. Streamable HTTP, no API key, no account.",
+    "url": "https://mediapronet.com/api/mcp",
+    "homepage": "https://mediapronet.com/mcp"
+  },
+  {
     "name": "Mortgage Tools by Jenny",
     "key": "MortgageToolsByJenny",
     "description": "Read-only Canadian mortgage calculators in CAD as a remote MCP server: compare renewal offers, extra payments and lump sums, breaking a mortgage early, and debt consolidation. No sign-in or API key.",
