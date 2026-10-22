@@ -1347,7 +1347,22 @@
     "homepage": "https://github.com/hashgraph-online/hol-guard-plugin"
   },
   {
-        "name": "Sem",
+    "name": "MAQAMI Travel",
+    "key": "MaqamiTravel",
+    "description": "Official MCP server for MAQAMI, a hotel and flight booking platform with 3M+ hotels. Search hotels and flights, look up places, airports and hotel details, then prebook and book. Remote Streamable HTTP endpoint, no API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.maqami.co/"
+    ],
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://github.com/negm17111995/mcp-server"
+  },
+  {
+     "name": "Sem",
     "key": "Sem",
     "description": "Local code symbol lookup, source search, structural diffs and impact analysis. Writes a local index; validation tools can execute commands. Use trusted checkouts; SEM_REPO is not a sandbox.",
     "command": "npx",
