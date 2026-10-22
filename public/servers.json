@@ -164,6 +164,14 @@
     "homepage": "https://biomcp.org/"
   },
   {
+    "name": "Blawgy",
+    "key": "Blawgy",
+    "description": "Research keywords, plan, write, update and publish SEO blog posts on your WordPress, Shopify, Webflow, Wix, Framer, Ghost or Duda site, and read Search Console traffic, rankings and indexing status.",
+    "command": "npx",
+    "args": ["-y", "mcp-remote", "https://app.blawgy.com/mcp"],
+    "homepage": "https://blawgy.com/mcp"
+  },
+  {
     "name": "Blender",
     "key": "Blender",
     "description": "a blender mcp server enables prompt assisted 3D modeling, scene creation, and manipulation",
