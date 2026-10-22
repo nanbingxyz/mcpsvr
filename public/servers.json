@@ -304,6 +304,18 @@
     "homepage": "https://github.com/donghao1393/mcp-dbutils"
   },
   {
+    "name": "DC Hub",
+    "key": "DCHub",
+    "description": "DC Hub is the live data layer for data-center site selection. Its DCPI is a daily score of where data centers can get grid power, across 300+ markets. 94 tools for grid, interconnection queue, electricity price, gas, fiber and facility data; answers carry an as-of timestamp and a citation line. Free tier works with no key (optional X-API-Key).",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://dchub.cloud/mcp"
+    ],
+    "homepage": "https://dchub.cloud"
+  },
+  {
     "name": "Desktop Commander",
     "key": "DesktopCommander",
     "command": "npx",
