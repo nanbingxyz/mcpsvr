@@ -1386,5 +1386,5 @@
       "MNEMOVERSE_API_KEY": "{{apiKey@string::Free API key (starts with mk_live_) from https://console.mnemoverse.com}}"
     },
     "homepage": "https://github.com/mnemoverse/mcp-memory-server"
-  },
+  }
 ]
