@@ -889,6 +889,13 @@
     "homepage": "https://shortformkit.com/mcp-server/"
   },
   {
+    "name": "SitePatent",
+    "key": "SitePatent",
+    "description": "Read-only remote MCP server for the SitePatent directory of startups, SaaS, AI and developer tools: search listings, read a full listing profile, find alternatives to a product, browse categories and see what is trending. Streamable HTTP, no API key, no account.",
+    "url": "https://sitepatent.com/api/mcp",
+    "homepage": "https://sitepatent.com/mcp"
+  },
+  {
     "name": "SkyAccess",
     "key": "SkyAccess",
     "description": "Search 5,000+ live empty leg flights, get charter price estimates and booking links. No account or API key.",
