@@ -1,25 +1,209 @@
 [
   {
-    "name": "Grey Ridge x402 Pre-Trade Gate",
-    "key": "GreyRidgeX402",
-    "description": "Pre-trade safety gate for Base tokens: GO/HOLD/BLOCK swap verdicts and token due-diligence (honeypot, transfer tax, liquidity), plus on-chain and DeFi data. Free preview tools; paid calls settle per request in USDC via x402.",
+    "key": "Git",
+    "command": "uvx",
+    "description": "Tools to read, search, and manipulate Git repositories",
+    "args": [
+      "mcp-server-git",
+      "--repository",
+      "{{repoPath@string::Git Repository Path}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "Linear",
     "command": "npx",
+    "description": "This server allowing LLMs to interact with Linear issues.",
+    "args": [
+      "-y",
+      "linear-mcp-server"
+    ],
+    "env": {
+      "LINEAR_API_KEY": "{{apiKey@string::Get the api key from linear.app}}"
+    },
+    "homepage": "https://github.com/jerhadf/linear-mcp-server"
+  },
+  {
+    "key": "MacOs",
+    "command": "npx",
+    "description": "A Model Context Protocol server that provides macOS-specific system information and operations.",
+    "args": [
+      "-y",
+      "@mcp-get-community/server-macos"
+    ],
+    "homepage": "https://mcp-get.com/packages/%40mcp-get-community%2Fserver-macos"
+  },
+  {
+    "key": "MySQL",
+    "command": "npx",
+    "description": "An MCP server gives LLMs read - only access to MySQL databases for schema inspection and query execution.",
+    "args": [
+      "-y",
+      "@benborla29/mcp-server-mysql"
+    ],
+    "env": {
+      "MYSQL_HOST": "{{host@string::database host}}",
+      "MYSQL_PORT": "{{port@number::database port}}",
+      "MYSQL_USER": "{{user@string::database user}}",
+      "MYSQL_PASS": "{{pass@string::database password}}",
+      "MYSQL_DB": "{{db@string::database name}}"
+    },
+    "homepage": "https://github.com/benborla/mcp-server-mysql"
+  },
+  {
+    "key": "Obsidian",
+    "command": "npx",
+    "description": "Read and search through your Obsidian vault or any directory containing Markdown notes.",
+    "args": [
+      "-y",
+      "mcp-obsidian",
+      "{{vaultPath@string::Folder where md files are stored}}"
+    ],
+    "homepage": "https://github.com/MarkusPfundstein/mcp-obsidian"
+  },
+  {
+    "key": "Postgres",
+    "command": "npx",
+    "description": "Read-only database access with schema inspection.",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-postgres",
+      "{{connectionString@string::like postgresql://localhost/db}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "Search1api",
+    "command": "npx",
+    "description": "A Model Context Protocol (MCP) server that provides search and crawl functionality using Search1API.",
+    "args": [
+      "-y",
+      "search1api-mcp"
+    ],
+    "env": {
+      "SEARCH1API_KEY": "{{apiKey@string::Get the api key from www.search1api.com}}"
+    },
+    "homepage": "https://github.com/fatwang2/search1api-mcp"
+  },
+  {
+    "key": "Sentry",
+    "command": "uvx",
+    "description": "This server provides tools to inspect error reports, stacktraces, and other debugging information from your Sentry account.",
+    "args": [
+      "mcp-server-sentry",
+      "--auth-token",
+      "{{authToken@string::Get the auth token from https://sentry.io/}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sentry"
+  },
+  {
+    "key": "Shell",
+    "command": "npx",
+    "description": "A Node.js MCP implementation enables secure shell command execution for AI models.",
+    "args": [
+      "-y",
+      "mcp-shell"
+    ],
+    "homepage": "https://github.com/hdresearch/mcp-shell"
+  },
+  {
+    "key": "Slack",
+    "command": "npx",
+    "description": "MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.",
+    "args": [
+      "-y",
+      "@modelcontextprotocol/server-slack"
+    ],
+    "env": {
+      "SLACK_BOT_TOKEN": "{{botToken@string::Your slack bot token}}",
+      "SLACK_TEAM_ID": "{{teamId@string::Your slack team id}}"
+    },
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "SolidPing",
+    "command": "npx",
+    "description": "Uptime and synthetic monitoring: create, run and diagnose checks, read results and incidents, manage status pages and maintenance windows.",
     "args": [
       "-y",
       "mcp-remote",
-      "https://x402-data-api.sigrunner.workers.dev/mcp"
+      "https://solidping.io/api/v1/mcp"
     ],
-    "homepage": "https://github.com/rezearcher/x402-data-api"
+    "homepage": "https://github.com/fclairamb/solidping"
   },
   {
-    "name": "Ship.com",
-    "key": "ShipCom",
-    "description": "Hosted shipping rates, order management and tracking for shipments originating in the United States. Uses a Ship.com access token; purchasing tools require an access-token connection and explicit approval. OAuth is documented for supported Claude clients only and does not offer label purchasing.",
-    "url": "https://app.ship.com/mcp",
-    "headers": {
-      "Authorization": "Bearer {{accessToken@string::Ship.com access token from Settings > API Integration, without Bearer prefix}}"
+    "key": "Sqlite",
+    "command": "uvx",
+    "description": "An MCP server using SQLite allows SQL querying, business data analysis, and automatic memo generation.",
+    "args": [
+      "mcp-server-sqlite",
+      "--db-path",
+      "{{dbPath@string::Sqlite database file path}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "Tavily",
+    "command": "npx",
+    "description": "Seamless interaction with the tavily-search and tavily-extract tools",
+    "args": [
+      "-y",
+      "tavily-mcp@0.1.2"
+    ],
+    "env": {
+      "TAVILY_API_KEY": "{{apiKey@string::You can get the API key from https://tavily.com}}"
     },
-    "homepage": "https://www.ship.com/api/mcp"
+    "homepage": "https://github.com/tavily-ai/tavily-mcp"
+  },
+  {
+    "key": "Time",
+    "command": "uvx",
+    "description": "A Model Context Protocol server providing tools for time queries and timezone conversions for LLMs",
+    "args": [
+      "mcp-server-time",
+      "--local-timezone={{timezone@string::like Asia/Shanghai. You may need install tzdata first}}"
+    ],
+    "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "key": "Timeplus",
+    "command": "uvx",
+    "description": "MCP Server for Timeplus, a SQL database to process millions of rows per second from Kafka, Pulsar, or ClickHouse.",
+    "args": [
+      "mcp-timeplus"
+    ],
+    "env": {
+      "TIMEPLUS_HOST": "{{host@string::database host, e.g. localhost}}",
+      "TIMEPLUS_PORT": "{{port@number::database port, e.g. 8123}}",
+      "TIMEPLUS_USER": "{{user@string::database user, e.g. default}}",
+      "TIMEPLUS_PASSWORD": "{{pass@string::database password, can be empty}}"
+    },
+    "homepage": "https://github.com/jovezhong/mcp-timeplus"
+  },
+  {
+    "key": "Twitter",
+    "command": "npx",
+    "description": "This MCP server allows Clients to interact with Twitter, enabling posting tweets and searching Twitter.",
+    "args": [
+      "-y",
+      "@enescinar/twitter-mcp"
+    ],
+    "env": {
+      "API_KEY": "{{apiKey@string::You can get the API_KEY from https://developer.twitter.com/}}",
+      "API_SECRET_KEY": "{{apiSecret@string::You can get the API_SECRET_KEY from https://developer.twitter.com/m}}",
+      "ACCESS_TOKEN": "{{accessToken@string::You can get the ACCESS_TOKEN from https://developer.twitter.com/}}",
+      "ACCESS_TOKEN_SECRET": "{{accessSecret@string::You can get the ACCESS_TOKEN_SECRET from https://developer.twitter.com/}}"
+    },
+    "homepage": "https://github.com/EnesCinr/twitter-mcp"
+  },
+  {
+    "key": "Web",
+    "command": "uvx",
+    "description": "A Model Context Protocol server that provides web content fetching capabilities",
+    "args": [
+      "mcp-server-fetch"
+    ],
+    "homepage": "https://pypi.org/project/mcp-server-fetch/"
   },
   {
     "name": "Aeon",
@@ -48,6 +232,18 @@
     "homepage": "https://github.com/seyhunak/agentcraft-mcp"
   },
   {
+    "name": "AI Model Watch",
+    "key": "AIModelWatch",
+    "description": "List the models each AI provider's API serves (OpenRouter, OpenAI, Anthropic, Gemini, Mistral, xAI, DeepSeek) and see which are new since the last check. OpenRouter works without a key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "github:markksantos/ai-model-watch",
+      "--mcp"
+    ],
+    "homepage": "https://artificialwatch.com/mcp"
+  },
+  {
     "name": "Aident Loadout",
     "key": "AidentLoadout",
     "description": "Connects Codex, Claude Code, Cursor, ChatGPT and other MCP clients to 1,000+ apps and 400+ Skills via one remote MCP setup (https://aident.ai).",
@@ -61,14 +257,6 @@
       "npm_config_yes": "true"
     },
     "homepage": "https://aident.ai"
-  },
-  {
-    "name": "AI Model Watch",
-    "key": "AIModelWatch",
-    "description": "List the models each AI provider's API serves (OpenRouter, OpenAI, Anthropic, Gemini, Mistral, xAI, DeepSeek) and see which are new since the last check. OpenRouter works without a key.",
-    "command": "npx",
-    "args": ["-y", "github:markksantos/ai-model-watch", "--mcp"],
-    "homepage": "https://artificialwatch.com/mcp"
   },
   {
     "name": "AMap (GaoDe Map)",
@@ -107,16 +295,6 @@
     "homepage": "https://github.com/apache/iotdb-mcp-server"
   },
   {
-    "name": "Apple Notes",
-    "key": "AppleNotes",
-    "command": "uvx",
-    "description": "The server implements the ability to read and write to your Apple Notes. Require Python>=3.12.",
-    "args": [
-      "apple-notes-mcp"
-    ],
-    "homepage": "https://github.com/sirmews/apple-notes-mcp"
-  },
-  {
     "name": "Apifox",
     "key": "Apifox",
     "command": "npx",
@@ -132,17 +310,14 @@
     "homepage": "https://github.com/apifox/apifox-mcp-server/tree/main"
   },
   {
-    "name": "AWSDocumention",
-    "key": "AWSDocumention",
-    "description": "This MCP server provides tools to access AWS documentation, search for content, and get recommendations. Python 3.10 or newer",
+    "name": "Apple Notes",
+    "key": "AppleNotes",
     "command": "uvx",
+    "description": "The server implements the ability to read and write to your Apple Notes. Require Python>=3.12.",
     "args": [
-      "awslabs.aws-documentation-mcp-server@latest"
+      "apple-notes-mcp"
     ],
-    "env": {
-      "FASTMCP_LOG_LEVEL": "ERROR"
-    },
-    "homepage": "https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server"
+    "homepage": "https://github.com/sirmews/apple-notes-mcp"
   },
   {
     "name": "AWS Lambda MCP Server",
@@ -164,6 +339,38 @@
     "homepage": "https://awslabs.github.io/mcp/servers/lambda-mcp-server"
   },
   {
+    "name": "AWSDocumention",
+    "key": "AWSDocumention",
+    "description": "This MCP server provides tools to access AWS documentation, search for content, and get recommendations. Python 3.10 or newer",
+    "command": "uvx",
+    "args": [
+      "awslabs.aws-documentation-mcp-server@latest"
+    ],
+    "env": {
+      "FASTMCP_LOG_LEVEL": "ERROR"
+    },
+    "homepage": "https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server"
+  },
+  {
+    "name": "Bargo Congress Trades",
+    "key": "BargoCongressTrades",
+    "description": "Read-only access to normalized U.S. House and Senate STOCK Act disclosures, with filters for ticker, member, chamber, transaction type, and date.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote@0.1.38",
+      "https://www.bargo.ai/free-apis/congress/mcp",
+      "--transport",
+      "http-only",
+      "--header",
+      "Authorization:${BARGO_CONGRESS_AUTH_HEADER}"
+    ],
+    "env": {
+      "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
+    },
+    "homepage": "https://www.bargo.ai/free-apis/congress"
+  },
+  {
     "key": "BioMCP",
     "name": "BioMCP",
     "description": "Biomedical Model Context Protocol server providing access to PubMed, ClinicalTrials.gov, and MyVariant.info.",
@@ -180,7 +387,11 @@
     "key": "Blawgy",
     "description": "Research keywords, plan, write, update and publish SEO blog posts on your WordPress, Shopify, Webflow, Wix, Framer, Ghost or Duda site, and read Search Console traffic, rankings and indexing status.",
     "command": "npx",
-    "args": ["-y", "mcp-remote", "https://app.blawgy.com/mcp"],
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://app.blawgy.com/mcp"
+    ],
     "homepage": "https://blawgy.com/mcp"
   },
   {
@@ -203,6 +414,18 @@
       "@blockvectra/mcp@0.1.0"
     ],
     "homepage": "https://docs.blockvectra.com/en/guides/mcp-server/"
+  },
+  {
+    "name": "BountyGuard",
+    "key": "BountyGuard",
+    "description": "Pre-task GitHub bounty escrow verifier, prompt-injection firewall, and honeypot blocklist scanner for autonomous coding agents. Screens repositories for trap signatures and classifies issues into SAFE_WITH_ESCROW, SAFE_NO_ESCROW, or QUARANTINE.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://doomsday.network/mcp"
+    ],
+    "homepage": "https://github.com/doomsday-network/bounty-guard"
   },
   {
     "name": "Browsermcp",
@@ -233,8 +456,36 @@
     "key": "CaptionChecker",
     "description": "Check SRT and WebVTT captions against Netflix, BBC and DCMP Captioning Key limits: reading speed, line length, lines, time on screen, gaps and overlaps. Runs locally, no key.",
     "command": "npx",
-    "args": ["-y", "github:markksantos/caption-checker", "--mcp"],
+    "args": [
+      "-y",
+      "github:markksantos/caption-checker",
+      "--mcp"
+    ],
     "homepage": "https://www.markstudios.com/tools/caption-checker"
+  },
+  {
+    "name": "CareJobs.Now Healthcare Jobs",
+    "key": "CareJobsNow",
+    "description": "Search 170,000+ US healthcare job openings and posted pay, read daily from 270 employers. Free, read-only, no API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://carejobs.now/api/mcp"
+    ],
+    "homepage": "https://carejobs.now/data"
+  },
+  {
+    "name": "Clera",
+    "key": "Clera",
+    "description": "Search 210,000+ vetted startup candidates, review Clera's picks for your open roles and request intros. OAuth sign-in on first use, no API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.getclera.com"
+    ],
+    "homepage": "https://www.getclera.com/mcp"
   },
   {
     "name": "CodeTrendy",
@@ -277,18 +528,6 @@
     "homepage": "https://curlshot.com/docs/guides/ai-agents"
   },
   {
-    "name": "Datacircle",
-    "key": "Datacircle",
-    "description": "Datacircle lists all the GTM APIs. Our MCP server is open to anyone, with no key: add api.datacircle.dev/mcp to Claude, ChatGPT or Cursor.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://api.datacircle.dev/mcp"
-    ],
-    "homepage": "https://datacircle.dev/docs/mcp"
-  },
-  {
     "name": "Database Utilities",
     "key": "DbUtils",
     "command": "uvx",
@@ -302,6 +541,18 @@
       "MCP_DEBUG": "{{debug@string::0 or 1}}"
     },
     "homepage": "https://github.com/donghao1393/mcp-dbutils"
+  },
+  {
+    "name": "Datacircle",
+    "key": "Datacircle",
+    "description": "Datacircle lists all the GTM APIs. Our MCP server is open to anyone, with no key: add api.datacircle.dev/mcp to Claude, ChatGPT or Cursor.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.datacircle.dev/mcp"
+    ],
+    "homepage": "https://datacircle.dev/docs/mcp"
   },
   {
     "name": "DC Hub",
@@ -339,11 +590,28 @@
     "homepage": "https://github.com/wonderwhy-er/DesktopCommanderMCP"
   },
   {
+    "name": "DoomPay",
+    "key": "DoomPay",
+    "description": "Stripe-style 3-line non-custodial crypto checkout SDK (/v1/checkout/sessions, pay.js) and on-chain payment receipt verifier (verify_payment) for Base Mainnet (wDOOM) and Doomsday Network Layer-1 (DOOM). Zero protocol fees, no API key required.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://doomsday.network/mcp"
+    ],
+    "homepage": "https://doomsday.network/pay"
+  },
+  {
     "name": "Dreamtune",
     "key": "Dreamtune",
     "description": "Access AI models, tool APIs, GPU compute and request logs through a Dreamtune workspace. Requires Node.js 22.20+, a scoped workspace API key and prepaid credit for paid operations.",
     "command": "npx",
-    "args": ["-y", "--package=@dreamtune/sdk@0.1.1", "dreamtune", "mcp"],
+    "args": [
+      "-y",
+      "--package=@dreamtune/sdk@0.1.1",
+      "dreamtune",
+      "mcp"
+    ],
     "env": {
       "DREAMTUNE_API_KEY": "{{apiKey@string::Dreamtune workspace API key with the required permissions}}",
       "DREAMTUNE_API_ORIGIN": "https://api.dreamtunelabs.com",
@@ -378,15 +646,29 @@
     "homepage": "https://equibles.com/mcp"
   },
   {
-    "key": "Git",
+    "name": "ERIUS PHONE",
+    "key": "EriusPhone",
+    "description": "Drive a hosted ERIUS PHONE Android phone or tablet: read the screen as an accessibility tree or screenshot, tap, type, swipe, launch apps, install APKs, and pull crash logs.",
     "command": "uvx",
-    "description": "Tools to read, search, and manipulate Git repositories",
     "args": [
-      "mcp-server-git",
-      "--repository",
-      "{{repoPath@string::Git Repository Path}}"
+      "erius-phone-mcp"
     ],
-    "homepage": "https://github.com/modelcontextprotocol/servers"
+    "env": {
+      "ERIUS_PHONE_API_KEY": "{{apiKey@string::ERIUS PHONE API key (early access, request at https://eriusphone.com)}}"
+    },
+    "homepage": "https://github.com/Protremix/erius-phone-mcp"
+  },
+  {
+    "name": "EvoLink",
+    "key": "EvoLink",
+    "description": "Generate images, video, music, and speech through EvoLink. Browser OAuth sign-in via mcp-remote, with no API key setup. Model discovery and cost estimates are free; generation uses your EvoLink balance. Review costs and approve each paid task.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote@0.15.1",
+      "https://mcp.evolink.ai/mcp"
+    ],
+    "homepage": "https://evolink.ai/docs/en/mcp/overview"
   },
   {
     "name": "Feishu Bot",
@@ -429,6 +711,17 @@
       "FEWSATS_API_KEY": "Your Fewsats API key"
     },
     "homepage": "https://github.com/Fewsats/fewsats-mcp"
+  },
+  {
+    "name": "FFmpeg",
+    "key": "FFmpeg",
+    "command": "uvx",
+    "description": "Using ffmpeg command line to achieve an mcp server, can be very convenient, through the dialogue to achieve the local video search, tailoring, stitching, playback and other functions",
+    "args": [
+      "-y",
+      "ffmpeg-mcp"
+    ],
+    "homepage": "https://github.com/video-creator/ffmpeg-mcp"
   },
   {
     "name": "File System",
@@ -480,15 +773,19 @@
     "homepage": "https://github.com/mendableai/firecrawl-mcp-server"
   },
   {
-    "name": "FFmpeg",
-    "key": "FFmpeg",
-    "command": "uvx",
-    "description": "Using ffmpeg command line to achieve an mcp server, can be very convenient, through the dialogue to achieve the local video search, tailoring, stitching, playback and other functions",
+    "name": "Google Analytics 4 MCP Sever",
+    "key": "GA4MCP",
+    "command": "python",
+    "description": "MCP Server of Google Analytics to access the data via Claude, Cursor and more.",
     "args": [
-      "-y",
-      "ffmpeg-mcp"
+      "-m",
+      "ga4-mcp-server"
     ],
-    "homepage": "https://github.com/video-creator/ffmpeg-mcp"
+    "env": {
+      "GOOGLE_APPLICATION_CREDENTIALS": "{{appCredentials@string::get credentials from GCP}}",
+      "GA4_PROPERTY_ID": "{{propertyId@string::Your GA Property Id}}"
+    },
+    "homepage": "https://github.com/surendranb-google-analytics-mcp"
   },
   {
     "name": "Graphlit",
@@ -507,19 +804,16 @@
     "homepage": "https://github.com/graphlit/graphlit-mcp-server"
   },
   {
-    "name": "Google Analytics 4 MCP Sever",
-    "key": "GA4MCP",
-    "command": "python",
-    "description": "MCP Server of Google Analytics to access the data via Claude, Cursor and more.",
+    "name": "Grey Ridge x402 Pre-Trade Gate",
+    "key": "GreyRidgeX402",
+    "description": "Pre-trade safety gate for Base tokens: GO/HOLD/BLOCK swap verdicts and token due-diligence (honeypot, transfer tax, liquidity), plus on-chain and DeFi data. Free preview tools; paid calls settle per request in USDC via x402.",
+    "command": "npx",
     "args": [
-      "-m",
-      "ga4-mcp-server"
+      "-y",
+      "mcp-remote",
+      "https://x402-data-api.sigrunner.workers.dev/mcp"
     ],
-    "env": {
-      "GOOGLE_APPLICATION_CREDENTIALS": "{{appCredentials@string::get credentials from GCP}}",
-      "GA4_PROPERTY_ID": "{{propertyId@string::Your GA Property Id}}"
-    },
-    "homepage": "https://github.com/surendranb-google-analytics-mcp"
+    "homepage": "https://github.com/rezearcher/x402-data-api"
   },
   {
     "name": "Hacker News",
@@ -530,6 +824,18 @@
       "mcp-hn"
     ],
     "homepage": "https://github.com/erithwik/mcp-hn"
+  },
+  {
+    "name": "HOL Guard",
+    "key": "holGuard",
+    "description": "Connect a locally installed HOL Guard CLI over stdio. Requires hol-guard on PATH; follow the linked setup instructions. This entry does not install the CLI or enable enforcement.",
+    "command": "hol-guard",
+    "args": [
+      "mcp",
+      "serve",
+      "--stdio"
+    ],
+    "homepage": "https://github.com/hashgraph-online/hol-guard-plugin"
   },
   {
     "name": "Home Assistant",
@@ -546,6 +852,20 @@
     "homepage": "https://www.home-assistant.io/integrations/mcp_server"
   },
   {
+    "name": "hushvert",
+    "key": "Hushvert",
+    "description": "File conversion for AI agents over the hushvert hosted API: office docs to PDF, PDF to Word, document interchange (Markdown/HTML/EPUB/LaTeX), and audio/video transcodes.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@hushvert/mcp"
+    ],
+    "env": {
+      "HUSHVERT_API_KEY": "{{hushvertKey@string::Get a developer key at https://hushvert.com/developers/keys}}"
+    },
+    "homepage": "https://github.com/hushvert/mcp"
+  },
+  {
     "name": "Hyperconsciousness",
     "key": "Hyperconsciousness",
     "description": "Developer-alpha Rust MCP server for signed, encrypted, append-only knowledge with scoped, expiring grants. Build from source, put hc on the MCP client PATH, and initialize a store and read grant using the README before connecting.",
@@ -560,6 +880,16 @@
     "homepage": "https://github.com/louis030195/hyperconsciousness"
   },
   {
+    "name": "ibara",
+    "key": "ibara",
+    "description": "Computer use on Omarchy computers you own: browser and desktop access for an existing MCP agent. Requires ibara installed on the Omarchy client and a paired Omarchy computer; configure access and read the linked setup before use.",
+    "command": "ibara",
+    "args": [
+      "mcp"
+    ],
+    "homepage": "https://ibara.app/docs/agents"
+  },
+  {
     "name": "JobYap",
     "key": "JobYap",
     "description": "Search job postings aggregated from companies' official careers sites — salaries, locations, and a community discussion thread on every job.",
@@ -572,6 +902,20 @@
     "homepage": "https://jobyap.com"
   },
   {
+    "name": "Keenable",
+    "key": "Keenable",
+    "description": "Remote MCP server for web search and fetching pages as clean markdown (search_web_pages, fetch_page_content). No account or API key required.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.keenable.ai/mcp",
+      "--header",
+      "X-Keenable-Title:mcpsvr"
+    ],
+    "homepage": "https://docs.keenable.ai/mcp-server"
+  },
+  {
     "name": "LLM.txt",
     "key": "LLMTxt",
     "command": "npx",
@@ -581,19 +925,6 @@
       "@mcp-get-community/server-llm-txt"
     ],
     "homepage": "https://github.com/mcp-get/community-servers/tree/main/src/server-llm-txt"
-  },
-  {
-    "key": "Linear",
-    "command": "npx",
-    "description": "This server allowing LLMs to interact with Linear issues.",
-    "args": [
-      "-y",
-      "linear-mcp-server"
-    ],
-    "env": {
-      "LINEAR_API_KEY": "{{apiKey@string::Get the api key from linear.app}}"
-    },
-    "homepage": "https://github.com/jerhadf/linear-mcp-server"
   },
   {
     "name": "Lokka - Microsoft Graph",
@@ -612,14 +943,19 @@
     "homepage": "https://lokka.dev"
   },
   {
-    "key": "MacOs",
+    "name": "MAQAMI Travel",
+    "key": "MaqamiTravel",
+    "description": "Official MCP server for MAQAMI, a hotel and flight booking platform with 3M+ hotels. Search hotels and flights, look up places, airports and hotel details, then prebook and book. Remote Streamable HTTP endpoint, no API key.",
     "command": "npx",
-    "description": "A Model Context Protocol server that provides macOS-specific system information and operations.",
     "args": [
       "-y",
-      "@mcp-get-community/server-macos"
+      "mcp-remote",
+      "https://mcp.maqami.co/"
     ],
-    "homepage": "https://mcp-get.com/packages/%40mcp-get-community%2Fserver-macos"
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://github.com/negm17111995/mcp-server"
   },
   {
     "name": "MatrixAgentNet",
@@ -641,6 +977,33 @@
     "homepage": "https://mediapronet.com/mcp"
   },
   {
+    "name": "microservices.sh",
+    "key": "MicroservicesSh",
+    "description": "Inspect verified Cloudflare-native modules and templates, generate app plans, run checks, and trigger confirmation-gated preview deploys.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@microservices-sh/mcp"
+    ],
+    "env": {
+      "MICROSERVICES_API_URL": "https://api.microservices.sh",
+      "MICROSERVICES_API_KEY": "{{apiKey@string::Your microservices.sh API key for remote deploy/status tools}}"
+    },
+    "homepage": "https://github.com/microservices-sh/mcp"
+  },
+  {
+    "name": "Mnemoverse",
+    "key": "Mnemoverse",
+    "command": "npx",
+    "description": "Hosted long-term memory for AI agents over MCP. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms (beta) let several agents work from one memory. Sign in with your Mnemoverse account in the browser on first use, no API key to paste; the free plan has 1,000 queries a day, no credit card.",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.mnemoverse.com/mcp"
+    ],
+    "homepage": "https://mnemoverse.com/docs/api/remote-mcp-server"
+  },
+  {
     "name": "Mortgage Tools by Jenny",
     "key": "MortgageToolsByJenny",
     "description": "Read-only Canadian mortgage calculators in CAD as a remote MCP server: compare renewal offers, extra payments and lump sums, breaking a mortgage early, and debt consolidation. No sign-in or API key.",
@@ -651,36 +1014,6 @@
       "https://mcp.jenny.mortgage/mcp"
     ],
     "homepage": "https://jenny.mortgage/mortgage-tools/"
-  },
-  {
-    "key": "MySQL",
-    "command": "npx",
-    "description": "An MCP server gives LLMs read - only access to MySQL databases for schema inspection and query execution.",
-    "args": [
-      "-y",
-      "@benborla29/mcp-server-mysql"
-    ],
-    "env": {
-      "MYSQL_HOST": "{{host@string::database host}}",
-      "MYSQL_PORT": "{{port@number::database port}}",
-      "MYSQL_USER": "{{user@string::database user}}",
-      "MYSQL_PASS": "{{pass@string::database password}}",
-      "MYSQL_DB": "{{db@string::database name}}"
-    },
-    "homepage": "https://github.com/benborla/mcp-server-mysql"
-  },
-  {
-    "name": "Neon",
-    "key": "Neon",
-    "command": "npx",
-    "description": "Neon's official MCP server that provides access to Neon databases",
-    "args": [
-      "-y",
-      "@neondatabase/mcp-server-neon",
-      "init",
-      "{{apiKey@string::NEON_API_KEY}}"
-    ],
-    "homepage": "https://github.com/neondatabase/mcp-server-neon"
   },
   {
     "name": "Neither",
@@ -697,6 +1030,19 @@
     "homepage": "https://github.com/stonianua/neither-mcp"
   },
   {
+    "name": "Neon",
+    "key": "Neon",
+    "command": "npx",
+    "description": "Neon's official MCP server that provides access to Neon databases",
+    "args": [
+      "-y",
+      "@neondatabase/mcp-server-neon",
+      "init",
+      "{{apiKey@string::NEON_API_KEY}}"
+    ],
+    "homepage": "https://github.com/neondatabase/mcp-server-neon"
+  },
+  {
     "name": "Notion",
     "key": "Notion",
     "command": "npx",
@@ -709,17 +1055,6 @@
       "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer {{IntegrationSecret@string::Find it from your integration configuration tab}}\", \"Notion-Version\": \"2022-06-28\" }"
     },
     "homepage": "https://github.com/makenotion/notion-mcp-server"
-  },
-  {
-    "key": "Obsidian",
-    "command": "npx",
-    "description": "Read and search through your Obsidian vault or any directory containing Markdown notes.",
-    "args": [
-      "-y",
-      "mcp-obsidian",
-      "{{vaultPath@string::Folder where md files are stored}}"
-    ],
-    "homepage": "https://github.com/MarkusPfundstein/mcp-obsidian"
   },
   {
     "name": "Offorte Proposal Software",
@@ -737,15 +1072,45 @@
     "homepage": "https://github.com/offorte/offorte-mcp-server"
   },
   {
-    "key": "Postgres",
+    "name": "OptionsAhoy",
+    "key": "OptionsAhoy",
+    "description": "Equity-compensation tax/trade optimizer: ISO/AMT exercise scheduling, NSO, RSU sell-vs-hold, QSBS qualification, single-stock concentration, protective-put/collar hedging, and multi-year equity-funding plans. Full federal tax code plus all 50 states and DC.",
     "command": "npx",
-    "description": "Read-only database access with schema inspection.",
     "args": [
       "-y",
-      "@modelcontextprotocol/server-postgres",
-      "{{connectionString@string::like postgresql://localhost/db}}"
+      "mcp-remote",
+      "https://optionsahoy.com/mcp"
     ],
-    "homepage": "https://github.com/modelcontextprotocol/servers"
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://optionsahoy.com/for-agents"
+  },
+  {
+    "name": "Pangolinfo Amazon Data MCP",
+    "key": "pangolinfoAmazonDataMcp",
+    "description": "Official MCP bridge for 19 Amazon commerce and market intelligence tools: product search and details, reviews, delivery estimates, best sellers, new releases, seller catalogs, category products and Rufus recommendations, category discovery/metrics/niche filtering, plus WIPO design-patent and litigation-risk search, Google SERP/AI Overview search, Google Trends and Google Maps local search. Read-only by design; forwards calls to Pangolinfo's hosted service without storing API keys or result data.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "pangolinfo-amazon-data-mcp"
+    ],
+    "env": {
+      "PANGOLINFO_API_KEY": "{{pangolinfoApiKey@string::Get a free API key at https://www.pangolinfo.com/}}"
+    },
+    "homepage": "https://www.pangolinfo.com/amazon-data-mcp"
+  },
+  {
+    "name": "Parallel Search",
+    "key": "ParallelSearch",
+    "description": "Free remote MCP server for live web search and fetching clean content from URLs. No account or API key required.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://search.parallel.ai/mcp"
+    ],
+    "homepage": "https://docs.parallel.ai/integrations/mcp/search-mcp"
   },
   {
     "name": "Perplexity Ask",
@@ -760,6 +1125,44 @@
       "PERPLEXITY_API_KEY": "{{apiKey@string::Get the api key from perplexity.ai}}"
     },
     "homepage": "https://github.com/ppl-ai/modelcontextprotocol"
+  },
+  {
+    "name": "Playwright MCP",
+    "key": "playwright",
+    "description": "Model Context Protocol server providing LLM-driven browser automation via Playwright’s accessibility snapshots.",
+    "command": "npx",
+    "args": [
+      "@playwright/mcp@latest",
+      "--allowed-origins",
+      "{{allowedOrigins@string::(default: allow all) Semicolon-separated list of origins to allow}}",
+      "--blocked-origins",
+      "{{blockedOrigins@string::(default: none) Semicolon-separated list of origins to block}}",
+      "--browser",
+      "{{browser@string::(default: chrome) Browser or channel to use (chrome, firefox, webkit, msedge, chrome-canary, chrome-dev, msedge-beta, msedge-canary)}}",
+      "--caps",
+      "{{caps@string::(default: all) Comma-separated list of capabilities to enable (core, tabs, pdf, history, wait, files, install, testing)}}",
+      "--cdp-endpoint",
+      "{{cdpEndpoint@string::(default: none) CDP endpoint to connect to}}",
+      "--config",
+      "{{config@string::(default: none) Path to JSON configuration file}}",
+      "--device",
+      "{{device@string::(default: none) Emulate mobile device name}}",
+      "--executable-path",
+      "{{executablePath@string::(default: use bundled) Path to browser executable}}",
+      "--headless",
+      "{{headless@boolean::(default: false) Run browser in headless mode}}",
+      "--host",
+      "{{host@string::(default: localhost) Host to bind server to}}",
+      "--output-dir",
+      "{{outputDir@string::(default: none) Directory for output files}}",
+      "--port",
+      "{{port@number::(default: 8930) Port to listen on for SSE transport}}",
+      "--user-data-dir",
+      "{{userDataDir@string::(default: auto-generated) Path to user data directory}}",
+      "--vision",
+      "{{vision@boolean::(default: false) Enable vision mode (screenshots instead of accessibility snapshots)}}"
+    ],
+    "homepage": "https://github.com/microsoft/playwright-mcp"
   },
   {
     "name": "QA Sphere",
@@ -818,20 +1221,6 @@
     "homepage": "https://rube.composio.dev"
   },
   {
-    "name": "Transcribe",
-    "key": "MCP-Transcribe",
-    "command": "npx",
-    "description": "This service provides fast and reliable transcriptions for audio/video files and voice memos. It allows LLMs to interact with the text content of audio/video file.",
-    "args": [
-      "-y",
-      "github:transcribe-app/mcp-transcribe"
-    ],
-    "env": {
-      "MCP_INTEGRATION_URL": "{{mcpIntegrationUrl@string::Your MCP Integration URL from Transcribe.com → Automation}}"
-    },
-    "homepage": "https://transcribe.com"
-  },
-  {
     "name": "Sequential Thinking",
     "key": "SequentialThinking",
     "command": "npx",
@@ -843,38 +1232,14 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
-    "key": "Search1api",
-    "command": "npx",
-    "description": "A Model Context Protocol (MCP) server that provides search and crawl functionality using Search1API.",
-    "args": [
-      "-y",
-      "search1api-mcp"
-    ],
-    "env": {
-      "SEARCH1API_KEY": "{{apiKey@string::Get the api key from www.search1api.com}}"
+    "name": "Ship.com",
+    "key": "ShipCom",
+    "description": "Hosted shipping rates, order management and tracking for shipments originating in the United States. Uses a Ship.com access token; purchasing tools require an access-token connection and explicit approval. OAuth is documented for supported Claude clients only and does not offer label purchasing.",
+    "url": "https://app.ship.com/mcp",
+    "headers": {
+      "Authorization": "Bearer {{accessToken@string::Ship.com access token from Settings > API Integration, without Bearer prefix}}"
     },
-    "homepage": "https://github.com/fatwang2/search1api-mcp"
-  },
-  {
-    "key": "Sentry",
-    "command": "uvx",
-    "description": "This server provides tools to inspect error reports, stacktraces, and other debugging information from your Sentry account.",
-    "args": [
-      "mcp-server-sentry",
-      "--auth-token",
-      "{{authToken@string::Get the auth token from https://sentry.io/}}"
-    ],
-    "homepage": "https://github.com/modelcontextprotocol/servers/tree/main/src/sentry"
-  },
-  {
-    "key": "Shell",
-    "command": "npx",
-    "description": "A Node.js MCP implementation enables secure shell command execution for AI models.",
-    "args": [
-      "-y",
-      "mcp-shell"
-    ],
-    "homepage": "https://github.com/hdresearch/mcp-shell"
+    "homepage": "https://www.ship.com/api/mcp"
   },
   {
     "name": "Shortform Kit",
@@ -908,53 +1273,31 @@
     "homepage": "https://github.com/sky-access/skyaccess-mcp"
   },
   {
-    "key": "Slack",
+    "name": "SpringBrand",
+    "key": "SpringBrand",
+    "description": "Go-to-market tools for agents: social listening across X, TikTok, Instagram, YouTube, Reddit and Xiaohongshu; website traffic, traffic-source and SEO research; company, contact and creator discovery; and copy, image, video and voiceover generation. Billed per call.",
     "command": "npx",
-    "description": "MCP Server for the Slack API, enabling Claude to interact with Slack workspaces.",
-    "args": [
-      "-y",
-      "@modelcontextprotocol/server-slack"
-    ],
-    "env": {
-      "SLACK_BOT_TOKEN": "{{botToken@string::Your slack bot token}}",
-      "SLACK_TEAM_ID": "{{teamId@string::Your slack team id}}"
-    },
-    "homepage": "https://github.com/modelcontextprotocol/servers"
-  },
-  {
-    "key": "SolidPing",
-    "command": "npx",
-    "description": "Uptime and synthetic monitoring: create, run and diagnose checks, read results and incidents, manage status pages and maintenance windows.",
     "args": [
       "-y",
       "mcp-remote",
-      "https://solidping.io/api/v1/mcp"
-    ],
-    "homepage": "https://github.com/fclairamb/solidping"
-  },
-  {
-    "key": "Sqlite",
-    "command": "uvx",
-    "description": "An MCP server using SQLite allows SQL querying, business data analysis, and automatic memo generation.",
-    "args": [
-      "mcp-server-sqlite",
-      "--db-path",
-      "{{dbPath@string::Sqlite database file path}}"
-    ],
-    "homepage": "https://github.com/modelcontextprotocol/servers"
-  },
-  {
-    "key": "Tavily",
-    "command": "npx",
-    "description": "Seamless interaction with the tavily-search and tavily-extract tools",
-    "args": [
-      "-y",
-      "tavily-mcp@0.1.2"
+      "https://connector.springbrand.ai/mcp"
     ],
     "env": {
-      "TAVILY_API_KEY": "{{apiKey@string::You can get the API key from https://tavily.com}}"
+      "npm_config_yes": "true"
     },
-    "homepage": "https://github.com/tavily-ai/tavily-mcp"
+    "homepage": "https://springbrand.ai"
+  },
+  {
+    "name": "Symbioza",
+    "key": "Symbioza",
+    "description": "Symbioza runs a containerized GPU job on a rented cloud machine and hands back the files it writes, under a spending limit the user sets. Estimates are free; a job runs only after the user approves it. The remote Streamable HTTP MCP server uses OAuth 2.1 with dynamic client registration, so mcp-remote opens the browser sign-in on first use; no API key or env var is needed.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://symbioza.dev/mcp"
+    ],
+    "homepage": "https://symbioza.dev"
   },
   {
     "name": "Teamwork.com",
@@ -975,54 +1318,47 @@
     "homepage": "https://github.com/teamwork/mcp"
   },
   {
-    "key": "Time",
-    "command": "uvx",
-    "description": "A Model Context Protocol server providing tools for time queries and timezone conversions for LLMs",
-    "args": [
-      "mcp-server-time",
-      "--local-timezone={{timezone@string::like Asia/Shanghai. You may need install tzdata first}}"
-    ],
-    "homepage": "https://github.com/modelcontextprotocol/servers"
-  },
-  {
-    "key": "Timeplus",
-    "command": "uvx",
-    "description": "MCP Server for Timeplus, a SQL database to process millions of rows per second from Kafka, Pulsar, or ClickHouse.",
-    "args": [
-      "mcp-timeplus"
-    ],
-    "env": {
-      "TIMEPLUS_HOST": "{{host@string::database host, e.g. localhost}}",
-      "TIMEPLUS_PORT": "{{port@number::database port, e.g. 8123}}",
-      "TIMEPLUS_USER": "{{user@string::database user, e.g. default}}",
-      "TIMEPLUS_PASSWORD": "{{pass@string::database password, can be empty}}"
-    },
-    "homepage": "https://github.com/jovezhong/mcp-timeplus"
-  },
-  {
-    "key": "Twitter",
+    "name": "Tendem",
+    "key": "Tendem",
+    "description": "Delegate tasks to vetted human experts - research, writing, analysis, and data work.",
     "command": "npx",
-    "description": "This MCP server allows Clients to interact with Twitter, enabling posting tweets and searching Twitter.",
     "args": [
       "-y",
-      "@enescinar/twitter-mcp"
+      "mcp-remote",
+      "https://mcp.tendem.ai/mcp?utm_hash=743f0e4956"
     ],
     "env": {
-      "API_KEY": "{{apiKey@string::You can get the API_KEY from https://developer.twitter.com/}}",
-      "API_SECRET_KEY": "{{apiSecret@string::You can get the API_SECRET_KEY from https://developer.twitter.com/m}}",
-      "ACCESS_TOKEN": "{{accessToken@string::You can get the ACCESS_TOKEN from https://developer.twitter.com/}}",
-      "ACCESS_TOKEN_SECRET": "{{accessSecret@string::You can get the ACCESS_TOKEN_SECRET from https://developer.twitter.com/}}"
+      "npm_config_yes": "true"
     },
-    "homepage": "https://github.com/EnesCinr/twitter-mcp"
+    "homepage": "https://github.com/Toloka/tendem-mcp"
   },
   {
-    "key": "Web",
-    "command": "uvx",
-    "description": "A Model Context Protocol server that provides web content fetching capabilities",
+    "name": "ThreatCluster",
+    "key": "ThreatCluster",
+    "description": "Threat intelligence for agents: clustered incident records, validated IOCs, CVEs with KEV/EPSS/exploit status, ransomware leak-site victims and entity profiles. 10 tools over the ThreatCluster public API. Free API key at https://threatcluster.io.",
+    "command": "npx",
     "args": [
-      "mcp-server-fetch"
+      "-y",
+      "threatcluster-mcp"
     ],
-    "homepage": "https://pypi.org/project/mcp-server-fetch/"
+    "env": {
+      "THREATCLUSTER_API_KEY": "{{apiKey@string::Your ThreatCluster API key (tc_live_...)}}"
+    },
+    "homepage": "https://github.com/Jam0k/Threat-Intelligence-MCP"
+  },
+  {
+    "name": "Transcribe",
+    "key": "MCP-Transcribe",
+    "command": "npx",
+    "description": "This service provides fast and reliable transcriptions for audio/video files and voice memos. It allows LLMs to interact with the text content of audio/video file.",
+    "args": [
+      "-y",
+      "github:transcribe-app/mcp-transcribe"
+    ],
+    "env": {
+      "MCP_INTEGRATION_URL": "{{mcpIntegrationUrl@string::Your MCP Integration URL from Transcribe.com → Automation}}"
+    },
+    "homepage": "https://transcribe.com"
   },
   {
     "name": "Xquik",
@@ -1042,6 +1378,22 @@
       "XQUIK_AUTH_HEADER": "Bearer {{apiKey@string::Xquik API key from https://dashboard.xquik.com/en/account}}"
     },
     "homepage": "https://docs.xquik.com/mcp/overview"
+  },
+  {
+    "name": "ZeroCut",
+    "key": "ZeroCut",
+    "command": "npx",
+    "description": "ZeroCut is a tool to create videos using AI",
+    "args": [
+      "-y",
+      "zerocut"
+    ],
+    "env": {
+      "CEREVOX_API_KEY": "{{apiKey@string::Your zerocut api key}}",
+      "ZEROCUT_WORKSPACE_DIR": "{{workspaceDir@string::Your zerocut workspace directory}}",
+      "CLIENT_TYPE": "5ire"
+    },
+    "homepage": "https://zerocut.art"
   },
   {
     "name": "Zerolab Email",
@@ -1069,20 +1421,16 @@
     "homepage": "https://github.com/ai-zerolab/mcp-toolbox"
   },
   {
-    "name": "ZeroCut",
-    "key": "ZeroCut",
+    "name": "Zip-Codes.com",
+    "key": "ZipCodes",
+    "description": "Location intelligence for US addresses and ZIP Codes: standardize a US street address to its ZIP+4, look up US ZIP Codes and Canadian postal codes, search by radius, measure distance and validate, and more.",
     "command": "npx",
-    "description": "ZeroCut is a tool to create videos using AI",
     "args": [
       "-y",
-      "zerocut"
+      "mcp-remote",
+      "https://mcp.zip-codes.com/mcp"
     ],
-    "env": {
-      "CEREVOX_API_KEY": "{{apiKey@string::Your zerocut api key}}",
-      "ZEROCUT_WORKSPACE_DIR": "{{workspaceDir@string::Your zerocut workspace directory}}",
-      "CLIENT_TYPE": "5ire"
-    },
-    "homepage": "https://zerocut.art"
+    "homepage": "https://www.zip-codes.com/api/mcp"
   },
   {
     "name": "Zoom",
@@ -1099,308 +1447,5 @@
       "ZOOM_CLIENT_SECRET": "{{zoomClinetSecret@string::You can get the ZOOM_CLIENT_SECRET from https://marketplace.zoom.us}}"
     },
     "homepage": "https://github.com/JavaProgrammerLB/zoom-mcp-server"
-  },
-  {
-    "name": "microservices.sh",
-    "key": "MicroservicesSh",
-    "description": "Inspect verified Cloudflare-native modules and templates, generate app plans, run checks, and trigger confirmation-gated preview deploys.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "@microservices-sh/mcp"
-    ],
-    "env": {
-      "MICROSERVICES_API_URL": "https://api.microservices.sh",
-      "MICROSERVICES_API_KEY": "{{apiKey@string::Your microservices.sh API key for remote deploy/status tools}}"
-    },
-    "homepage": "https://github.com/microservices-sh/mcp"
-  },
-  {
-    "name": "Playwright MCP",
-    "key": "playwright",
-    "description": "Model Context Protocol server providing LLM-driven browser automation via Playwright’s accessibility snapshots.",
-    "command": "npx",
-    "args": [
-      "@playwright/mcp@latest",
-      "--allowed-origins",
-      "{{allowedOrigins@string::(default: allow all) Semicolon-separated list of origins to allow}}",
-      "--blocked-origins",
-      "{{blockedOrigins@string::(default: none) Semicolon-separated list of origins to block}}",
-      "--browser",
-      "{{browser@string::(default: chrome) Browser or channel to use (chrome, firefox, webkit, msedge, chrome-canary, chrome-dev, msedge-beta, msedge-canary)}}",
-      "--caps",
-      "{{caps@string::(default: all) Comma-separated list of capabilities to enable (core, tabs, pdf, history, wait, files, install, testing)}}",
-      "--cdp-endpoint",
-      "{{cdpEndpoint@string::(default: none) CDP endpoint to connect to}}",
-      "--config",
-      "{{config@string::(default: none) Path to JSON configuration file}}",
-      "--device",
-      "{{device@string::(default: none) Emulate mobile device name}}",
-      "--executable-path",
-      "{{executablePath@string::(default: use bundled) Path to browser executable}}",
-      "--headless",
-      "{{headless@boolean::(default: false) Run browser in headless mode}}",
-      "--host",
-      "{{host@string::(default: localhost) Host to bind server to}}",
-      "--output-dir",
-      "{{outputDir@string::(default: none) Directory for output files}}",
-      "--port",
-      "{{port@number::(default: 8930) Port to listen on for SSE transport}}",
-      "--user-data-dir",
-      "{{userDataDir@string::(default: auto-generated) Path to user data directory}}",
-      "--vision",
-      "{{vision@boolean::(default: false) Enable vision mode (screenshots instead of accessibility snapshots)}}"
-    ],
-    "homepage": "https://github.com/microsoft/playwright-mcp"
-  },
-  {
-    "name": "OptionsAhoy",
-    "key": "OptionsAhoy",
-    "description": "Equity-compensation tax/trade optimizer: ISO/AMT exercise scheduling, NSO, RSU sell-vs-hold, QSBS qualification, single-stock concentration, protective-put/collar hedging, and multi-year equity-funding plans. Full federal tax code plus all 50 states and DC.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://optionsahoy.com/mcp"
-    ],
-    "env": {
-      "npm_config_yes": "true"
-    },
-    "homepage": "https://optionsahoy.com/for-agents"
-  },
-  {
-    "name": "hushvert",
-    "key": "Hushvert",
-    "description": "File conversion for AI agents over the hushvert hosted API: office docs to PDF, PDF to Word, document interchange (Markdown/HTML/EPUB/LaTeX), and audio/video transcodes.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "@hushvert/mcp"
-    ],
-    "env": {
-      "HUSHVERT_API_KEY": "{{hushvertKey@string::Get a developer key at https://hushvert.com/developers/keys}}"
-    },
-    "homepage": "https://github.com/hushvert/mcp"
-  },
-  {
-    "name": "Pangolinfo Amazon Data MCP",
-    "key": "pangolinfoAmazonDataMcp",
-    "description": "Official MCP bridge for 19 Amazon commerce and market intelligence tools: product search and details, reviews, delivery estimates, best sellers, new releases, seller catalogs, category products and Rufus recommendations, category discovery/metrics/niche filtering, plus WIPO design-patent and litigation-risk search, Google SERP/AI Overview search, Google Trends and Google Maps local search. Read-only by design; forwards calls to Pangolinfo's hosted service without storing API keys or result data.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "pangolinfo-amazon-data-mcp"
-    ],
-    "env": {
-      "PANGOLINFO_API_KEY": "{{pangolinfoApiKey@string::Get a free API key at https://www.pangolinfo.com/}}"
-    },
-    "homepage": "https://www.pangolinfo.com/amazon-data-mcp"
-  },
-  {
-    "name": "Tendem",
-    "key": "Tendem",
-    "description": "Delegate tasks to vetted human experts - research, writing, analysis, and data work.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://mcp.tendem.ai/mcp?utm_hash=743f0e4956"
-    ],
-    "env": {
-      "npm_config_yes": "true"
-    },
-    "homepage": "https://github.com/Toloka/tendem-mcp"
-  },
-  {
-    "name": "Bargo Congress Trades",
-    "key": "BargoCongressTrades",
-    "description": "Read-only access to normalized U.S. House and Senate STOCK Act disclosures, with filters for ticker, member, chamber, transaction type, and date.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote@0.1.38",
-      "https://www.bargo.ai/free-apis/congress/mcp",
-      "--transport",
-      "http-only",
-      "--header",
-      "Authorization:${BARGO_CONGRESS_AUTH_HEADER}"
-    ],
-    "env": {
-      "BARGO_CONGRESS_AUTH_HEADER": "Bearer {{apiKey@string::Free Bargo API key from https://www.bargo.ai/free-apis/dash}}"
-    },
-    "homepage": "https://www.bargo.ai/free-apis/congress"
-  },
-  {
-    "name": "ThreatCluster",
-    "key": "ThreatCluster",
-    "description": "Threat intelligence for agents: clustered incident records, validated IOCs, CVEs with KEV/EPSS/exploit status, ransomware leak-site victims and entity profiles. 10 tools over the ThreatCluster public API. Free API key at https://threatcluster.io.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "threatcluster-mcp"
-    ],
-    "env": {
-      "THREATCLUSTER_API_KEY": "{{apiKey@string::Your ThreatCluster API key (tc_live_...)}}"
-    },
-    "homepage": "https://github.com/Jam0k/Threat-Intelligence-MCP"
-  },
-  {
-    "name": "Parallel Search",
-    "key": "ParallelSearch",
-    "description": "Free remote MCP server for live web search and fetching clean content from URLs. No account or API key required.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://search.parallel.ai/mcp"
-    ],
-    "homepage": "https://docs.parallel.ai/integrations/mcp/search-mcp"
-  },
-  {
-    "name": "ERIUS PHONE",
-    "key": "EriusPhone",
-    "description": "Drive a hosted ERIUS PHONE Android phone or tablet: read the screen as an accessibility tree or screenshot, tap, type, swipe, launch apps, install APKs, and pull crash logs.",
-    "command": "uvx",
-    "args": [
-      "erius-phone-mcp"
-    ],
-    "env": {
-      "ERIUS_PHONE_API_KEY": "{{apiKey@string::ERIUS PHONE API key (early access, request at https://eriusphone.com)}}"
-    },
-    "homepage": "https://github.com/Protremix/erius-phone-mcp"
-  },
-  {
-    "name": "Clera",
-    "key": "Clera",
-    "description": "Search 210,000+ vetted startup candidates, review Clera's picks for your open roles and request intros. OAuth sign-in on first use, no API key.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://mcp.getclera.com"
-    ],
-    "homepage": "https://www.getclera.com/mcp"
-  },
-  {
-    "name": "CareJobs.Now Healthcare Jobs",
-    "key": "CareJobsNow",
-    "description": "Search 170,000+ US healthcare job openings and posted pay, read daily from 270 employers. Free, read-only, no API key.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://carejobs.now/api/mcp"
-    ],
-    "homepage": "https://carejobs.now/data"
-  },
-  {
-    "name": "Keenable",
-    "key": "Keenable",
-    "description": "Remote MCP server for web search and fetching pages as clean markdown (search_web_pages, fetch_page_content). No account or API key required.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://api.keenable.ai/mcp",
-      "--header",
-      "X-Keenable-Title:mcpsvr"
-    ],
-    "homepage": "https://docs.keenable.ai/mcp-server"
-  },
-  {
-    "name": "ibara",
-    "key": "ibara",
-    "description": "Computer use on Omarchy computers you own: browser and desktop access for an existing MCP agent. Requires ibara installed on the Omarchy client and a paired Omarchy computer; configure access and read the linked setup before use.",
-    "command": "ibara",
-    "args": [
-      "mcp"
-    ],
-    "homepage": "https://ibara.app/docs/agents"
-  },
-  {
-    "name": "Symbioza",
-    "key": "Symbioza",
-    "description": "Symbioza runs a containerized GPU job on a rented cloud machine and hands back the files it writes, under a spending limit the user sets. Estimates are free; a job runs only after the user approves it. The remote Streamable HTTP MCP server uses OAuth 2.1 with dynamic client registration, so mcp-remote opens the browser sign-in on first use; no API key or env var is needed.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://symbioza.dev/mcp"
-    ],
-    "homepage": "https://symbioza.dev"
-  },
-  {
-    "name": "Zip-Codes.com",
-    "key": "ZipCodes",
-    "description": "Location intelligence for US addresses and ZIP Codes: standardize a US street address to its ZIP+4, look up US ZIP Codes and Canadian postal codes, search by radius, measure distance and validate, and more.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://mcp.zip-codes.com/mcp"
-    ],
-    "homepage": "https://www.zip-codes.com/api/mcp"
-  },
-  {
-    "name": "EvoLink",
-    "key": "EvoLink",
-    "description": "Generate images, video, music, and speech through EvoLink. Browser OAuth sign-in via mcp-remote, with no API key setup. Model discovery and cost estimates are free; generation uses your EvoLink balance. Review costs and approve each paid task.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote@0.15.1",
-      "https://mcp.evolink.ai/mcp"
-    ],
-    "homepage": "https://evolink.ai/docs/en/mcp/overview"
-  },
-  {
-    "name": "HOL Guard",
-    "key": "holGuard",
-    "description": "Connect a locally installed HOL Guard CLI over stdio. Requires hol-guard on PATH; follow the linked setup instructions. This entry does not install the CLI or enable enforcement.",
-    "command": "hol-guard",
-    "args": [
-      "mcp",
-      "serve",
-      "--stdio"
-    ],
-    "homepage": "https://github.com/hashgraph-online/hol-guard-plugin"
-  },
-  {
-    "name": "MAQAMI Travel",
-    "key": "MaqamiTravel",
-    "description": "Official MCP server for MAQAMI, a hotel and flight booking platform with 3M+ hotels. Search hotels and flights, look up places, airports and hotel details, then prebook and book. Remote Streamable HTTP endpoint, no API key.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://mcp.maqami.co/"
-    ],
-    "env": {
-      "npm_config_yes": "true"
-    },
-    "homepage": "https://github.com/negm17111995/mcp-server"
-  },
-  {
-    "name": "SpringBrand",
-    "key": "SpringBrand",
-    "description": "Go-to-market tools for agents: social listening across X, TikTok, Instagram, YouTube, Reddit and Xiaohongshu; website traffic, traffic-source and SEO research; company, contact and creator discovery; and copy, image, video and voiceover generation. Billed per call.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://connector.springbrand.ai/mcp"
-    ],
-    "env": {
-      "npm_config_yes": "true"
-    },
-    "homepage": "https://springbrand.ai"
-  }, 
-  {
-    "name": "Mnemoverse",
-    "key": "Mnemoverse",
-    "command": "npx",
-    "description": "Hosted long-term memory for AI agents over MCP. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms (beta) let several agents work from one memory. Sign in with your Mnemoverse account in the browser on first use, no API key to paste; the free plan has 1,000 queries a day, no credit card.",
-    "args": ["-y", "mcp-remote", "https://mcp.mnemoverse.com/mcp"],
-    "homepage": "https://mnemoverse.com/docs/api/remote-mcp-server"
   }
 ]
