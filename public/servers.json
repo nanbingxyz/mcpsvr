@@ -316,6 +316,18 @@
     "homepage": "https://dchub.cloud"
   },
   {
+    "name": "deed.page",
+    "key": "DeedPage",
+    "description": "Publish static files to a permanent HTTPS URL on <slug>.deed.page: create, update, roll back and delete sites, attach custom domains. 24 tools. Remote Streamable HTTP endpoint; first publish needs no account or API key and returns a token for later edits.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://deed.page/mcp"
+    ],
+    "homepage": "https://deed.page/docs"
+  },
+  {
     "name": "Desktop Commander",
     "key": "DesktopCommander",
     "command": "npx",
