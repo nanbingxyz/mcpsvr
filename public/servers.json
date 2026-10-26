@@ -34,6 +34,20 @@
     "homepage": "https://www.aeon.fun/connect"
   },
   {
+    "name": "agent-qa",
+    "key": "agentqa",
+    "description": "Natural-language web and mobile testing from vostride, with advanced memidex memory and self-improvement. Requires Node.js 24+ and an initialized project with model credentials and browser or mobile dependencies.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "agent-qa@0.2.3",
+      "--config",
+      "{{configPath@string::Absolute path to your project's agent-qa.config.yaml}}",
+      "mcp"
+    ],
+    "homepage": "https://vostride.com/docs/agent-qa/quickstart"
+  },
+  {
     "name": "AgentCraft",
     "key": "AgentCraft",
     "description": "AgentCraft is a partner product of Crafted™. Our AI Agent framework allows you to deploy intelligent agents that understand, learn, and evolve with your business needs. It provides premade and custom AI agents for enterprises, ensuring secure and scalable solutions.",
