@@ -1058,6 +1058,18 @@
     "homepage": "https://docs.xquik.com/mcp/overview"
   },
   {
+    "name": "Zaptu",
+    "key": "Zaptu",
+    "description": "Zaptu: request a local US home-service pro (plumbing, cleaning, pest control) via a contact request; remote MCP at https://api.zaptu.ai/mcp.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.zaptu.ai/mcp"
+    ],
+    "homepage": "https://zaptu.ai/agents/"
+  },
+  {
     "name": "Zerolab Email",
     "key": "ZerolabEmail",
     "command": "uvx",
