@@ -403,6 +403,20 @@
     "homepage": "https://github.com/modelcontextprotocol/servers"
   },
   {
+    "name": "Fax for Agents",
+    "key": "FaxForAgents",
+    "description": "Send and receive faxes from an AI agent through the Fax for Agents API. 15 tools for sending, quotes, human review, delegated policies, inbound faxes and delivery evidence, plus guide resources and prompts. A test key reaches a free sandbox, a live key spends prepaid credit.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "faxforagents-mcp"
+    ],
+    "env": {
+      "FAXFORAGENTS_API_KEY": "{{apiKey@string::API key from https://app.faxforagents.com, ffa_test_ for the sandbox or ffa_live_ for real sends}}"
+    },
+    "homepage": "https://faxforagents.com"
+  },
+  {
     "name": "Feishu Bot",
     "key": "FeishuBot",
     "command": "npx",
