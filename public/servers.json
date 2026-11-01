@@ -1474,5 +1474,17 @@
       "footballcharts-mcp"
     ],
     "homepage": "https://www.football-charts.com/developers"
+  },
+  {
+    "name": "NeverApply",
+    "key": "NeverApply",
+    "description": "Search and match jobs, tailor resumes, answer screening questions, prep for interviews and apply to jobs with your approval. OAuth sign-in on first use, no API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://neverapply.co/mcp"
+    ],
+    "homepage": "https://neverapply.co/features/mcp"
   }
 ]
