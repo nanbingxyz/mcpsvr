@@ -81,7 +81,11 @@
     "key": "AIModelWatch",
     "description": "List the models each AI provider's API serves (OpenRouter, OpenAI, Anthropic, Gemini, Mistral, xAI, DeepSeek) and see which are new since the last check. OpenRouter works without a key.",
     "command": "npx",
-    "args": ["-y", "github:markksantos/ai-model-watch", "--mcp"],
+    "args": [
+      "-y",
+      "github:markksantos/ai-model-watch",
+      "--mcp"
+    ],
     "homepage": "https://artificialwatch.com/mcp"
   },
   {
@@ -194,7 +198,11 @@
     "key": "Blawgy",
     "description": "Research keywords, plan, write, update and publish SEO blog posts on your WordPress, Shopify, Webflow, Wix, Framer, Ghost or Duda site, and read Search Console traffic, rankings and indexing status.",
     "command": "npx",
-    "args": ["-y", "mcp-remote", "https://app.blawgy.com/mcp"],
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://app.blawgy.com/mcp"
+    ],
     "homepage": "https://blawgy.com/mcp"
   },
   {
@@ -247,7 +255,11 @@
     "key": "CaptionChecker",
     "description": "Check SRT and WebVTT captions against Netflix, BBC and DCMP Captioning Key limits: reading speed, line length, lines, time on screen, gaps and overlaps. Runs locally, no key.",
     "command": "npx",
-    "args": ["-y", "github:markksantos/caption-checker", "--mcp"],
+    "args": [
+      "-y",
+      "github:markksantos/caption-checker",
+      "--mcp"
+    ],
     "homepage": "https://www.markstudios.com/tools/caption-checker"
   },
   {
@@ -357,7 +369,12 @@
     "key": "Dreamtune",
     "description": "Access AI models, tool APIs, GPU compute and request logs through a Dreamtune workspace. Requires Node.js 22.20+, a scoped workspace API key and prepaid credit for paid operations.",
     "command": "npx",
-    "args": ["-y", "--package=@dreamtune/sdk@0.1.1", "dreamtune", "mcp"],
+    "args": [
+      "-y",
+      "--package=@dreamtune/sdk@0.1.1",
+      "dreamtune",
+      "mcp"
+    ],
     "env": {
       "DREAMTUNE_API_KEY": "{{apiKey@string::Dreamtune workspace API key with the required permissions}}",
       "DREAMTUNE_API_ORIGIN": "https://api.dreamtunelabs.com",
@@ -1420,13 +1437,28 @@
       "npm_config_yes": "true"
     },
     "homepage": "https://springbrand.ai"
-  }, 
+  },
   {
     "name": "Mnemoverse",
     "key": "Mnemoverse",
     "command": "npx",
     "description": "Hosted long-term memory for AI agents over MCP. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms (beta) let several agents work from one memory. Sign in with your Mnemoverse account in the browser on first use, no API key to paste; the free plan has 1,000 queries a day, no credit card.",
-    "args": ["-y", "mcp-remote", "https://mcp.mnemoverse.com/mcp"],
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.mnemoverse.com/mcp"
+    ],
     "homepage": "https://mnemoverse.com/docs/api/remote-mcp-server"
+  },
+  {
+    "name": "Football Charts",
+    "key": "FootballCharts",
+    "description": "Free football statistics, league tables, match results, half-time scores, goal-timing distributions (45+ and 90+ stoppage time) and upcoming fixtures across 98 leagues in 44 countries. Keyless out of the box.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "footballcharts-mcp"
+    ],
+    "homepage": "https://www.football-charts.com/developers"
   }
 ]
