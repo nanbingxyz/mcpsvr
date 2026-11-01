@@ -34,6 +34,20 @@
     "homepage": "https://www.aeon.fun/connect"
   },
   {
+    "name": "agent-qa",
+    "key": "agentqa",
+    "description": "Natural-language web and mobile testing from vostride, with advanced memidex memory and self-improvement. Requires Node.js 24+ and an initialized project with model credentials and browser or mobile dependencies.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "agent-qa@0.2.3",
+      "--config",
+      "{{configPath@string::Absolute path to your project's agent-qa.config.yaml}}",
+      "mcp"
+    ],
+    "homepage": "https://vostride.com/docs/agent-qa/quickstart"
+  },
+  {
     "name": "AgentCraft",
     "key": "AgentCraft",
     "description": "AgentCraft is a partner product of Crafted™. Our AI Agent framework allows you to deploy intelligent agents that understand, learn, and evolve with your business needs. It provides premade and custom AI agents for enterprises, ensuring secure and scalable solutions.",
@@ -67,7 +81,11 @@
     "key": "AIModelWatch",
     "description": "List the models each AI provider's API serves (OpenRouter, OpenAI, Anthropic, Gemini, Mistral, xAI, DeepSeek) and see which are new since the last check. OpenRouter works without a key.",
     "command": "npx",
-    "args": ["-y", "github:markksantos/ai-model-watch", "--mcp"],
+    "args": [
+      "-y",
+      "github:markksantos/ai-model-watch",
+      "--mcp"
+    ],
     "homepage": "https://artificialwatch.com/mcp"
   },
   {
@@ -180,7 +198,11 @@
     "key": "Blawgy",
     "description": "Research keywords, plan, write, update and publish SEO blog posts on your WordPress, Shopify, Webflow, Wix, Framer, Ghost or Duda site, and read Search Console traffic, rankings and indexing status.",
     "command": "npx",
-    "args": ["-y", "mcp-remote", "https://app.blawgy.com/mcp"],
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://app.blawgy.com/mcp"
+    ],
     "homepage": "https://blawgy.com/mcp"
   },
   {
@@ -233,7 +255,11 @@
     "key": "CaptionChecker",
     "description": "Check SRT and WebVTT captions against Netflix, BBC and DCMP Captioning Key limits: reading speed, line length, lines, time on screen, gaps and overlaps. Runs locally, no key.",
     "command": "npx",
-    "args": ["-y", "github:markksantos/caption-checker", "--mcp"],
+    "args": [
+      "-y",
+      "github:markksantos/caption-checker",
+      "--mcp"
+    ],
     "homepage": "https://www.markstudios.com/tools/caption-checker"
   },
   {
@@ -316,6 +342,18 @@
     "homepage": "https://dchub.cloud"
   },
   {
+    "name": "deed.page",
+    "key": "DeedPage",
+    "description": "Publish static files to a permanent HTTPS URL on <slug>.deed.page: create, update, roll back and delete sites, attach custom domains. 24 tools. Remote Streamable HTTP endpoint; first publish needs no account or API key and returns a token for later edits.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://deed.page/mcp"
+    ],
+    "homepage": "https://deed.page/docs"
+  },
+  {
     "name": "Desktop Commander",
     "key": "DesktopCommander",
     "command": "npx",
@@ -331,7 +369,12 @@
     "key": "Dreamtune",
     "description": "Access AI models, tool APIs, GPU compute and request logs through a Dreamtune workspace. Requires Node.js 22.20+, a scoped workspace API key and prepaid credit for paid operations.",
     "command": "npx",
-    "args": ["-y", "--package=@dreamtune/sdk@0.1.1", "dreamtune", "mcp"],
+    "args": [
+      "-y",
+      "--package=@dreamtune/sdk@0.1.1",
+      "dreamtune",
+      "mcp"
+    ],
     "env": {
       "DREAMTUNE_API_KEY": "{{apiKey@string::Dreamtune workspace API key with the required permissions}}",
       "DREAMTUNE_API_ORIGIN": "https://api.dreamtunelabs.com",
@@ -375,6 +418,20 @@
       "{{repoPath@string::Git Repository Path}}"
     ],
     "homepage": "https://github.com/modelcontextprotocol/servers"
+  },
+  {
+    "name": "Fax for Agents",
+    "key": "FaxForAgents",
+    "description": "Send and receive faxes from an AI agent through the Fax for Agents API. 15 tools for sending, quotes, human review, delegated policies, inbound faxes and delivery evidence, plus guide resources and prompts. A test key reaches a free sandbox, a live key spends prepaid credit.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "faxforagents-mcp"
+    ],
+    "env": {
+      "FAXFORAGENTS_API_KEY": "{{apiKey@string::API key from https://app.faxforagents.com, ffa_test_ for the sandbox or ffa_live_ for real sends}}"
+    },
+    "homepage": "https://faxforagents.com"
   },
   {
     "name": "Feishu Bot",
@@ -877,6 +934,13 @@
     "homepage": "https://shortformkit.com/mcp-server/"
   },
   {
+    "name": "SitePatent",
+    "key": "SitePatent",
+    "description": "Read-only remote MCP server for the SitePatent directory of startups, SaaS, AI and developer tools: search listings, read a full listing profile, find alternatives to a product, browse categories and see what is trending. Streamable HTTP, no API key, no account.",
+    "url": "https://sitepatent.com/api/mcp",
+    "homepage": "https://sitepatent.com/mcp"
+  },
+  {
     "name": "SkyAccess",
     "key": "SkyAccess",
     "description": "Search 5,000+ live empty leg flights, get charter price estimates and booking links. No account or API key.",
@@ -1023,6 +1087,18 @@
       "XQUIK_AUTH_HEADER": "Bearer {{apiKey@string::Xquik API key from https://dashboard.xquik.com/en/account}}"
     },
     "homepage": "https://docs.xquik.com/mcp/overview"
+  },
+  {
+    "name": "Zaptu",
+    "key": "Zaptu",
+    "description": "Zaptu: request a local US home-service pro (plumbing, cleaning, pest control) via a contact request; remote MCP at https://api.zaptu.ai/mcp.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.zaptu.ai/mcp"
+    ],
+    "homepage": "https://zaptu.ai/agents/"
   },
   {
     "name": "Zerolab Email",
@@ -1362,11 +1438,65 @@
     "homepage": "https://github.com/negm17111995/mcp-server"
   },
   {
-     "name": "Sem",
+    "name": "SpringBrand",
+    "key": "SpringBrand",
+    "description": "Go-to-market tools for agents: social listening across X, TikTok, Instagram, YouTube, Reddit and Xiaohongshu; website traffic, traffic-source and SEO research; company, contact and creator discovery; and copy, image, video and voiceover generation. Billed per call.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://connector.springbrand.ai/mcp"
+    ],
+    "env": {
+      "npm_config_yes": "true"
+    },
+    "homepage": "https://springbrand.ai"
+  },
+  {
+    "name": "Mnemoverse",
+    "key": "Mnemoverse",
+    "command": "npx",
+    "description": "Hosted long-term memory for AI agents over MCP. Rating a recalled memory as helpful or misleading re-ranks what comes back next. Shared rooms (beta) let several agents work from one memory. Sign in with your Mnemoverse account in the browser on first use, no API key to paste; the free plan has 1,000 queries a day, no credit card.",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.mnemoverse.com/mcp"
+    ],
+    "homepage": "https://mnemoverse.com/docs/api/remote-mcp-server"
+  },
+  {
+    "name": "Football Charts",
+    "key": "FootballCharts",
+    "description": "Free football statistics, league tables, match results, half-time scores, goal-timing distributions (45+ and 90+ stoppage time) and upcoming fixtures across 98 leagues in 44 countries. Keyless out of the box.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "footballcharts-mcp"
+    ],
+    "homepage": "https://www.football-charts.com/developers"
+  },
+  {
+    "name": "NeverApply",
+    "key": "NeverApply",
+    "description": "Search and match jobs, tailor resumes, answer screening questions, prep for interviews and apply to jobs with your approval. OAuth sign-in on first use, no API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://neverapply.co/mcp"
+    ],
+    "homepage": "https://neverapply.co/features/mcp"
+  },
+  {
+    "name": "Sem",
     "key": "Sem",
     "description": "Local code symbol lookup, source search, structural diffs and impact analysis. Writes a local index; validation tools can execute commands. Use trusted checkouts; SEM_REPO is not a sandbox.",
     "command": "npx",
-    "args": ["-y", "@ataraxy-labs/sem@0.27.0", "mcp"],
+    "args": [
+      "-y",
+      "@ataraxy-labs/sem@0.27.0",
+      "mcp"
+    ],
     "env": {
       "SEM_REPO": "{{repoPath@string::Absolute path to an existing Git checkout on the MCP client host}}"
     },
