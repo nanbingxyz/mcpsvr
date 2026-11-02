@@ -1544,5 +1544,13 @@
         "ADTEST_API_KEY": "{{apiKey@string::Your AdTest.AI developer API key (app.adtest.ai → Developer → Generate key)}}"
     },
     "homepage": "https://github.com/menaker/adtest-mcp"
+  },
+  {
+    "name": "Varity",
+    "key": "Varity",
+    "description": "Deploy apps, AI agents, and LLMs to production from your AI client, with the monthly cost shown before you deploy. Tools cover deploys, status, logs, app templates, virtual machines, and cost estimates. Deploys need the Varity CLI (pipx install varitykit) and a deploy key.",
+    "command": "npx",
+    "args": ["-y", "@varity-labs/mcp"],
+    "homepage": "https://github.com/varity-labs/varity-mcp"
   }
 ]
