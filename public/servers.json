@@ -1567,5 +1567,17 @@
     "command": "npx",
     "args": ["-y", "@varity-labs/mcp"],
     "homepage": "https://github.com/varity-labs/varity-mcp"
+  },
+  {
+    "name": "Perisclaw",
+    "key": "Perisclaw",
+    "description": "Use your own WhatsApp from AI clients through Perisclaw: catch up on what needs your reply, search chats and messages, and review and send replies. Hosted server; sign in with OAuth and choose read-only or read and write access.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.perisclaw.com/mcp/plugin"
+    ],
+    "homepage": "https://docs.perisclaw.com/mcp-server"
   }
 ]
