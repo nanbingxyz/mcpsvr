@@ -1,5 +1,19 @@
 [
   {
+    "name": "Bowmark",
+    "key": "Bowmark",
+    "description": "Bowmark: typed functions for live data on 100+ websites (LinkedIn, X, Instagram, Reddit, YouTube and more), returned as JSON and tested on a schedule; remote MCP at https://api.bowmark.ai/mcp. Needs a Bowmark API key; starts with a free $10.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.bowmark.ai/mcp",
+      "--header",
+      "Authorization:Bearer {{apiKey@string::Bowmark API key from https://bowmark.ai/dashboard}}"
+    ],
+    "homepage": "https://bowmark.ai"
+  },
+  {
     "name": "Grey Ridge x402 Pre-Trade Gate",
     "key": "GreyRidgeX402",
     "description": "Pre-trade safety gate for Base tokens: GO/HOLD/BLOCK swap verdicts and token due-diligence (honeypot, transfer tax, liquidity), plus on-chain and DeFi data. Free preview tools; paid calls settle per request in USDC via x402.",
