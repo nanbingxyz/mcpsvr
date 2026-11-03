@@ -2,7 +2,7 @@
   {
     "name": "Bowmark",
     "key": "Bowmark",
-    "description": "Bowmark: typed functions for live data on 100+ websites (LinkedIn, X, Instagram, Reddit, YouTube and more), returned as JSON and tested on a schedule; remote MCP at https://api.bowmark.ai/mcp. Needs a Bowmark API key; starts with a free $10.",
+    "description": "Bowmark: live structured data from 750+ websites (LinkedIn, X, Instagram, Reddit, YouTube and more) through a library of tested functions: find one with get_library, call it with run, get JSON back. Remote MCP at https://api.bowmark.ai/mcp. Needs a Bowmark API key; starts with a free $10.",
     "command": "npx",
     "args": [
       "-y",
