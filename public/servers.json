@@ -1567,5 +1567,22 @@
     "command": "npx",
     "args": ["-y", "@varity-labs/mcp"],
     "homepage": "https://github.com/varity-labs/varity-mcp"
+  },
+  {
+    "name": "LurkAPI",
+    "key": "LurkAPI",
+    "description": "Public social media data: posts, profiles, comments, video transcripts and ad library results from TikTok, Instagram, YouTube, Reddit, X, LinkedIn and 10 more platforms. Hosted remote server; most calls cost 1 credit, 100 free credits at signup.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.lurkapi.com/mcp",
+      "--header",
+      "x-api-key:${LURKAPI_API_KEY}"
+    ],
+    "env": {
+      "LURKAPI_API_KEY": "{{apiKey@string::LurkAPI API key from https://lurkapi.com/login}}"
+    },
+    "homepage": "https://lurkapi.com/docs#claude"
   }
 ]
