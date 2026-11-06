@@ -1,5 +1,29 @@
 [
   {
+    "name": "BankBridge",
+    "key": "BankBridge",
+    "description": "Read-only access to your own US bank, credit card and investment accounts: balances, transactions, spending, recurring charges, holdings. Hosted remote MCP, works with local models. Paid, $5/mo per connected bank; needs a BankBridge API key.",
+    "url": "https://bankbridge.money/api/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::BankBridge API key from https://bankbridge.money/dashboard/settings, without Bearer prefix}}"
+    },
+    "homepage": "https://bankbridge.money/docs"
+  },
+  {
+    "name": "Bowmark",
+    "key": "Bowmark",
+    "description": "Bowmark: live structured data from 750+ websites (LinkedIn, X, Instagram, Reddit, YouTube and more) through a library of tested functions: find one with get_library, call it with run, get JSON back. Remote MCP at https://api.bowmark.ai/mcp. Needs a Bowmark API key; starts with a free $10.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.bowmark.ai/mcp",
+      "--header",
+      "Authorization:Bearer {{apiKey@string::Bowmark API key from https://bowmark.ai/dashboard}}"
+    ],
+    "homepage": "https://bowmark.ai"
+  },
+  {
     "name": "Grey Ridge x402 Pre-Trade Gate",
     "key": "GreyRidgeX402",
     "description": "Pre-trade safety gate for Base tokens: GO/HOLD/BLOCK swap verdicts and token due-diligence (honeypot, transfer tax, liquidity), plus on-chain and DeFi data. Free preview tools; paid calls settle per request in USDC via x402.",
@@ -1567,6 +1591,23 @@
     "command": "npx",
     "args": ["-y", "@varity-labs/mcp"],
     "homepage": "https://github.com/varity-labs/varity-mcp"
+  },
+  {
+    "name": "LurkAPI",
+    "key": "LurkAPI",
+    "description": "Public social media data: posts, profiles, comments, video transcripts and ad library results from TikTok, Instagram, YouTube, Reddit, X, LinkedIn and 10 more platforms. Hosted remote server; most calls cost 1 credit, 100 free credits at signup.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.lurkapi.com/mcp",
+      "--header",
+      "x-api-key:${LURKAPI_API_KEY}"
+    ],
+    "env": {
+      "LURKAPI_API_KEY": "{{apiKey@string::LurkAPI API key from https://lurkapi.com/login}}"
+    },
+    "homepage": "https://lurkapi.com/docs#claude"
   },
   {
     "name": "Perisclaw",
