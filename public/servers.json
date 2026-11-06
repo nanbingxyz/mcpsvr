@@ -1,5 +1,15 @@
 [
   {
+    "name": "BankBridge",
+    "key": "BankBridge",
+    "description": "Read-only access to your own US bank, credit card and investment accounts: balances, transactions, spending, recurring charges, holdings. Hosted remote MCP, works with local models. Paid, $5/mo per connected bank; needs a BankBridge API key.",
+    "url": "https://bankbridge.money/api/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::BankBridge API key from https://bankbridge.money/dashboard/settings, without Bearer prefix}}"
+    },
+    "homepage": "https://bankbridge.money/docs"
+  },
+  {
     "name": "Bowmark",
     "key": "Bowmark",
     "description": "Bowmark: live structured data from 750+ websites (LinkedIn, X, Instagram, Reddit, YouTube and more) through a library of tested functions: find one with get_library, call it with run, get JSON back. Remote MCP at https://api.bowmark.ai/mcp. Needs a Bowmark API key; starts with a free $10.",
