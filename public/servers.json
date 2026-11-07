@@ -1,5 +1,12 @@
 [
   {
+    "name": "Datacircle",
+    "key": "Datacircle",
+    "description": "Find the best GTM APIs. Our MCP server is open to anyone, with no key: list_apis lists the GTM APIs on it, and search_plans finds their plans by API, provider or price.",
+    "url": "https://api.datacircle.dev/mcp",
+    "homepage": "https://datacircle.dev/docs/mcp"
+  },
+  {
     "name": "Ship.com",
     "key": "ShipCom",
     "description": "Hosted shipping rates, order management and tracking for shipments originating in the United States. Uses a Ship.com access token; purchasing tools require an access-token connection and explicit approval. OAuth is documented for supported Claude clients only and does not offer label purchasing.",
