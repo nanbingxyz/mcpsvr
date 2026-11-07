@@ -329,13 +329,8 @@
   {
     "name": "Datacircle",
     "key": "Datacircle",
-    "description": "Datacircle lists all the GTM APIs. Our MCP server is open to anyone, with no key: add api.datacircle.dev/mcp to Claude, ChatGPT or Cursor.",
-    "command": "npx",
-    "args": [
-      "-y",
-      "mcp-remote",
-      "https://api.datacircle.dev/mcp"
-    ],
+    "description": "Find the best GTM APIs. Our MCP server is open to anyone, with no key: list_apis lists the GTM APIs on it, and search_plans finds their plans by API, provider or price.",
+    "url": "https://api.datacircle.dev/mcp",
     "homepage": "https://datacircle.dev/docs/mcp"
   },
   {
