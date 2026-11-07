@@ -150,14 +150,16 @@ export default function Home() {
                   />
                 </div>
                 <div className="flex flex-start gap-2 items-center mb-2">
-                  <div
-                    className={cn(
-                      "text-sm px-2 rounded-md",
-                      cmdBgColor(s.command),
-                    )}
-                  >
-                    {s.command}
-                  </div>
+                  {s.command && (
+                    <div
+                      className={cn(
+                        "text-sm px-2 rounded-md",
+                        cmdBgColor(s.command),
+                      )}
+                    >
+                      {s.command}
+                    </div>
+                  )}
                   {s.homepage && (
                     <div>
                       <a
