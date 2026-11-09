@@ -1089,6 +1089,16 @@
     "homepage": "https://pypi.org/project/mcp-server-fetch/"
   },
   {
+    "name": "Wiro AI",
+    "key": "WiroAI",
+    "description": "Search, price and run 1,000+ image, video, audio and LLM models on Wiro AI, chain them into workflows, and deploy and message AI agents. Hosted remote MCP; needs a Wiro API key, and runs are billed from your Wiro wallet.",
+    "url": "https://mcp.wiro.ai/v1",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Wiro API key from https://wiro.ai/panel/project, without Bearer prefix. For a signature-based project enter key:secret}}"
+    },
+    "homepage": "https://wiro.ai/docs/wiro-mcp-server"
+  },
+  {
     "name": "Xquik",
     "key": "Xquik",
     "command": "npx",
