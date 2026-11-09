@@ -1615,5 +1615,17 @@
       "https://api.perisclaw.com/mcp/plugin"
     ],
     "homepage": "https://docs.perisclaw.com/mcp-server"
+  },
+  {
+    "name": "Imagera",
+    "key": "Imagera",
+    "description": "Generate and edit images, video, voiceovers and music, and run multi-step jobs such as product photos, ads and reels, with saved Character IDs that keep a face or product consistent. Hosted server; sign in with OAuth. Paid Imagera account required; every generation is quoted in credits before it runs.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.imagera.ai/mcp"
+    ],
+    "homepage": "https://imagera.ai/mcp"
   }
 ]
