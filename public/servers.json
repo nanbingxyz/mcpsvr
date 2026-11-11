@@ -1637,5 +1637,16 @@
       "https://mcp.imagera.ai/mcp"
     ],
     "homepage": "https://imagera.ai/mcp"
+  },
+  {
+    "name": "nano-mcp",
+    "key": "nanomcp",
+    "description": "Nano (XNO) wallet operations - balance, send, receive - as MCP tool calls. Powers Unstuck, an agent ask/answer/pay network settled in Nano.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "nano-mcp"
+    ],
+    "homepage": "https://github.com/PANDeveloper001/nano-mcp"
   }
 ]
