@@ -1637,5 +1637,17 @@
       "https://mcp.imagera.ai/mcp"
     ],
     "homepage": "https://imagera.ai/mcp"
+  },
+  {
+    "name": "Deal.ai",
+    "key": "DealAI",
+    "description": "Shop with Deal.ai: compare every US store's price for the same product with its price history, check whether a deal is real, ask Deal.ai's shopping agent what to buy, and watch prices with an e-mail when one drops. Hosted server; sign in with OAuth (free Deal.ai account, no API key).",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://deal.ai/mcp"
+    ],
+    "homepage": "https://deal.ai/mcp-server"
   }
 ]
