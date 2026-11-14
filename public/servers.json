@@ -586,6 +586,16 @@
     "homepage": "https://github.com/surendranb-google-analytics-mcp"
   },
   {
+    "name": "GetYouTubeTranscript",
+    "key": "GetYouTubeTranscript",
+    "description": "Get YouTube transcripts with timestamps, search YouTube, and browse channels and playlists. Hosted remote MCP; needs a GetYouTubeTranscript API key.",
+    "url": "https://getyoutubetranscript.com/api/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::GetYouTubeTranscript API key from https://getyoutubetranscript.com/docs, without Bearer prefix}}"
+    },
+    "homepage": "https://github.com/tubeagentkit/youtube-mcp"
+  },
+  {
     "name": "Hacker News",
     "key": "HackerNews",
     "command": "uvx",
