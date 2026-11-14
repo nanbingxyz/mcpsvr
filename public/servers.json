@@ -351,7 +351,7 @@
   {
     "name": "DC Hub",
     "key": "DCHub",
-    "description": "DC Hub is the live data layer for data-center site selection. Its DCPI is a daily score of where data centers can get grid power, across 300+ markets. 94 tools for grid, interconnection queue, electricity price, gas, fiber and facility data; answers carry an as-of timestamp and a citation line. Free tier works with no key (optional X-API-Key).",
+    "description": "DC Hub is the orchestration layer for data center and energy intelligence. Start with execute_plan: one question about grid power, electricity prices or interconnection queues returns one dated, cited answer. It also publishes the Data Center Power Index (DCPI). 96 tools; answers carry an as-of timestamp and a citation line. DCHUB_API_KEY is optional.",
     "command": "npx",
     "args": [
       "-y",
