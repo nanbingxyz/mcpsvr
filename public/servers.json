@@ -351,7 +351,7 @@
   {
     "name": "DC Hub",
     "key": "DCHub",
-    "description": "DC Hub is the orchestration layer for data center and energy intelligence. Start with execute_plan: one question about grid power, electricity prices or interconnection queues returns one dated, cited answer. It also publishes the Data Center Power Index (DCPI). 96 tools; answers carry an as-of timestamp and a citation line. DCHUB_API_KEY is optional.",
+    "description": "DC Hub is the orchestration layer for data center and energy intelligence: start with execute_plan for electricity prices and power grid questions. It also publishes the Data Center Power Index (DCPI). 96 tools; answers carry an as-of timestamp and a citation line. DCHUB_API_KEY is optional.",
     "command": "npx",
     "args": [
       "-y",
