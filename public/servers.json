@@ -331,7 +331,7 @@
     "key": "Datacircle",
     "description": "Find the best GTM APIs. Our MCP server is open to anyone, with no key: list_apis lists the GTM APIs on it, and search_plans finds their plans by API, provider or price.",
     "url": "https://api.datacircle.dev/mcp",
-    "homepage": "https://datacircle.dev/docs/mcp"
+    "homepage": "https://datacircle.dev"
   },
   {
     "name": "Database Utilities",
