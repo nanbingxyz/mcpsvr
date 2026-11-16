@@ -1007,6 +1007,16 @@
     "homepage": "https://github.com/fclairamb/solidping"
   },
   {
+    "name": "SpecStream",
+    "key": "SpecStream",
+    "description": "Live web search, page extraction, research reports, and structured web data discovery with source URLs and read times. Hosted remote MCP; requires a SpecStream API key (new accounts start with $10 credit).",
+    "url": "https://api.specstream.ai/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::SpecStream API key from https://specstream.ai/workspace, without Bearer prefix}}"
+    },
+    "homepage": "https://specstream.ai/docs/mcp"
+  },
+  {
     "key": "Sqlite",
     "command": "uvx",
     "description": "An MCP server using SQLite allows SQL querying, business data analysis, and automatic memo generation.",
@@ -1088,6 +1098,18 @@
       "ACCESS_TOKEN_SECRET": "{{accessSecret@string::You can get the ACCESS_TOKEN_SECRET from https://developer.twitter.com/}}"
     },
     "homepage": "https://github.com/EnesCinr/twitter-mcp"
+  },
+  {
+    "name": "Warmerly",
+    "key": "Warmerly",
+    "description": "Email warmup and cold outreach: mailbox health and warmup, SPF/DKIM/DMARC checks, placement tests, lead search, draft campaigns and inbox reply triage. Hosted server; sign in with a Warmerly account (OAuth, free plan available).",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://app.warmerly.com/api/mcp"
+    ],
+    "homepage": "https://warmerly.com/ai"
   },
   {
     "key": "Web",
@@ -1659,6 +1681,17 @@
       "https://deal.ai/mcp"
     ],
     "homepage": "https://deal.ai/mcp-server"
+  },
+  {
+    "name": "nano-mcp",
+    "key": "nanomcp",
+    "description": "Nano (XNO) wallet operations - balance, send, receive - as MCP tool calls. Powers Unstuck, an agent ask/answer/pay network settled in Nano.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "nano-mcp"
+    ],
+    "homepage": "https://github.com/PANDeveloper001/nano-mcp"
   },
   {
     "name": "AdMakeAI",
