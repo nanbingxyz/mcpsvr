@@ -1007,6 +1007,16 @@
     "homepage": "https://github.com/fclairamb/solidping"
   },
   {
+    "name": "SpecStream",
+    "key": "SpecStream",
+    "description": "Live web search, page extraction, research reports, and structured web data discovery with source URLs and read times. Hosted remote MCP; requires a SpecStream API key (new accounts start with $10 credit).",
+    "url": "https://api.specstream.ai/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::SpecStream API key from https://specstream.ai/workspace, without Bearer prefix}}"
+    },
+    "homepage": "https://specstream.ai/docs/mcp"
+  },
+  {
     "key": "Sqlite",
     "command": "uvx",
     "description": "An MCP server using SQLite allows SQL querying, business data analysis, and automatic memo generation.",
