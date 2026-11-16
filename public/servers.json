@@ -331,7 +331,7 @@
     "key": "Datacircle",
     "description": "Find the best GTM APIs. Our MCP server is open to anyone, with no key: list_apis lists the GTM APIs on it, and search_plans finds their plans by API, provider or price.",
     "url": "https://api.datacircle.dev/mcp",
-    "homepage": "https://datacircle.dev/docs/mcp"
+    "homepage": "https://datacircle.dev"
   },
   {
     "name": "Database Utilities",
@@ -351,7 +351,7 @@
   {
     "name": "DC Hub",
     "key": "DCHub",
-    "description": "DC Hub is the live data layer for data-center site selection. Its DCPI is a daily score of where data centers can get grid power, across 300+ markets. 94 tools for grid, interconnection queue, electricity price, gas, fiber and facility data; answers carry an as-of timestamp and a citation line. Free tier works with no key (optional X-API-Key).",
+    "description": "DC Hub is the orchestration layer for data center and energy intelligence: start with execute_plan for electricity prices and power grid questions. It also publishes the Data Center Power Index (DCPI). 96 tools; answers carry an as-of timestamp and a citation line. DCHUB_API_KEY is optional.",
     "command": "npx",
     "args": [
       "-y",
@@ -584,6 +584,16 @@
       "GA4_PROPERTY_ID": "{{propertyId@string::Your GA Property Id}}"
     },
     "homepage": "https://github.com/surendranb-google-analytics-mcp"
+  },
+  {
+    "name": "GetYouTubeTranscript",
+    "key": "GetYouTubeTranscript",
+    "description": "Get YouTube transcripts with timestamps, search YouTube, and browse channels and playlists. Hosted remote MCP; needs a GetYouTubeTranscript API key.",
+    "url": "https://getyoutubetranscript.com/api/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::GetYouTubeTranscript API key from https://getyoutubetranscript.com/docs, without Bearer prefix}}"
+    },
+    "homepage": "https://github.com/tubeagentkit/youtube-mcp"
   },
   {
     "name": "Hacker News",
@@ -1637,6 +1647,18 @@
       "https://mcp.imagera.ai/mcp"
     ],
     "homepage": "https://imagera.ai/mcp"
+  },
+  {
+    "name": "Deal.ai",
+    "key": "DealAI",
+    "description": "Shop with Deal.ai: compare every US store's price for the same product with its price history, check whether a deal is real, ask Deal.ai's shopping agent what to buy, and watch prices with an e-mail when one drops. Hosted server; sign in with OAuth (free Deal.ai account, no API key).",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://deal.ai/mcp"
+    ],
+    "homepage": "https://deal.ai/mcp-server"
   },
   {
     "name": "nano-mcp",
