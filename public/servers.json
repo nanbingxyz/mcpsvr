@@ -1692,5 +1692,17 @@
       "nano-mcp"
     ],
     "homepage": "https://github.com/PANDeveloper001/nano-mcp"
+  },
+  {
+    "name": "AdMakeAI",
+    "key": "AdMakeAI",
+    "description": "Generate Meta ad images and UGC-style video ads, pull competitors' live ads from the Meta Ad Library, and draft and report on Meta campaigns. Hosted server; sign in with OAuth. 30 free credits at signup; generation spends credits.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://admakeai.com/api/mcp"
+    ],
+    "homepage": "https://admakeai.com/agents"
   }
 ]
