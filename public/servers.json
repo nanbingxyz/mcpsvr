@@ -1708,7 +1708,7 @@
   {
     "name": "AppScreen",
     "key": "AppScreen",
-    "description": "Build App Store and Google Play screenshots in the AppScreen web editor while it stays open in your browser: add slides, iPhone, iPad and Android frames, captions and your own app screenshots, set backgrounds, then export store-sized PNGs. Can also save works to the cloud and make share links. Hosted server; sign in with OAuth. The editor itself is free, but agent access needs AppScreen Pro ($9 one-time, no subscription).",
+    "description": "Build App Store and Google Play screenshots in the AppScreen web editor while it stays open in your browser: add slides, iPhone, iPad and Android frames, captions and your own app screenshots, set backgrounds, then export store-sized PNGs. Can also save works to the cloud and make share links. Hosted server; sign in with OAuth.",
     "command": "npx",
     "args": [
       "-y",
