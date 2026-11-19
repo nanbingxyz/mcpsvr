@@ -1726,5 +1726,15 @@
       "https://appscreen.pro/mcp"
     ],
     "homepage": "https://appscreen.pro"
+  },
+  {
+    "name": "ChemDraw MCP (unofficial)",
+    "key": "ChemdrawMcp",
+    "description": "Draws molecules from names or SMILES as 2D structures (PNG/SVG) and rotatable 3D models with RDKit, plus reaction schemes, SN1/SN2/Fischer esterification mechanisms and protein cartoons from the PDB or AlphaFold. This unofficial server does not include or require ChemDraw.",
+    "command": "uvx",
+    "args": [
+      "chemdraw-mcp"
+    ],
+    "homepage": "https://github.com/jurimaxam-dotcom/chemdraw-mcp"
   }
 ]
