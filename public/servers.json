@@ -1,5 +1,15 @@
 [
   {
+    "name": "Taskhold",
+    "key": "Taskhold",
+    "description": "A task list you share with your coding agents: next task, steps, live progress and blocked questions you answer from a web board. Hosted remote MCP. Paid, $12/month with a 7-day trial; needs a Taskhold API key.",
+    "url": "https://taskhold.com/api/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Taskhold API key from https://taskhold.com/dashboard/settings, without Bearer prefix}}"
+    },
+    "homepage": "https://taskhold.com/docs"
+  },
+  {
     "name": "BankBridge",
     "key": "BankBridge",
     "description": "Read-only access to your own US bank, credit card and investment accounts: balances, transactions, spending, recurring charges, holdings. Hosted remote MCP, works with local models. Paid, $5/mo per connected bank; needs a BankBridge API key.",
