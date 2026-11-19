@@ -1704,5 +1704,17 @@
       "https://admakeai.com/api/mcp"
     ],
     "homepage": "https://admakeai.com/agents"
+  },
+  {
+    "name": "Embarko",
+    "key": "Embarko",
+    "description": "Deploy and host AI-built apps and websites, and get a live URL without any DevOps setup. Hosted server; sign in with OAuth, no API key. Tools: deploy_app, read_app, update_app, app_danger_zone.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.embarko.ai/mcp"
+    ],
+    "homepage": "https://embarko.ai/docs/quickstart"
   }
 ]
