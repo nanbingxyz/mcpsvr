@@ -1726,5 +1726,17 @@
       "https://appscreen.pro/mcp"
     ],
     "homepage": "https://appscreen.pro"
+  },
+  {
+    "name": "Liliphant",
+    "key": "Liliphant",
+    "description": "Liliphant joins your meetings and remembers the work across all of them: ask what was decided, who promised what or what's still blocked, and get answers with the exact quote, the speaker and the meeting it came from. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.liliphant.com/mcp"
+    ],
+    "homepage": "https://liliphant.com/"
   }
 ]
