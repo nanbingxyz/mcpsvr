@@ -1738,5 +1738,17 @@
       "https://mcp.liliphant.com/mcp"
     ],
     "homepage": "https://liliphant.com/"
+  },
+  {
+    "name": "CheapCarRent Search",
+    "key": "CheapCarRentSearch",
+    "description": "List CheapCarRent pickup cities and airports, then search live car rental offers from local companies (15,000 pickup points in 46 countries, 19 languages). Hosted remote MCP; Streamable HTTP, no authentication, read-only tools list_locations and search_cars.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://cheapcarent.com/mcp"
+    ],
+    "homepage": "https://cheapcarent.com/developers"
   }
 ]
