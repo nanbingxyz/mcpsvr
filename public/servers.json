@@ -1738,5 +1738,19 @@
       "https://mcp.liliphant.com/mcp"
     ],
     "homepage": "https://liliphant.com/"
+  },
+  {
+    "name": "FlashData",
+    "key": "FlashData",
+    "description": "Hosted remote MCP server (22 tools / 15 data capabilities) for real-time Google Search SERP, YouTube Data & transcripts/captions, and cloud-storage video/audio downloads in structured JSON. Start with a free trial at flashdata.dev (no credit card required); $0/mo pay-as-you-go ($1.00/1,000 Google searches, $0.50/1,000 standard YouTube Data requests, $0.10/GB delivered) or optional plans from $49/mo. Requires a FlashData API key.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://data.flashdata.dev/mcp",
+      "--header",
+      "X-API-Key:{{apiKey@string::Get your FlashData API key at https://flashdata.dev/app/api-keys}}"
+    ],
+    "homepage": "https://flashdata.dev/mcp"
   }
 ]
