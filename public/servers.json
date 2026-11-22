@@ -1,5 +1,15 @@
 [
   {
+    "name": "Runheed",
+    "key": "Runheed",
+    "description": "Error tracking your coding agent can read: search production errors, read stack traces and breadcrumbs, and resolve an error with the fixing commit. Hosted remote MCP. Paid, from $29/month with a 7-day trial; needs a Runheed agent key.",
+    "url": "https://runheed.com/api/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Runheed agent key from https://runheed.com/docs, without Bearer prefix}}"
+    },
+    "homepage": "https://runheed.com/mcp-server"
+  },
+  {
     "name": "Taskhold",
     "key": "Taskhold",
     "description": "A task list you share with your coding agents: next task, steps, live progress and blocked questions you answer from a web board. Hosted remote MCP. Paid, $12/month with a 7-day trial; needs a Taskhold API key.",
