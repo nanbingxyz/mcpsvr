@@ -1738,5 +1738,19 @@
       "https://mcp.liliphant.com/mcp"
     ],
     "homepage": "https://liliphant.com/"
+  },
+  {
+    "name": "MakeAIVideo",
+    "key": "MakeAIVideo",
+    "description": "Create finished short-form AI videos (script, AI voiceover, AI or stock scenes, captions, music) from a prompt or script, get the MP4, and post or schedule it to TikTok, Instagram or YouTube. Needs a MakeAIVideo API key; videos use account credits. Also hosted at https://mcp.makeaivideo.ai with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "@makeaivideo/mcp"
+    ],
+    "env": {
+      "MAKEAIVIDEO_API_KEY": "{{apiKey@string::Your MakeAIVideo API key}}"
+    },
+    "homepage": "https://github.com/makeaivideo-ai/mcp"
   }
 ]
