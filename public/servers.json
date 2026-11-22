@@ -10,6 +10,18 @@
     "homepage": "https://taskhold.com/docs"
   },
   {
+    "name": "CallForMe",
+    "key": "CallForMe",
+    "description": "Phones businesses for your agent: finds the number, works the phone menu, waits on hold, asks you mid-call and returns a transcript with answers (US and Canada). Hosted remote MCP, OAuth sign-in, connecting asks for nothing. Paid, $1 per answered call.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://callforme.tel/mcp"
+    ],
+    "homepage": "https://callforme.tel/docs/mcp"
+  },
+  {
     "name": "BankBridge",
     "key": "BankBridge",
     "description": "Read-only access to your own US bank, credit card and investment accounts: balances, transactions, spending, recurring charges, holdings. Hosted remote MCP, works with local models. Paid, $5/mo per connected bank; needs a BankBridge API key.",
