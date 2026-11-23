@@ -20,6 +20,18 @@
     "homepage": "https://bankbridge.money/docs"
   },
   {
+    "name": "Octopost",
+    "key": "Octopost",
+    "description": "Posts to X, Bluesky, Mastodon, LinkedIn and Threads for your agent: threads, scheduling, an interval queue and an approval queue for posts a person should check first. Hosted remote MCP, OAuth sign-in. Paid, from $29/month with a 7-day $1 trial.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://octopost.ink/mcp"
+    ],
+    "homepage": "https://octopost.ink/docs/mcp"
+  },
+  {
     "name": "Bowmark",
     "key": "Bowmark",
     "description": "Bowmark: live structured data from 750+ websites (LinkedIn, X, Instagram, Reddit, YouTube and more) through a library of tested functions: find one with get_library, call it with run, get JSON back. Remote MCP at https://api.bowmark.ai/mcp. Needs a Bowmark API key; starts with a free $10.",
