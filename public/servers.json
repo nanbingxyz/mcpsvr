@@ -1738,5 +1738,17 @@
       "https://mcp.liliphant.com/mcp"
     ],
     "homepage": "https://liliphant.com/"
+  },
+  {
+    "name": "MSG91",
+    "key": "MSG91",
+    "description": "MSG91 is a cloud communication platform: search the MSG91 docs and call its APIs for SMS, WhatsApp, email, voice calls and OTP verification from your AI assistant. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.msg91.com/mcp"
+    ],
+    "homepage": "https://msg91.com/"
   }
 ]
