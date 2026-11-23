@@ -56,6 +56,16 @@
     "homepage": "https://www.ship.com/api/mcp"
   },
   {
+    "name": "Postage",
+    "key": "Postage",
+    "description": "Mac email client with a local MCP server on 127.0.0.1 (port 47913): search, read, organize and draft mail across your accounts, with per-client tokens and read-only, organize or full access levels. Runs only while the Postage Mac app is open. Paid app, $39 one-time.",
+    "url": "http://127.0.0.1:47913/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Postage client token from Postage Settings > Agents, without Bearer prefix}}"
+    },
+    "homepage": "https://postageformac.com"
+  },
+  {
     "name": "Aeon",
     "key": "Aeon",
     "description": "Run and manage your Aeon autonomous agent from chat: skills, runs, memory, strategy, packs and settings. Hosted server; sign in with GitHub (OAuth) and pick which agent the client may use.",
