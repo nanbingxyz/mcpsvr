@@ -1728,6 +1728,18 @@
     "homepage": "https://appscreen.pro"
   },
   {
+    "name": "Liliphant",
+    "key": "Liliphant",
+    "description": "Liliphant joins your meetings and remembers the work across all of them: ask what was decided, who promised what or what's still blocked, and get answers with the exact quote, the speaker and the meeting it came from. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.liliphant.com/mcp"
+    ],
+    "homepage": "https://liliphant.com/"
+  },
+  {
     "name": "chempane",
     "key": "Chempane",
     "description": "Chemistry panel for Claude Desktop (formerly chemdraw-mcp): draws molecules from names or SMILES as 2D structures (PNG/SVG) and rotatable 3D models with RDKit, plus reaction schemes, SN1/SN2/Fischer esterification mechanisms and protein cartoons from the PDB or AlphaFold. Unofficial, not affiliated with Revvity.",
