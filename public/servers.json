@@ -861,6 +861,18 @@
     "homepage": "https://github.com/Hypersequent/qasphere-mcp"
   },
   {
+    "name": "QuestionPunk",
+    "key": "QuestionPunk",
+    "description": "Surveys and AI-moderated interviews in QuestionPunk: create a study or start from a template, edit its questions while it is a draft, and publish it when you ask. With permission to read responses, get response counts, single responses, reports, cross-tabs and exports. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://app.questionpunk.com/api/v1"
+    ],
+    "homepage": "https://www.questionpunk.com/features/mcp-server"
+  },
+  {
     "name": "Readwise",
     "key": "Readwise",
     "command": "npx",
