@@ -861,6 +861,16 @@
     "homepage": "https://github.com/Hypersequent/qasphere-mcp"
   },
   {
+    "name": "Qorx",
+    "key": "Qorx",
+    "description": "Local, line-cited code search over an indexed workspace. Install the free Qorx CLI on your client's PATH, start its local daemon, and index a project using the linked instructions. No hosted account required.",
+    "command": "qorx",
+    "args": [
+      "mcp"
+    ],
+    "homepage": "https://github.com/bbrainfuckk/qorx#connect-an-mcp-client"
+  },
+  {
     "name": "Readwise",
     "key": "Readwise",
     "command": "npx",
