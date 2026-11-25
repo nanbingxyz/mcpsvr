@@ -1738,5 +1738,17 @@
       "https://mcp.liliphant.com/mcp"
     ],
     "homepage": "https://liliphant.com/"
+  },
+  {
+    "name": "Clema",
+    "key": "Clema",
+    "description": "Clema is an AI analyst for higher-ed institutional research (IR) teams. Work the IR data request queue (list, read, create and update tickets) and query the public IPEDS and College Scorecard datasets with read-only SQL. Hosted server; sign in with OAuth. Needs a paid Clema plan; free trial available.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.clema.ai/mcp"
+    ],
+    "homepage": "https://clema.ai/docs/mcp"
   }
 ]
