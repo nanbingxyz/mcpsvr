@@ -1610,12 +1610,9 @@
     "key": "AdTestAI",
     "description": "Score an image, video or text ad on 13 effectiveness dimensions before you spend on media; returns a section-by-section report with concrete fixes (1 credit per analysis).",
     "command": "npx",
-    "args": [
-      "-y",
-      "adtest-mcp"
-    ],
+    "args": ["-y", "adtest-mcp"],
     "env": {
-      "ADTEST_API_KEY": "{{apiKey@string::Your AdTest.AI developer API key (app.adtest.ai → Developer → Generate key)}}"
+        "ADTEST_API_KEY": "{{apiKey@string::Your AdTest.AI developer API key (app.adtest.ai → Developer → Generate key)}}"
     },
     "homepage": "https://github.com/menaker/adtest-mcp"
   },
@@ -1639,10 +1636,7 @@
     "key": "Varity",
     "description": "Deploy apps, AI agents, and LLMs to production from your AI client, with the monthly cost shown before you deploy. Tools cover deploys, status, logs, app templates, virtual machines, and cost estimates. Deploys need the Varity CLI (pipx install varitykit) and a deploy key.",
     "command": "npx",
-    "args": [
-      "-y",
-      "@varity-labs/mcp"
-    ],
+    "args": ["-y", "@varity-labs/mcp"],
     "homepage": "https://github.com/varity-labs/varity-mcp"
   },
   {
