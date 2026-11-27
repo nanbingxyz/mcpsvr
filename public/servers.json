@@ -1,5 +1,15 @@
 [
   {
+    "name": "Runheed",
+    "key": "Runheed",
+    "description": "Error tracking your coding agent can read: search production errors, read stack traces and breadcrumbs, and resolve an error with the fixing commit. Hosted remote MCP. Paid, from $29/month with a 7-day trial; needs a Runheed agent key.",
+    "url": "https://runheed.com/api/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Runheed agent key from https://runheed.com/docs, without Bearer prefix}}"
+    },
+    "homepage": "https://runheed.com/mcp-server"
+  },
+  {
     "name": "Taskhold",
     "key": "Taskhold",
     "description": "A task list you share with your coding agents: next task, steps, live progress and blocked questions you answer from a web board. Hosted remote MCP. Paid, $12/month with a 7-day trial; needs a Taskhold API key.",
@@ -80,6 +90,18 @@
       "https://x402-data-api.sigrunner.workers.dev/mcp"
     ],
     "homepage": "https://github.com/rezearcher/x402-data-api"
+  },
+  {
+    "name": "Great Work Labs",
+    "key": "Great Work Labs",
+    "description": "35 small task models behind one tool: moderation, prompt-injection detection, embeddings, reranking, speech to text, OCR, object detection, JSON extraction and more. Hosted remote MCP, OAuth sign-in, connecting asks for nothing. Paid, prepaid per call from $0.005 per 1,000 calls.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://labs.greatwork.company/mcp"
+    ],
+    "homepage": "https://labs.greatwork.company/docs/agents"
   },
   {
     "name": "Ship.com",
@@ -912,6 +934,16 @@
       "QASPHERE_API_KEY": "{{apiKey@string::Your QA Sphere API key from Settings → API Keys}}"
     },
     "homepage": "https://github.com/Hypersequent/qasphere-mcp"
+  },
+  {
+    "name": "Qorx",
+    "key": "Qorx",
+    "description": "Local, line-cited code search over an indexed workspace. Install the free Qorx CLI on your client's PATH, start its local daemon, and index a project using the linked instructions. No hosted account required.",
+    "command": "qorx",
+    "args": [
+      "mcp"
+    ],
+    "homepage": "https://github.com/bbrainfuckk/qorx#connect-an-mcp-client"
   },
   {
     "name": "QuestionPunk",
@@ -1813,6 +1845,18 @@
       "Authorization": "Bearer {{apiKey@string::Termalin API key from https://termal.in/account (API keys & MCP), without Bearer prefix}}"
     },
     "homepage": "https://termal.in/mcp/"
+  },
+  {
+    "name": "viaSocket",
+    "key": "viaSocket",
+    "description": "viaSocket is integration and AI infrastructure for developers: your AI assistant explores viaSocket's docs and APIs, then builds and verifies integrations so your users connect their own apps and your product can act on them, automate workflows and power AI experiences across 2,300+ apps. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://connect.viasocket.com/mcp"
+    ],
+    "homepage": "https://viasocket.com/"
   },
   {
     "name": "chempane",
