@@ -1857,5 +1857,15 @@
       "https://connect.viasocket.com/mcp"
     ],
     "homepage": "https://viasocket.com/"
+  },
+  {
+    "name": "chempane",
+    "key": "Chempane",
+    "description": "Chemistry panel for Claude Desktop (formerly chemdraw-mcp): draws molecules from names or SMILES as 2D structures (PNG/SVG) and rotatable 3D models with RDKit, plus reaction schemes, SN1/SN2/Fischer esterification mechanisms and protein cartoons from the PDB or AlphaFold. Unofficial, not affiliated with Revvity.",
+    "command": "uvx",
+    "args": [
+      "chempane"
+    ],
+    "homepage": "https://github.com/chempane/chempane"
   }
 ]
