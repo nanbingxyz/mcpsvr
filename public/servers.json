@@ -1738,5 +1738,15 @@
       "https://mcp.liliphant.com/mcp"
     ],
     "homepage": "https://liliphant.com/"
+  },
+  {
+    "name": "Termalin",
+    "key": "Termalin",
+    "description": "SSH, SFTP, databases and monitoring for your own Linux servers through Termalin's hosted MCP server: run commands and background jobs, read and write files, query Postgres, MySQL and other databases, read metrics, alerts and pending security updates. Reaches only the servers you enrolled with the Termalin Connector, no SSH key goes to the model, and each server has a policy (full, allowlist, read-only). Hosted remote MCP, works with local models. Pro plan or 14-day trial; needs a Termalin API key.",
+    "url": "https://termal.in/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Termalin API key from https://termal.in/account (API keys & MCP), without Bearer prefix}}"
+    },
+    "homepage": "https://termal.in/mcp/"
   }
 ]
