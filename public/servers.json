@@ -1857,5 +1857,15 @@
       "https://connect.viasocket.com/mcp"
     ],
     "homepage": "https://viasocket.com/"
+  },
+  {
+    "name": "Genaya Connect",
+    "key": "GenayaConnect",
+    "description": "Ask about a service business's appointments, clients, invoices, calls and tasks in Genaya through its hosted MCP server. With a Genaya API key (Allow MCP on, under Settings > Developer) it reads and answers questions only; hosts that sign in with OAuth can also prepare changes the member confirms. Hosted remote MCP, Streamable HTTP. Paid product, every plan starts with a 14-day free trial.",
+    "url": "https://api.genaya.com/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Genaya API key with Allow MCP on (Settings > Developer in Genaya), without Bearer prefix}}"
+    },
+    "homepage": "https://developer.genaya.com/mcp"
   }
 ]
