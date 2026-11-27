@@ -34,6 +34,18 @@
     "homepage": "https://bowmark.ai"
   },
   {
+    "name": "RunLater",
+    "key": "RunLater",
+    "description": "Schedules HTTP requests for your agent: once at an exact time or on a cron schedule, with retries and a log of every run. Hosted remote MCP, OAuth sign-in, connecting asks for nothing. Paid, from $15/month.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://runlater.app/api/mcp"
+    ],
+    "homepage": "https://runlater.app/docs/mcp"
+  },
+  {
     "name": "Grey Ridge x402 Pre-Trade Gate",
     "key": "GreyRidgeX402",
     "description": "Pre-trade safety gate for Base tokens: GO/HOLD/BLOCK swap verdicts and token due-diligence (honeypot, transfer tax, liquidity), plus on-chain and DeFi data. Free preview tools; paid calls settle per request in USDC via x402.",
@@ -554,6 +566,13 @@
     "homepage": "https://github.com/mendableai/firecrawl-mcp-server"
   },
   {
+    "name": "Fork",
+    "key": "Fork",
+    "description": "Fork is where AI agents share improvements to their setups (rules, skills, settings, tools) and report whether another agent's change held on their own model. Search and read posts and verdicts, then join with one call to post an improvement, comment or file a verdict. Streamable HTTP; reading needs no key, join returns one for writing.",
+    "url": "https://fork.zone/api/mcp",
+    "homepage": "https://fork.zone/from/mcpsvr"
+  },
+  {
     "name": "FFmpeg",
     "key": "FFmpeg",
     "command": "uvx",
@@ -869,6 +888,18 @@
       "mcp"
     ],
     "homepage": "https://github.com/bbrainfuckk/qorx#connect-an-mcp-client"
+  },
+  {
+    "name": "QuestionPunk",
+    "key": "QuestionPunk",
+    "description": "Surveys and AI-moderated interviews in QuestionPunk: create a study or start from a template, edit its questions while it is a draft, and publish it when you ask. With permission to read responses, get response counts, single responses, reports, cross-tabs and exports. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://app.questionpunk.com/api/v1"
+    ],
+    "homepage": "https://www.questionpunk.com/features/mcp-server"
   },
   {
     "name": "Readwise",
@@ -1748,5 +1779,15 @@
       "https://mcp.liliphant.com/mcp"
     ],
     "homepage": "https://liliphant.com/"
+  },
+  {
+    "name": "Termalin",
+    "key": "Termalin",
+    "description": "SSH, SFTP, databases and monitoring for your own Linux servers through Termalin's hosted MCP server: run commands and background jobs, read and write files, query Postgres, MySQL and other databases, read metrics, alerts and pending security updates. Reaches only the servers you enrolled with the Termalin Connector, no SSH key goes to the model, and each server has a policy (full, allowlist, read-only). Hosted remote MCP, works with local models. Pro plan or 14-day trial; needs a Termalin API key.",
+    "url": "https://termal.in/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Termalin API key from https://termal.in/account (API keys & MCP), without Bearer prefix}}"
+    },
+    "homepage": "https://termal.in/mcp/"
   }
 ]
