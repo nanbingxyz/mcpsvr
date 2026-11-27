@@ -1803,5 +1803,17 @@
       "Authorization": "Bearer {{apiKey@string::Termalin API key from https://termal.in/account (API keys & MCP), without Bearer prefix}}"
     },
     "homepage": "https://termal.in/mcp/"
+  },
+  {
+    "name": "viaSocket",
+    "key": "viaSocket",
+    "description": "viaSocket is integration and AI infrastructure for developers: your AI assistant explores viaSocket's docs and APIs, then builds and verifies integrations so your users connect their own apps and your product can act on them, automate workflows and power AI experiences across 2,300+ apps. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://connect.viasocket.com/mcp"
+    ],
+    "homepage": "https://viasocket.com/"
   }
 ]
