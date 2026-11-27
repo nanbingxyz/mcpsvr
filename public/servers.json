@@ -10,6 +10,18 @@
     "homepage": "https://taskhold.com/docs"
   },
   {
+    "name": "CallForMe",
+    "key": "CallForMe",
+    "description": "Phones businesses for your agent: finds the number, works the phone menu, waits on hold, asks you mid-call and returns a transcript with answers (US and Canada). Hosted remote MCP, OAuth sign-in, connecting asks for nothing. Paid, $1 per answered call.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://callforme.tel/mcp"
+    ],
+    "homepage": "https://callforme.tel/docs/mcp"
+  },
+  {
     "name": "BankBridge",
     "key": "BankBridge",
     "description": "Read-only access to your own US bank, credit card and investment accounts: balances, transactions, spending, recurring charges, holdings. Hosted remote MCP, works with local models. Paid, $5/mo per connected bank; needs a BankBridge API key.",
@@ -18,6 +30,18 @@
       "Authorization": "Bearer {{apiKey@string::BankBridge API key from https://bankbridge.money/dashboard/settings, without Bearer prefix}}"
     },
     "homepage": "https://bankbridge.money/docs"
+  },
+  {
+    "name": "Octopost",
+    "key": "Octopost",
+    "description": "Posts to X, Bluesky, Mastodon, LinkedIn and Threads for your agent: threads, scheduling, an interval queue and an approval queue for posts a person should check first. Hosted remote MCP, OAuth sign-in. Paid, from $29/month with a 7-day $1 trial.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://octopost.ink/mcp"
+    ],
+    "homepage": "https://octopost.ink/docs/mcp"
   },
   {
     "name": "Bowmark",
@@ -34,6 +58,18 @@
     "homepage": "https://bowmark.ai"
   },
   {
+    "name": "RunLater",
+    "key": "RunLater",
+    "description": "Schedules HTTP requests for your agent: once at an exact time or on a cron schedule, with retries and a log of every run. Hosted remote MCP, OAuth sign-in, connecting asks for nothing. Paid, from $15/month.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://runlater.app/api/mcp"
+    ],
+    "homepage": "https://runlater.app/docs/mcp"
+  },
+  {
     "name": "Grey Ridge x402 Pre-Trade Gate",
     "key": "GreyRidgeX402",
     "description": "Pre-trade safety gate for Base tokens: GO/HOLD/BLOCK swap verdicts and token due-diligence (honeypot, transfer tax, liquidity), plus on-chain and DeFi data. Free preview tools; paid calls settle per request in USDC via x402.",
@@ -46,6 +82,18 @@
     "homepage": "https://github.com/rezearcher/x402-data-api"
   },
   {
+    "name": "Great Work Labs",
+    "key": "Great Work Labs",
+    "description": "35 small task models behind one tool: moderation, prompt-injection detection, embeddings, reranking, speech to text, OCR, object detection, JSON extraction and more. Hosted remote MCP, OAuth sign-in, connecting asks for nothing. Paid, prepaid per call from $0.005 per 1,000 calls.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://labs.greatwork.company/mcp"
+    ],
+    "homepage": "https://labs.greatwork.company/docs/agents"
+  },
+  {
     "name": "Ship.com",
     "key": "ShipCom",
     "description": "Hosted shipping rates, order management and tracking for shipments originating in the United States. Uses a Ship.com access token; purchasing tools require an access-token connection and explicit approval. OAuth is documented for supported Claude clients only and does not offer label purchasing.",
@@ -54,6 +102,16 @@
       "Authorization": "Bearer {{accessToken@string::Ship.com access token from Settings > API Integration, without Bearer prefix}}"
     },
     "homepage": "https://www.ship.com/api/mcp"
+  },
+  {
+    "name": "Postage",
+    "key": "Postage",
+    "description": "Mac email client with a local MCP server on 127.0.0.1 (port 47913): search, read, organize and draft mail across your accounts, with per-client tokens and read-only, organize or full access levels. Runs only while the Postage Mac app is open. Paid app, $39 one-time.",
+    "url": "http://127.0.0.1:47913/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Postage client token from Postage Settings > Agents, without Bearer prefix}}"
+    },
+    "homepage": "https://postageformac.com"
   },
   {
     "name": "Aeon",
@@ -554,6 +612,13 @@
     "homepage": "https://github.com/mendableai/firecrawl-mcp-server"
   },
   {
+    "name": "Fork",
+    "key": "Fork",
+    "description": "Fork is where AI agents share improvements to their setups (rules, skills, settings, tools) and report whether another agent's change held on their own model. Search and read posts and verdicts, then join with one call to post an improvement, comment or file a verdict. Streamable HTTP; reading needs no key, join returns one for writing.",
+    "url": "https://fork.zone/api/mcp",
+    "homepage": "https://fork.zone/from/mcpsvr"
+  },
+  {
     "name": "FFmpeg",
     "key": "FFmpeg",
     "command": "uvx",
@@ -859,6 +924,18 @@
       "QASPHERE_API_KEY": "{{apiKey@string::Your QA Sphere API key from Settings → API Keys}}"
     },
     "homepage": "https://github.com/Hypersequent/qasphere-mcp"
+  },
+  {
+    "name": "QuestionPunk",
+    "key": "QuestionPunk",
+    "description": "Surveys and AI-moderated interviews in QuestionPunk: create a study or start from a template, edit its questions while it is a draft, and publish it when you ask. With permission to read responses, get response counts, single responses, reports, cross-tabs and exports. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://app.questionpunk.com/api/v1"
+    ],
+    "homepage": "https://www.questionpunk.com/features/mcp-server"
   },
   {
     "name": "Readwise",
@@ -1738,6 +1815,16 @@
       "https://mcp.liliphant.com/mcp"
     ],
     "homepage": "https://liliphant.com/"
+  },
+  {
+    "name": "Termalin",
+    "key": "Termalin",
+    "description": "SSH, SFTP, databases and monitoring for your own Linux servers through Termalin's hosted MCP server: run commands and background jobs, read and write files, query Postgres, MySQL and other databases, read metrics, alerts and pending security updates. Reaches only the servers you enrolled with the Termalin Connector, no SSH key goes to the model, and each server has a policy (full, allowlist, read-only). Hosted remote MCP, works with local models. Pro plan or 14-day trial; needs a Termalin API key.",
+    "url": "https://termal.in/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::Termalin API key from https://termal.in/account (API keys & MCP), without Bearer prefix}}"
+    },
+    "homepage": "https://termal.in/mcp/"
   },
   {
     "name": "Cloud Alter Ego",
