@@ -629,6 +629,18 @@
     "homepage": "https://fork.zone/from/mcpsvr"
   },
   {
+    "name": "Frank AI Researcher",
+    "key": "FrankAIResearcher",
+    "description": "AI-moderated voice interviews with your own customers: create a research study, edit and publish it, then list and read the interviews. 50+ languages. Hosted server; sign in with OAuth. Free plan with 60 voice minutes a month.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://api.hifrank.ai/mcp"
+    ],
+    "homepage": "https://www.hifrank.ai/?utm_source=mcpsvr&utm_medium=directory&utm_campaign=mcp"
+  },
+  {
     "name": "FFmpeg",
     "key": "FFmpeg",
     "command": "uvx",
