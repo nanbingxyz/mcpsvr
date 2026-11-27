@@ -1,5 +1,15 @@
 [
   {
+    "name": "VideoGen",
+    "key": "VideoGen",
+    "description": "Create editable AI videos, product ads, images and voiceovers, edit projects, and export MP4s. Hosted Streamable HTTP MCP; requires your own VideoGen API key and account credits for generation.",
+    "url": "https://mcp.videogen.io/mcp",
+    "headers": {
+      "Authorization": "Bearer {{apiKey@string::VideoGen API key from https://app.videogen.io/api, without Bearer prefix}}"
+    },
+    "homepage": "https://videogen.io/videogen-mcp"
+  },
+  {
     "name": "Taskhold",
     "key": "Taskhold",
     "description": "A task list you share with your coding agents: next task, steps, live progress and blocked questions you answer from a web board. Hosted remote MCP. Paid, $12/month with a 7-day trial; needs a Taskhold API key.",
