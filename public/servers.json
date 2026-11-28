@@ -1857,5 +1857,17 @@
       "https://connect.viasocket.com/mcp"
     ],
     "homepage": "https://viasocket.com/"
+  },
+  {
+    "name": "DocStar",
+    "key": "DocStar",
+    "description": "Turns your product's API into published docs that your users' AI assistants can read and call. Hosted server; reading docs needs no account, changes need sign-in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://mcp.docstar.io/mcp"
+    ],
+    "homepage": "https://docstar.io"
   }
 ]
