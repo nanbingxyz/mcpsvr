@@ -1707,9 +1707,12 @@
     "key": "AdTestAI",
     "description": "Score an image, video or text ad on 13 effectiveness dimensions before you spend on media; returns a section-by-section report with concrete fixes (1 credit per analysis).",
     "command": "npx",
-    "args": ["-y", "adtest-mcp"],
+    "args": [
+      "-y",
+      "adtest-mcp"
+    ],
     "env": {
-        "ADTEST_API_KEY": "{{apiKey@string::Your AdTest.AI developer API key (app.adtest.ai → Developer → Generate key)}}"
+      "ADTEST_API_KEY": "{{apiKey@string::Your AdTest.AI developer API key (app.adtest.ai → Developer → Generate key)}}"
     },
     "homepage": "https://github.com/menaker/adtest-mcp"
   },
@@ -1733,7 +1736,10 @@
     "key": "Varity",
     "description": "Deploy apps, AI agents, and LLMs to production from your AI client, with the monthly cost shown before you deploy. Tools cover deploys, status, logs, app templates, virtual machines, and cost estimates. Deploys need the Varity CLI (pipx install varitykit) and a deploy key.",
     "command": "npx",
-    "args": ["-y", "@varity-labs/mcp"],
+    "args": [
+      "-y",
+      "@varity-labs/mcp"
+    ],
     "homepage": "https://github.com/varity-labs/varity-mcp"
   },
   {
@@ -1857,5 +1863,60 @@
       "https://connect.viasocket.com/mcp"
     ],
     "homepage": "https://viasocket.com/"
+  },
+  {
+    "name": "SOP Retrieval MCP",
+    "key": "SopRetrievalMcp",
+    "description": "Self-serve SOP retrieval for AI agents: query versioned SOP documents and get cited sections back. Local stdio MCP, MIT, pip install sop-retrieval-mcp.",
+    "command": "python3",
+    "args": [
+      "-m",
+      "sop_retrieval_mcp"
+    ],
+    "homepage": "https://github.com/tanbopiao/sop-retrieval-mcp"
+  },
+  {
+    "name": "Agent Eval Engine",
+    "key": "AgentEvalEngine",
+    "description": "Verifiable agent evaluation engine: deterministic scoring with a hash-chain audit trail, so eval results can be independently checked. Local stdio MCP, Apache-2.0, pip install agent-eval-engine.",
+    "command": "python3",
+    "args": [
+      "-m",
+      "agent_eval_engine"
+    ],
+    "homepage": "https://github.com/tanbopiao/agent-eval-engine"
+  },
+  {
+    "name": "Constraint Runtime",
+    "key": "ConstraintRuntime",
+    "description": "Agent constraint runtime: rule fences, shadow runs, circuit breaking and audit replay to keep autonomous agents inside declared boundaries. Local stdio MCP, Apache-2.0, pip install constraint-runtime.",
+    "command": "python3",
+    "args": [
+      "-m",
+      "constraint_runtime"
+    ],
+    "homepage": "https://github.com/tanbopiao/constraint-runtime"
+  },
+  {
+    "name": "Taixuan Semantic Base",
+    "key": "TaixuanSemanticBase",
+    "description": "Three-state semantic translation base with coupling adjudication, for mapping natural language onto structured agent operations. Local stdio MCP, pip install taixuan-semantic-base.",
+    "command": "python3",
+    "args": [
+      "-m",
+      "taixuan_semantic_base"
+    ],
+    "homepage": "https://github.com/tanbopiao/taixuan-semantic-base"
+  },
+  {
+    "name": "Nine Pivots Governance",
+    "key": "NinePivotsGovernance",
+    "description": "Governance runtime for autonomous agent evolution: admission gate, process monitor, final verdict, checkpointed long tasks and event-stream memory. Pure Python stdlib, local stdio MCP, Apache-2.0.",
+    "command": "python3",
+    "args": [
+      "-m",
+      "mcp_server"
+    ],
+    "homepage": "https://github.com/tanbopiao/jiushu-governance"
   }
 ]
