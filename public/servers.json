@@ -1857,5 +1857,17 @@
       "https://connect.viasocket.com/mcp"
     ],
     "homepage": "https://viasocket.com/"
+  },
+  {
+    "name": "Wavegrain",
+    "key": "Wavegrain",
+    "description": "Curated TikTok slideshows and Instagram carousels for your brand on autopilot. Agents read your brand, make slideshows in its voice with your photos, edit slides, schedule them and export, within a credit limit you set. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://wavegrain.com/api/mcp"
+    ],
+    "homepage": "https://wavegrain.com/mcp"
   }
 ]
