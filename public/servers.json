@@ -1857,5 +1857,17 @@
       "https://connect.viasocket.com/mcp"
     ],
     "homepage": "https://viasocket.com/"
+  },
+  {
+    "name": "Cloud Alter Ego",
+    "key": "CloudAlterEgo",
+    "description": "One memory for every AI chat. Works in Claude, ChatGPT, Gemini and any AI chat with MCP. Logs every question automatically and keeps notes as plain files in your own cloud. Hosted server; sign in with OAuth.",
+    "command": "npx",
+    "args": [
+      "-y",
+      "mcp-remote",
+      "https://cloudalterego.cafeboon.com/mcp"
+    ],
+    "homepage": "https://cloudalterego.cafeboon.com"
   }
 ]
